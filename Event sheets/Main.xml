@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Main</name>
+    <events>
+        <event-group description="" disabled="1" sid="4202359322235978" title="Startup">
+            <sub-events>
+                <event-block disabled="1" sid="3150600093037006">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="6372682286054963" type="GameLobbyBtn" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set CSS style" sid="9654122134096928" type="GameLobbyBtn">
+                            <param id="0" name="Property name">&quot;border&quot;</param>
+                            <param id="1" name="Value">&quot;none&quot;</param>
+                        </action>
+                        <action id="5" name="Set CSS style" sid="5426388945087616" type="GameLobbyBtn">
+                            <param id="0" name="Property name">&quot;background&quot;</param>
+                            <param id="1" name="Value">&quot;none&quot;</param>
+                        </action>
+                        <action id="5" name="Set CSS style" sid="117447743648515" type="GameLobbyBtn">
+                            <param id="0" name="Property name">&quot;font&quot;</param>
+                            <param id="1" name="Value">&quot;25px verdana bold&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="6678858576981914">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="8740553683506741" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set CSS style" sid="178355646897457" type="GameLobbyBtn">
+                            <param id="0" name="Property name">&quot;font-size&quot;</param>
+                            <param id="1" name="Value">&quot;25px&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="5814553025128782">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="3881028430808585" type="Mouse">
+                            <param id="0" name="Object">GameLobbyBtn</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set CSS style" sid="4933622743653658" type="GameLobbyBtn">
+                            <param id="0" name="Property name">&quot;font-size&quot;</param>
+                            <param id="1" name="Value">&quot;30px&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="8111984608162024" title="On Clicks">
+            <sub-events>
+                <event-block sid="3826440559690451">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="5762872675761376" type="GameLobbyBtn" />
+                    </conditions>
+                    <actions>
+                        <action id="-25" name="Go to layout (by name)" sid="546664844153043" type="System">
+                            <param id="0" name="Layout">&quot;GameLobby&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="7199507185490478">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="271942749542577">
+            <conditions>
+                <condition id="-18" name="On created" sid="6801071363795007" type="LobbyTitle" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="8301806621448946" type="LobbyTitle">
+                    <param id="0" name="Text">&quot;Welcome &quot; &amp; username</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

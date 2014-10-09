@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Login</name>
+    <events>
+        <variable constant="0" name="username" sid="9802918184484332" static="0" type="text"></variable>
+        <event-block sid="4974645831909099">
+            <conditions>
+                <condition id="-18" name="On created" sid="8994802254871734" type="usernameBox" />
+            </conditions>
+            <actions>
+                <action id="6" name="Set focused" sid="7156093061112795" type="usernameBox" />
+            </actions>
+        </event-block>
+        <event-block sid="7233770125864572">
+            <conditions>
+                <condition id="12" inverted="1" name="Supports multiplayer" sid="9690233622508646" type="Multiplayer" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="1385302984017623" type="LoginTitle">
+                    <param id="0" name="Text">&quot;Multiplayer not supported by browser&quot;</param>
+                </action>
+                <action id="4" name="Set enabled" sid="6862660366282666" type="usernameBox">
+                    <param id="0" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="2746679562866028">
+            <conditions>
+                <condition id="0" name="On clicked" sid="9468907027716101" type="LoginBtn" />
+                <condition id="0" name="On key pressed" sid="8331113244343347" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="701242378030943" type="LoginTitle">
+                    <param id="0" name="Text">&quot;derp&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="6268672269773991" type="System">
+                    <param id="0" name="Layout">Main</param>
+                </action>
+                <action id="-9" name="Set value" sid="3176503831564008" type="System">
+                    <param id="0" name="Variable">username</param>
+                    <param id="1" name="Value">usernameBox.Text</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

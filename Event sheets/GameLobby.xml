@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GameLobby</name>
+    <events>
+        <variable constant="0" name="ROOM_NAME" sid="1428368826137922" static="0" type="text">main</variable>
+        <variable constant="0" name="INSTANCE_NAME" sid="9025334424391592" static="0" type="text">default</variable>
+        <variable constant="1" name="GAME_NAME" sid="7098387866259919" static="0" type="text">grp8-temp</variable>
+        <event-group description="" sid="3317249418782414" title="chat">
+            <sub-events>
+                <event-block sid="8674698341115371">
+                    <conditions>
+                        <condition id="0" name="On function" sid="1492778016558325" type="Function">
+                            <param id="0" name="Name">&quot;updateChat&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="8449325092282606" type="Chat">
+                            <param id="0" name="Text">Self.Text &amp; newline &amp; Function.Param(0)</param>
+                        </action>
+                        <action id="9" name="Scroll to bottom" sid="8271282531894894" type="Chat" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="2825615770183548" title="Signaling">
+            <sub-events>
+                <event-block sid="7300063380420869">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="3644281476650868" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Connect" sid="700922004021937" type="Multiplayer">
+                            <param id="0" name="Server">&quot;wss://multiplayer.scirra.com&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6226364022412525">
+                    <conditions>
+                        <condition id="2" name="On connected" sid="717134630793157" type="Multiplayer" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Log in" sid="4876000596555243" type="Multiplayer">
+                            <param id="0" name="Alias">username</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4765350026262174">
+                    <conditions>
+                        <condition id="4" name="On logged in" sid="1953154611104467" type="Multiplayer" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Join room" sid="7769475010451072" type="Multiplayer">
+                            <param id="0" name="Game">GAME_NAME</param>
+                            <param id="1" name="Instance">INSTANCE_NAME</param>
+                            <param id="2" name="Room">ROOM_NAME</param>
+                            <param id="3" name="Max peers">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9813181159577841">
+                    <conditions>
+                        <condition id="5" name="On joined room" sid="7797189719957919" type="Multiplayer" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="2912143846563004" type="Function">
+                            <param id="0" name="Name">&quot;updateChat&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;Joined room&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="5994141669202775">
+                            <conditions>
+                                <condition id="10" name="Is host" sid="2057346267910117" type="Multiplayer" />
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="9460442599218848" type="System">
+                                    <param id="0" name="Group name">&quot;Host&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="7985355058001183">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="8394156542470929" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="499776360396923" type="System">
+                                    <param id="0" name="Group name">&quot;Peer&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="9086237429162713">
+                    <conditions>
+                        <condition id="1" name="On error" sid="3296940114670893" type="Multiplayer" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="8762757942659697" type="Function">
+                            <param id="0" name="Name">&quot;updateChat&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;Signalling error: &quot; &amp; Multiplayer.ErrorMessage</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group collapsed="1" description="" sid="9090469954930364" title="Connection">
+            <sub-events>
+                <event-block sid="5740772653454478">
+                    <conditions>
+                        <condition id="11" name="On peer connected" sid="1038800918636632" type="Multiplayer" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="3025289673394891" type="Function">
+                            <param id="0" name="Name">&quot;updateChat&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;&apos;&quot; &amp; Multiplayer.PeerAlias &amp; &quot;&apos; joined&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8484955675340558">
+                    <conditions>
+                        <condition id="13" name="On peer disconnected" sid="4664506806576327" type="Multiplayer" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="6241945255361818" type="Function">
+                            <param id="0" name="Name">&quot;updateChat&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;&apos;&quot; &amp; Multiplayer.PeerAlias &amp; &quot;&apos; disconected&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="651134760143068" title="Peer">
+            <sub-events>
+                <event-block any="1" sid="5161144337834577">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="2458087873859259" type="SendBtn" />
+                        <condition id="0" name="On key pressed" sid="7759942792770996" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="7976584359548592">
+                            <conditions>
+                                <condition id="0" inverted="1" name="Compare text" sid="8067349009037447" type="ChatInput">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                    <param id="1" name="Case">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="8552794246498682" type="Function">
+                                    <param id="0" name="Name">&quot;updateChat&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;&lt;&quot; &amp; Multiplayer.MyAlias &amp; &quot;&gt; &quot; &amp; ChatInput.Text</param>
+                                </action>
+                                <action id="8" name="Send message" sid="6062444375369223" type="Multiplayer">
+                                    <param id="0" name="Peer ID">&quot;&quot;</param>
+                                    <param id="1" name="Tag">&quot;chat&quot;</param>
+                                    <param id="2" name="Message">ChatInput.Text</param>
+                                    <param id="3" name="Mode">0</param>
+                                </action>
+                                <action id="0" name="Set text" sid="5685403752519476" type="ChatInput">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="389303785420839">
+                    <conditions>
+                        <condition id="15" name="On peer message" sid="9821229678159905" type="Multiplayer">
+                            <param id="0" name="Tag">&quot;chat&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="3631304143939043" type="Function">
+                            <param id="0" name="Name">&quot;updateChat&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;&lt;&quot; &amp; Multiplayer.FromAlias &amp; &quot;&gt; &quot; &amp; Multiplayer.Message</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="6968934655683444" title="Host">
+            <sub-events>
+                <event-block any="1" sid="182405712060336">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="5375074361557435" type="SendBtn" />
+                        <condition id="0" name="On key pressed" sid="6392998147297032" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="1746847965651576">
+                            <conditions>
+                                <condition id="0" inverted="1" name="Compare text" sid="1166480360938363" type="ChatInput">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                    <param id="1" name="Case">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="7014134686956956" type="Function">
+                                    <param id="0" name="Name">&quot;updateChat&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;&lt;&quot; &amp; Multiplayer.MyAlias &amp; &quot;&gt; &quot; &amp; ChatInput.Text</param>
+                                </action>
+                                <action id="9" name="Broadcast message" sid="590717105268599" type="Multiplayer">
+                                    <param id="0" name="From ID">&quot;&quot;</param>
+                                    <param id="1" name="Tag">&quot;chat&quot;</param>
+                                    <param id="2" name="Message">ChatInput.Text</param>
+                                    <param id="3" name="Mode">0</param>
+                                </action>
+                                <action id="0" name="Set text" sid="5326434974326605" type="ChatInput">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="1038062013712374">
+                    <conditions>
+                        <condition id="15" name="On peer message" sid="2961280648087338" type="Multiplayer">
+                            <param id="0" name="Tag">&quot;chat&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="4358806240954919" type="Function">
+                            <param id="0" name="Name">&quot;updateChat&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;&lt;&quot; &amp; Multiplayer.FromAlias &amp; &quot;&gt; &quot; &amp; Multiplayer.Message</param>
+                        </action>
+                        <action id="9" name="Broadcast message" sid="3137636947083194" type="Multiplayer">
+                            <param id="0" name="From ID">Multiplayer.FromID</param>
+                            <param id="1" name="Tag">&quot;chat&quot;</param>
+                            <param id="2" name="Message">Multiplayer.Message</param>
+                            <param id="3" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
