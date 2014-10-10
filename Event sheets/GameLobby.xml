@@ -67,6 +67,9 @@
                             <param id="0" name="Name">&quot;updateChat&quot;</param>
                             <param id="1" name="Parameter {n}">&quot;Joined room&quot;</param>
                         </action>
+                        <action id="7" name="Add item" sid="2739424601336924" type="PlayerList">
+                            <param id="0" name="Text">Multiplayer.MyAlias</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="5994141669202775">
@@ -106,7 +109,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="9090469954930364" title="Connection">
+        <event-group description="" sid="9090469954930364" title="Connection">
             <sub-events>
                 <event-block sid="5740772653454478">
                     <conditions>
@@ -116,6 +119,9 @@
                         <action id="0" name="Call function" sid="3025289673394891" type="Function">
                             <param id="0" name="Name">&quot;updateChat&quot;</param>
                             <param id="1" name="Parameter {n}">&quot;&apos;&quot; &amp; Multiplayer.PeerAlias &amp; &quot;&apos; joined&quot;</param>
+                        </action>
+                        <action id="7" name="Add item" sid="8759200800964525" type="PlayerList">
+                            <param id="0" name="Text">Multiplayer.PeerAlias</param>
                         </action>
                     </actions>
                 </event-block>
@@ -129,6 +135,25 @@
                             <param id="1" name="Parameter {n}">&quot;&apos;&quot; &amp; Multiplayer.PeerAlias &amp; &quot;&apos; disconected&quot;</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="6092799481399919">
+                            <conditions>
+                                <condition id="-12" name="Repeat" sid="3598955822305248" type="System">
+                                    <param id="0" name="Count">PlayerList.ItemCount</param>
+                                </condition>
+                                <condition id="5" name="Compare item text at" sid="3857885224045248" type="PlayerList">
+                                    <param id="0" name="Index">loopindex</param>
+                                    <param id="1" name="Text to compare">Multiplayer.PeerAlias</param>
+                                    <param id="2" name="Case sensitivity">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="9" name="Remove" sid="9237024534219702" type="PlayerList">
+                                    <param id="0" name="Index">loopindex</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>

@@ -13,6 +13,7 @@
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="List" version="1">List</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Multiplayer" version="1">Multiplayer</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -76,7 +77,7 @@
                 <plugin id="Button" />
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="game lobby">
+        <object-folder expanded="1" name="game lobby">
             <object-type name="Chat" sid="7211364043948355">
                 <plugin id="TextBox" />
             </object-type>
@@ -85,6 +86,9 @@
             </object-type>
             <object-type name="SendBtn" sid="7550711781978757">
                 <plugin id="Button" />
+            </object-type>
+            <object-type name="PlayerList" sid="4226696101376845">
+                <plugin id="List" />
             </object-type>
         </object-folder>
         <object-folder expanded="0" name="misc">
