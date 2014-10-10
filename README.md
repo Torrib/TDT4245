@@ -14,6 +14,7 @@ We will be using [Construct 2](https://www.scirra.com/construct2) for the develo
 - `git add -A` - Adds all files
 - `git commit -m '[message]'` - Creates a commit with the [message]
 - `git push origin [branchname]` - Pushes your commits upp to github, read more about branches below
+- `git pull` - Get the lates updates
 
 #### Branches
 Branches are used to separate the project when different people are working on multiple things at once.
