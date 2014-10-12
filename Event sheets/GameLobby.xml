@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GameLobby</name>
     <events>
+        <variable constant="0" name="gameStart" sid="1323135135226517" static="0" type="number">0</variable>
+        <variable constant="0" name="gameRoom" sid="9537434448598398" static="0" type="text"></variable>
         <variable constant="0" name="ROOM_NAME" sid="1428368826137922" static="0" type="text">main</variable>
         <variable constant="0" name="INSTANCE_NAME" sid="9025334424391592" static="0" type="text">default</variable>
         <variable constant="1" name="GAME_NAME" sid="7098387866259919" static="0" type="text">grp8-temp</variable>
@@ -23,7 +25,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="2825615770183548" title="Signaling">
+        <event-group description="" sid="2825615770183548" title="Signaling">
             <sub-events>
                 <event-block sid="7300063380420869">
                     <conditions>
@@ -109,7 +111,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="9090469954930364" title="Connection">
+        <event-group collapsed="1" description="" sid="9090469954930364" title="Connection">
             <sub-events>
                 <event-block sid="5740772653454478">
                     <conditions>
@@ -157,7 +159,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" inactive="1" sid="651134760143068" title="Peer">
+        <event-group description="" inactive="1" sid="651134760143068" title="Peer">
             <sub-events>
                 <event-block any="1" sid="5161144337834577">
                     <conditions>
@@ -206,10 +208,54 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="9700637452383176">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="4776506145637278" type="InviteBtn" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="174758340468626" type="System">
+                            <param id="0" name="Variable">gameStart</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6636963893772055" type="System">
+                            <param id="0" name="Variable">gameRoom</param>
+                            <param id="1" name="Value">username</param>
+                        </action>
+                        <action id="8" name="Send message" sid="8138135852535447" type="Multiplayer">
+                            <param id="0" name="Peer ID">&quot;&quot;</param>
+                            <param id="1" name="Tag">&quot;invitePlayer&quot;</param>
+                            <param id="2" name="Message">PlayerList.SelectedText</param>
+                            <param id="3" name="Mode">0</param>
+                        </action>
+                        <action id="6" name="Leave room" sid="7794200633644842" type="Multiplayer" />
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" inactive="1" sid="6968934655683444" title="Host">
+        <event-group description="" inactive="1" sid="6968934655683444" title="Host">
             <sub-events>
+                <event-block sid="6104609219635157">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="5702910822285022" type="InviteBtn" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="8050511856564189" type="System">
+                            <param id="0" name="Variable">gameStart</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="4808407018268988" type="System">
+                            <param id="0" name="Variable">gameRoom</param>
+                            <param id="1" name="Value">username</param>
+                        </action>
+                        <action id="9" name="Broadcast message" sid="8203484471376866" type="Multiplayer">
+                            <param id="0" name="From ID">Multiplayer.MyID</param>
+                            <param id="1" name="Tag">&quot;invite&quot;</param>
+                            <param id="2" name="Message">PlayerList.SelectedText</param>
+                            <param id="3" name="Mode">0</param>
+                        </action>
+                        <action id="6" name="Leave room" sid="1510583621603535" type="Multiplayer" />
+                    </actions>
+                </event-block>
                 <event-block any="1" sid="182405712060336">
                     <conditions>
                         <condition id="0" name="On clicked" sid="5375074361557435" type="SendBtn" />
@@ -263,21 +309,118 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="5786621637658509">
+                    <conditions>
+                        <condition id="15" name="On peer message" sid="6506806854632369" type="Multiplayer">
+                            <param id="0" name="Tag">&quot;invitePlayer&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="3954199565596542">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="7089429569980505" type="System">
+                                    <param id="0" name="First value">Multiplayer.Message</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">username</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="3738400956533669" type="Function">
+                                    <param id="0" name="Name">&quot;invited&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1331628673972997">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="7464261562235257" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="9" name="Broadcast message" sid="8308237753399271" type="Multiplayer">
+                                    <param id="0" name="From ID">Multiplayer.FromID</param>
+                                    <param id="1" name="Tag">&quot;invite&quot;</param>
+                                    <param id="2" name="Message">Multiplayer.Message</param>
+                                    <param id="3" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="933462182593076">
+        <event-block sid="9139708117446725">
             <conditions>
-                <condition id="0" name="On clicked" sid="7785751032332209" type="StartBtn" />
+                <condition id="15" name="On peer message" sid="7043199953809981" type="Multiplayer">
+                    <param id="0" name="Tag">&quot;invite&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="4233415047842642">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2973874996481704" type="System">
+                            <param id="0" name="First value">Multiplayer.Message</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">username</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="9760943465392574" type="Function">
+                            <param id="0" name="Name">&quot;invited&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="6528380600954153">
+            <conditions>
+                <condition id="0" name="On function" sid="2522871366273236" type="Function">
+                    <param id="0" name="Name">&quot;invited&quot;</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="6" name="Leave room" sid="5799788986124445" type="Multiplayer" />
+                <action id="-9" name="Set value" sid="5119851582681361" type="System">
+                    <param id="0" name="Variable">gameRoom</param>
+                    <param id="1" name="Value">Multiplayer.FromAlias</param>
+                </action>
+                <action id="0" name="Call function" sid="1907348032699255" type="Function">
+                    <param id="0" name="Name">&quot;startGame&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5290390249109778">
+            <conditions>
+                <condition id="0" name="On function" sid="516649698932069" type="Function">
+                    <param id="0" name="Name">&quot;startGame&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="3228470090018329" type="System">
+                    <param id="0" name="Variable">gameStart</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="6" name="Leave room" sid="1310984368067155" type="Multiplayer" />
             </actions>
         </event-block>
         <event-block sid="5490671480781712">
             <conditions>
                 <condition id="6" name="On left room" sid="6841831348384692" type="Multiplayer" />
+                <condition disabled="1" id="-14" name="Compare variable" sid="5937011881004329" type="System">
+                    <param id="0" name="Variable">gameStart</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
             </conditions>
             <actions>
+                <action id="5" name="Join room" sid="8291221012505304" type="Multiplayer">
+                    <param id="0" name="Game">GAME_NAME</param>
+                    <param id="1" name="Instance">INSTANCE_NAME</param>
+                    <param id="2" name="Room">gameRoom</param>
+                    <param id="3" name="Max peers">0</param>
+                </action>
                 <action id="-2" name="Go to layout" sid="5211955427544346" type="System">
                     <param id="0" name="Layout">MultiplayerTest</param>
                 </action>

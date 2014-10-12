@@ -28,36 +28,7 @@
                             <param id="3" name="Interpolation">0</param>
                             <param id="4" name="Client value tag">&quot;input&quot;</param>
                         </action>
-                        <action disabled="1" id="1" name="Connect" sid="4202204326245148" type="Multiplayer">
-                            <param id="0" name="Server">&quot;wss://multiplayer.scirra.com&quot;</param>
-                        </action>
-                        <action id="19" name="Auto-join room" sid="3113422624409541" type="Multiplayer">
-                            <param id="0" name="Game">GAME_NAME</param>
-                            <param id="1" name="Instance">&quot;in-game&quot;</param>
-                            <param id="2" name="First room">&quot;room&quot;</param>
-                            <param id="3" name="Max peers">2</param>
-                            <param id="4" name="Locking">0</param>
-                        </action>
                     </actions>
-                </event-block>
-                <event-block disabled="1" sid="6294048764962022">
-                    <conditions>
-                        <condition id="2" name="On connected" sid="3852810109774999" type="Multiplayer" />
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Log in" sid="748515526823044" type="Multiplayer">
-                            <param id="0" name="Alias">username</param>
-                        </action>
-                        <action id="0" name="Set text" sid="683141494531979" type="HostText">
-                            <param id="0" name="Text">&quot;logged inn&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="8634010793223842">
-                    <conditions>
-                        <condition id="4" name="On logged in" sid="3381194946081652" type="Multiplayer" />
-                    </conditions>
-                    <actions />
                 </event-block>
                 <event-block sid="3784300953611292">
                     <conditions>

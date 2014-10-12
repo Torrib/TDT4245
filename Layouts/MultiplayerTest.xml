@@ -27,7 +27,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite2" uid="20">
+                <instance type="Terain" uid="20">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -56,7 +56,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="21">
+                <instance type="Terain" uid="21">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -85,7 +85,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="22">
+                <instance type="Terain" uid="22">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -114,7 +114,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="23">
+                <instance type="Terain" uid="23">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -143,7 +143,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="24">
+                <instance type="Terain" uid="24">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -172,7 +172,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="25">
+                <instance type="Terain" uid="25">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
