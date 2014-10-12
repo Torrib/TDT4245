@@ -6,7 +6,7 @@
         <variable constant="0" name="ROOM_NAME" sid="1428368826137922" static="0" type="text">main</variable>
         <variable constant="0" name="INSTANCE_NAME" sid="9025334424391592" static="0" type="text">default</variable>
         <variable constant="1" name="GAME_NAME" sid="7098387866259919" static="0" type="text">grp8-temp</variable>
-        <event-group description="" sid="3317249418782414" title="chat">
+        <event-group collapsed="1" description="" sid="3317249418782414" title="chat">
             <sub-events>
                 <event-block sid="8674698341115371">
                     <conditions>
@@ -23,7 +23,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="2825615770183548" title="Signaling">
+        <event-group collapsed="1" description="" sid="2825615770183548" title="Signaling">
             <sub-events>
                 <event-block sid="7300063380420869">
                     <conditions>
@@ -157,7 +157,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" inactive="1" sid="651134760143068" title="Peer">
+        <event-group collapsed="1" description="" inactive="1" sid="651134760143068" title="Peer">
             <sub-events>
                 <event-block any="1" sid="5161144337834577">
                     <conditions>
@@ -208,7 +208,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" inactive="1" sid="6968934655683444" title="Host">
+        <event-group collapsed="1" description="" inactive="1" sid="6968934655683444" title="Host">
             <sub-events>
                 <event-block any="1" sid="182405712060336">
                     <conditions>
@@ -265,5 +265,23 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="933462182593076">
+            <conditions>
+                <condition id="0" name="On clicked" sid="7785751032332209" type="StartBtn" />
+            </conditions>
+            <actions>
+                <action id="6" name="Leave room" sid="5799788986124445" type="Multiplayer" />
+            </actions>
+        </event-block>
+        <event-block sid="5490671480781712">
+            <conditions>
+                <condition id="6" name="On left room" sid="6841831348384692" type="Multiplayer" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="5211955427544346" type="System">
+                    <param id="0" name="Layout">MultiplayerTest</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

@@ -16,11 +16,15 @@
         <plugin author="Scirra" id="List" version="1">List</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Multiplayer" version="1">Multiplayer</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
-    <used-behaviors />
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -77,7 +81,7 @@
                 <plugin id="Button" />
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="game lobby">
+        <object-folder expanded="0" name="game lobby">
             <object-type name="Chat" sid="7211364043948355">
                 <plugin id="TextBox" />
             </object-type>
@@ -109,13 +113,63 @@
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\thb\Downloads\menu_background_new_002.png" />
         </object-type>
+        <object-type name="Sprite2" sid="6565937249814746">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="7825500806814212">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2136123094556915" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.727273" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player" sid="68388623007841">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="peerid" sid="4449089839012752" type="string" />
+                <instance-variable name="input" sid="5305508107057793" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="1223886742106707">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="7751334586170579">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1988724425483089" speed="5">
+                    <frame duration="1" hotspotX="0.283688" hotspotY="0.497006" original-source="C:\Users\thb\Downloads\character-color (1).png">
+                        <collision-poly>
+                            <point x="0.283688" y="0.0778443" />
+                            <point x="0.943262" y="0.748503" />
+                            <point x="0.851064" y="0.497006" />
+                            <point x="0.283688" y="0.994012" />
+                            <point x="0.219858" y="0.497006" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="StartBtn" sid="3103305579517032">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="HostText" sid="3320421383993328">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
-    <layout-folder expanded="0">
+    <layout-folder expanded="1">
         <layout-folder expanded="1" name="menu">
             <layout>Login.xml</layout>
             <layout>Main.xml</layout>
             <layout>GameLobby.xml</layout>
+        </layout-folder>
+        <layout-folder expanded="1" name="game">
+            <layout>MultiplayerTest.xml</layout>
         </layout-folder>
     </layout-folder>
     <event-folder expanded="1">
@@ -123,6 +177,9 @@
             <event-sheet>GameLobby.xml</event-sheet>
             <event-sheet>Login.xml</event-sheet>
             <event-sheet>Main.xml</event-sheet>
+        </event-folder>
+        <event-folder expanded="1" name="game">
+            <event-sheet>MultiplayerTest.xml</event-sheet>
         </event-folder>
     </event-folder>
     <global-instances>

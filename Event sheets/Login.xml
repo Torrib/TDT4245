@@ -36,12 +36,12 @@
                 <action id="0" name="Set text" sid="701242378030943" type="LoginTitle">
                     <param id="0" name="Text">&quot;derp&quot;</param>
                 </action>
-                <action id="-2" name="Go to layout" sid="6268672269773991" type="System">
-                    <param id="0" name="Layout">Main</param>
-                </action>
                 <action id="-9" name="Set value" sid="3176503831564008" type="System">
                     <param id="0" name="Variable">username</param>
                     <param id="1" name="Value">usernameBox.Text</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="6268672269773991" type="System">
+                    <param id="0" name="Layout">Main</param>
                 </action>
             </actions>
         </event-block>
