@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Login</name>
-    <sid>7664437499103244</sid>
-    <event-sheet>Login</event-sheet>
+    <name>UserCreation</name>
+    <sid>7626006062178309</sid>
+    <event-sheet>UserCreation</event-sheet>
     <size>
         <width>1708</width>
         <height>960</height>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Background" sid="9606396333296761">
+        <layer name="Background" sid="6424650713116987">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -27,7 +27,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="TiledBackground" uid="3">
+                <instance type="TiledBackground" uid="32">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -35,7 +35,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-44</x>
+                        <x>-39</x>
                         <y>-30</y>
                         <z>0</z>
                         <width>706</width>
@@ -50,7 +50,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Layer 0" sid="3035537138971114">
+        <layer name="Layer 0" sid="8198936989827708">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -64,7 +64,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="usernameBox" uid="4">
+                <instance type="NewUsernameField" uid="33">
                     <properties>
                         <text></text>
                         <placeholder></placeholder>
@@ -80,95 +80,17 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>197</x>
-                        <y>188</y>
+                        <x>182</x>
+                        <y>189</y>
                         <z>0</z>
-                        <width>320</width>
-                        <height>35</height>
+                        <width>240</width>
+                        <height>34</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="LoginTitle" uid="5">
-                    <properties>
-                        <text>Title</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Verdana,-32,400,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>302</x>
-                        <y>80</y>
-                        <z>0</z>
-                        <width>239</width>
-                        <height>77</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="usernameLabel" uid="7">
-                    <properties>
-                        <text>Username</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>307</x>
-                        <y>158</y>
-                        <z>0</z>
-                        <width>79</width>
-                        <height>30</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="LoginBtn" uid="11">
-                    <properties>
-                        <type>Button</type>
-                        <text>Login</text>
-                        <tooltip></tooltip>
-                        <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                        <checked>No</checked>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>304</x>
-                        <y>327</y>
-                        <z>0</z>
-                        <width>72</width>
-                        <height>24</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
-                <instance type="PasswordBox" uid="28">
+                <instance type="NewPasswordField" uid="34">
                     <properties>
                         <text></text>
                         <placeholder></placeholder>
@@ -184,17 +106,70 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>195</x>
-                        <y>266</y>
+                        <x>182</x>
+                        <y>270</y>
                         <z>0</z>
-                        <width>321</width>
+                        <width>240</width>
                         <height>36</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="Text" uid="30">
+                <instance type="ConfirmPasswordField" uid="35">
+                    <properties>
+                        <text></text>
+                        <placeholder></placeholder>
+                        <tooltip></tooltip>
+                        <initial-visibility>Visible</initial-visibility>
+                        <enabled>Yes</enabled>
+                        <read-only>No</read-only>
+                        <spell-check>No</spell-check>
+                        <type>Password</type>
+                        <auto-font-size>Yes</auto-font-size>
+                        <id-optional></id-optional>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>182</x>
+                        <y>355</y>
+                        <z>0</z>
+                        <width>241</width>
+                        <height>34</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="NewUsernameText" uid="36">
+                    <properties>
+                        <text>Username</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>259</x>
+                        <y>156</y>
+                        <z>0</z>
+                        <width>83</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="NewPasswordText" uid="37">
                     <properties>
                         <text>Password</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -209,11 +184,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>309</x>
-                        <y>240</y>
+                        <x>258</x>
+                        <y>245</y>
                         <z>0</z>
-                        <width>77</width>
-                        <height>22</height>
+                        <width>82</width>
+                        <height>23</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -221,10 +196,64 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="NewUserBtn" uid="31">
+                <instance type="ConfirmPasswordText" uid="38">
+                    <properties>
+                        <text>Confirm Password</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>232</x>
+                        <y>327</y>
+                        <z>0</z>
+                        <width>138</width>
+                        <height>27</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="userCreationErrorText" uid="39">
+                    <properties>
+                        <text>Error</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>51</x>
+                        <y>100</y>
+                        <z>0</z>
+                        <width>475</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="CreateUser" uid="40">
                     <properties>
                         <type>Button</type>
-                        <text>Create User</text>
+                        <text>Create</text>
                         <tooltip></tooltip>
                         <initial-visibility>Visible</initial-visibility>
                         <enabled>Yes</enabled>
@@ -235,10 +264,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>507</x>
-                        <y>425</y>
+                        <x>259</x>
+                        <y>422</y>
                         <z>0</z>
-                        <width>97</width>
+                        <width>72</width>
                         <height>24</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -249,6 +278,8 @@
             <effects />
         </layer>
     </layers>
-    <nonworld-instances />
+    <nonworld-instances>
+        <instance type="Users" uid="41" />
+    </nonworld-instances>
     <effects />
 </c2layout>

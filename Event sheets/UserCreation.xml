@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>UserCreation</name>
+    <events>
+        <variable constant="0" name="errors" sid="2386303345508909" static="0" type="number">0</variable>
+        <event-block sid="50559305786239">
+            <conditions>
+                <condition id="-18" name="On created" sid="4562504729676897" type="userCreationErrorText" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="8672831869757297" type="userCreationErrorText">
+                    <param id="0" name="Color">rgb(250, 0, 0)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7444137675772002">
+            <conditions>
+                <condition id="0" name="On clicked" sid="9348606725334076" type="CreateUser" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="7506703994214936">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="4205310608741303" type="System">
+                            <param id="0" name="First value">NewPasswordField.Text</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">ConfirmPasswordField.Text</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="9824716562516807">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="444760356068097" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="9138402004534522" type="userCreationErrorText">
+                            <param id="0" name="Text">&quot;Passwords didnt match&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="7275462825325654" type="System">
+                            <param id="0" name="Variable">errors</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8487350725670308">
+                    <conditions>
+                        <condition id="3" name="Has key" sid="1496467046665255" type="Users">
+                            <param id="0" name="Key">NewUsernameField.Text</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="7459447495240264" type="userCreationErrorText">
+                            <param id="0" name="Text">&quot;Username already taken&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="7151406977683509" type="System">
+                            <param id="0" name="Variable">errors</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8041652731126171">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="7345207258977311" type="System">
+                            <param id="0" name="Variable">errors</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Add key" sid="8383334538762644" type="Users">
+                            <param id="0" name="Key">NewUsernameField.Text</param>
+                            <param id="1" name="Value">NewPasswordField.Text</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="5502860363337033" type="System">
+                            <param id="0" name="Layout">Login</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6355606622327803">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="9510408551725083" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="6235661887184187" type="System">
+                            <param id="0" name="Variable">errors</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
