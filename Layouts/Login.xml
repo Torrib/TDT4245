@@ -194,7 +194,7 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="Text" uid="30">
+                <instance type="PasswordText" uid="30">
                     <properties>
                         <text>Password</text>
                         <initial-visibility>Visible</initial-visibility>

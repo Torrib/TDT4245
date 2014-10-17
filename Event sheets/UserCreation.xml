@@ -45,11 +45,7 @@
                     </actions>
                 </event-block>
                 <event-block sid="8487350725670308">
-                    <conditions>
-                        <condition id="3" name="Has key" sid="1496467046665255" type="Users">
-                            <param id="0" name="Key">NewUsernameField.Text</param>
-                        </condition>
-                    </conditions>
+                    <conditions />
                     <actions>
                         <action id="0" name="Set text" sid="7459447495240264" type="userCreationErrorText">
                             <param id="0" name="Text">&quot;Username already taken&quot;</param>
@@ -69,10 +65,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Add key" sid="8383334538762644" type="Users">
-                            <param id="0" name="Key">NewUsernameField.Text</param>
-                            <param id="1" name="Value">NewPasswordField.Text</param>
-                        </action>
                         <action id="-2" name="Go to layout" sid="5502860363337033" type="System">
                             <param id="0" name="Layout">Login</param>
                         </action>

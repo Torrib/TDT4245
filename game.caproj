@@ -11,7 +11,6 @@
     <saved-with-version>17800</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
-        <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="List" version="1">List</plugin>
@@ -64,6 +63,12 @@
             <object-type name="usernameLabel" sid="4593161179562087">
                 <plugin id="Text" />
             </object-type>
+            <object-type name="NewUserBtn" sid="9683667989038841">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="PasswordBox" sid="9188140548628853">
+                <plugin id="TextBox" />
+            </object-type>
         </object-folder>
         <object-folder expanded="0" name="main">
             <object-type name="LobbyTitle" sid="3020015787999585">
@@ -97,6 +102,21 @@
             </object-type>
             <object-type name="InviteBtn" sid="5994019794344431">
                 <plugin id="Button" />
+            </object-type>
+            <object-type name="AcceptBtn" sid="3416332461021534">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="DeclineBtn" sid="7466367715158846">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="HostText" sid="4609530430430994">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="DeclinedText" sid="9268451099543543">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="InviteText" sid="4514051458838692">
+                <plugin id="Text" />
             </object-type>
         </object-folder>
         <object-folder expanded="0" name="misc">
@@ -156,48 +176,38 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder expanded="0" name="user creation">
+            <object-type name="ConfirmPasswordField" sid="8951545958808912">
+                <plugin id="TextBox" />
+            </object-type>
+            <object-type name="ConfirmPasswordText" sid="9536907376589543">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="CreateUser" sid="4421458047912187">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="NewPasswordField" sid="2774558214210747">
+                <plugin id="TextBox" />
+            </object-type>
+            <object-type name="NewPasswordText" sid="4830766454803509">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="NewUsernameField" sid="695329163217591">
+                <plugin id="TextBox" />
+            </object-type>
+            <object-type name="NewUsernameText" sid="6317181204047767">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="userCreationErrorText" sid="8570195391415372">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="PasswordText" sid="8908407753415051">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
         <object-type name="TiledBackground" sid="6836145549299733">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\thb\Downloads\menu_background_new_002.png" />
-        </object-type>
-        <object-type name="HostText" sid="3320421383993328">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="PasswordBox" sid="9188140548628853">
-            <plugin id="TextBox" />
-        </object-type>
-        <object-type name="Text" sid="8908407753415051">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="NewUserBtn" sid="9683667989038841">
-            <plugin id="Button" />
-        </object-type>
-        <object-type name="NewUsernameField" sid="695329163217591">
-            <plugin id="TextBox" />
-        </object-type>
-        <object-type name="NewPasswordField" sid="2774558214210747">
-            <plugin id="TextBox" />
-        </object-type>
-        <object-type name="ConfirmPasswordField" sid="8951545958808912">
-            <plugin id="TextBox" />
-        </object-type>
-        <object-type name="NewUsernameText" sid="6317181204047767">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="NewPasswordText" sid="4830766454803509">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="ConfirmPasswordText" sid="9536907376589543">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="userCreationErrorText" sid="8570195391415372">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="CreateUser" sid="4421458047912187">
-            <plugin id="Button" />
-        </object-type>
-        <object-type global="1" name="Users" sid="475840109085955">
-            <plugin id="Dictionary" />
         </object-type>
         <object-type name="Sprite" sid="5001063840379136">
             <plugin id="Sprite" />
@@ -206,6 +216,13 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground2" sid="651347329426731">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="HostTextGame" sid="453583829600656">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
@@ -216,7 +233,7 @@
             <layout>GameLobby.xml</layout>
             <layout>UserCreation.xml</layout>
         </layout-folder>
-        <layout-folder expanded="0" name="game">
+        <layout-folder expanded="1" name="game">
             <layout>MultiplayerTest.xml</layout>
         </layout-folder>
     </layout-folder>

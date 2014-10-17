@@ -53,8 +53,8 @@
                                     <param id="0" name="Object">Player</param>
                                     <param id="1" name="Peer ID">Multiplayer.MyID</param>
                                 </action>
-                                <action id="0" name="Set text" sid="8208249953559141" type="HostText">
-                                    <param id="0" name="Text">&quot;Host&quot;</param>
+                                <action id="-15" name="Set visible" sid="2930488382094199" type="HostTextGame">
+                                    <param id="0" name="Visibility">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -68,9 +68,6 @@
                                     <param id="1" name="State">1</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="6230466905340162" type="Player" />
-                                <action id="0" name="Set text" sid="7923802944668956" type="HostText">
-                                    <param id="0" name="Text">&quot;Peer&quot;</param>
-                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -79,7 +76,7 @@
         </event-group>
         <event-group description="" sid="479740519335512" title="Game">
             <sub-events>
-                <event-group description="" inactive="1" sid="8601797289685352" title="GamePeer">
+                <event-group collapsed="1" description="" inactive="1" sid="8601797289685352" title="GamePeer">
                     <sub-events>
                         <event-block sid="9579428919206325">
                             <conditions>
@@ -284,7 +281,7 @@
                                 <action id="-3" name="Create object" sid="9484300169970367" type="System">
                                     <param id="0" name="Object to create">Player</param>
                                     <param id="1" name="Layer">0</param>
-                                    <param id="2" name="X">20</param>
+                                    <param id="2" name="X">200</param>
                                     <param id="3" name="Y">20</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="3471477034221871" type="Player">
@@ -297,7 +294,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="6981929290576743">
+                        <event-block collapsed="1" sid="6981929290576743">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="4147017061745556" type="Player">
                                     <param id="0" name="Instance variable">peerid</param>

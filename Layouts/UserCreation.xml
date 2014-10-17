@@ -225,7 +225,7 @@
                 </instance>
                 <instance type="userCreationErrorText" uid="39">
                     <properties>
-                        <text>Error</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>0,0,0</color>
@@ -278,8 +278,6 @@
             <effects />
         </layer>
     </layers>
-    <nonworld-instances>
-        <instance type="Users" uid="41" />
-    </nonworld-instances>
+    <nonworld-instances />
     <effects />
 </c2layout>
