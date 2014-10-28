@@ -148,6 +148,10 @@
                         <behavior id="solid" />
                     </behavior-type>
                 </behaviors>
+                <container>
+                    <type>Player</type>
+                    <type>UsernameText</type>
+                </container>
                 <animation-folder expanded="1">
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1988724425483089" speed="5">
                         <frame duration="1" hotspotX="0.283688" hotspotY="0.497006" original-source="C:\Users\thb\Downloads\character-color (1).png">
@@ -209,20 +213,19 @@
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\thb\Downloads\menu_background_new_002.png" />
         </object-type>
-        <object-type name="Sprite" sid="5001063840379136">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6247797337163384" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="TiledBackground2" sid="651347329426731">
             <plugin id="TiledBg" />
             <texture />
         </object-type>
         <object-type name="HostTextGame" sid="453583829600656">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="UsernameText" sid="1133383186947097">
+            <plugin id="Text" />
+            <container>
+                <type>Player</type>
+                <type>UsernameText</type>
+            </container>
         </object-type>
     </object-folder>
     <families />
