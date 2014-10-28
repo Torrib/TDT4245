@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>MultiplayerTest</name>
     <events>
+        <include>IngameChat</include>
         <event-group description="" sid="7675116793019805" title="Setup">
             <sub-events>
                 <event-block sid="4877001345771824">

@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>IngameChat</name>
+    <events>
+        <event-block sid="9809845286317402">
+            <conditions>
+                <condition id="0" name="On function" sid="6630793087921723" type="Function">
+                    <param id="0" name="Name">&quot;updateChat&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="3738757498215135" type="IngameChat">
+                    <param id="0" name="Text">Self.Text &amp; newline &amp; Function.Param(0)</param>
+                </action>
+                <action id="9" name="Scroll to bottom" sid="865862732421318" type="IngameChat" />
+            </actions>
+        </event-block>
+        <event-block sid="8924685135843899">
+            <conditions>
+                <condition id="5" name="On joined room" sid="3604486768758938" type="Multiplayer" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="2874686477898483">
+                    <conditions>
+                        <condition id="10" name="Is host" sid="8396573541025605" type="Multiplayer" />
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="6441738600077862" type="System">
+                            <param id="0" name="Group name">&quot;IngameChatHost&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2098871600601271">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="7725463451240124" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="5821669964789687" type="System">
+                            <param id="0" name="Group name">&quot;IngameChatPeer&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="2036600706451251">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="603268355164217" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+                <condition id="0" name="On clicked" sid="7672081814722673" type="IngameChatButton" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-group description="" inactive="1" sid="4500442019417524" title="IngameChatPeer">
+            <sub-events>
+                <event-block any="1" sid="5652558939646848">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="9016252317085932" type="IngameChatButton" />
+                        <condition id="0" name="On key pressed" sid="9980760941824195" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="7915502980718931">
+                            <conditions>
+                                <condition id="-9" inverted="1" name="Layer is visible" sid="8478211100272023" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="5763976991490426" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="6" name="Set focused" sid="2730399001113242" type="IngameChatInput" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="2639663850377155">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="6900191689667444" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="7694941415138061">
+                                    <conditions>
+                                        <condition id="0" inverted="1" name="Compare text" sid="9426926986478009" type="IngameChatInput">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                            <param id="1" name="Case">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="2470929917402561" type="Function">
+                                            <param id="0" name="Name">&quot;updateChat&quot;</param>
+                                            <param id="1" name="Parameter {n}">Multiplayer.MyAlias &amp; &quot;: &quot; &amp; IngameChatInput.Text</param>
+                                        </action>
+                                        <action id="8" name="Send message" sid="4778381242594612" type="Multiplayer">
+                                            <param id="0" name="Peer ID">&quot;&quot;</param>
+                                            <param id="1" name="Tag">&quot;chat&quot;</param>
+                                            <param id="2" name="Message">IngameChatInput.Text</param>
+                                            <param id="3" name="Mode">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="1096213931778191" type="IngameChatInput">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="7737842352373351" type="System">
+                                            <param id="0" name="Layer">2</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="3736791621216474">
+                    <conditions>
+                        <condition id="15" name="On peer message" sid="5156677853149103" type="Multiplayer">
+                            <param id="0" name="Tag">&quot;chat&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="5919422061237156" type="Function">
+                            <param id="0" name="Name">&quot;updateChat&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;&lt;&quot; &amp; Multiplayer.FromAlias &amp; &quot;&gt; &quot; &amp; Multiplayer.Message</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="68292812342492" title="IngameChatHost">
+            <sub-events>
+                <event-block any="1" sid="8213261161156315">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="8142938814757013" type="IngameChatButton" />
+                        <condition id="0" name="On key pressed" sid="4503503249583955" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="3482772062517439">
+                            <conditions>
+                                <condition id="-9" inverted="1" name="Layer is visible" sid="8824935140434945" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="3734646388813383" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="6" name="Set focused" sid="9112246784995194" type="IngameChatInput" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="3145567460153008">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="603802536241603" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="1798045690633741">
+                                    <conditions>
+                                        <condition id="0" inverted="1" name="Compare text" sid="6890310292994507" type="IngameChatInput">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                            <param id="1" name="Case">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="3246645833520845" type="Function">
+                                            <param id="0" name="Name">&quot;updateChat&quot;</param>
+                                            <param id="1" name="Parameter {n}">Multiplayer.MyAlias &amp; &quot;: &quot; &amp; IngameChatInput.Text</param>
+                                        </action>
+                                        <action id="9" name="Broadcast message" sid="1685243711096404" type="Multiplayer">
+                                            <param id="0" name="From ID">&quot;&quot;</param>
+                                            <param id="1" name="Tag">&quot;chat&quot;</param>
+                                            <param id="2" name="Message">IngameChatInput.Text</param>
+                                            <param id="3" name="Mode">0</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="2497883290061345" type="IngameChatInput">
+                                            <param id="0" name="Text">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="5503202876025541" type="System">
+                                            <param id="0" name="Layer">2</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="801209032824259">
+                    <conditions>
+                        <condition id="15" name="On peer message" sid="8670831019642031" type="Multiplayer">
+                            <param id="0" name="Tag">&quot;chat&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="5929630124037999" type="Function">
+                            <param id="0" name="Name">&quot;updateChat&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;&lt;&quot; &amp; Multiplayer.FromAlias &amp; &quot;&gt; &quot; &amp; Multiplayer.Message</param>
+                        </action>
+                        <action id="9" name="Broadcast message" sid="7614842347966376" type="Multiplayer">
+                            <param id="0" name="From ID">Multiplayer.FromID</param>
+                            <param id="1" name="Tag">&quot;chat&quot;</param>
+                            <param id="2" name="Message">Multiplayer.Message</param>
+                            <param id="3" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

@@ -227,6 +227,15 @@
                 <type>UsernameText</type>
             </container>
         </object-type>
+        <object-type name="IngameChat" sid="6246719838601663">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="IngameChatInput" sid="4353541941095695">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="IngameChatButton" sid="324500952680237">
+            <plugin id="Button" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
@@ -246,6 +255,7 @@
             <event-sheet>Login.xml</event-sheet>
             <event-sheet>Main.xml</event-sheet>
             <event-sheet>UserCreation.xml</event-sheet>
+            <event-sheet>IngameChat.xml</event-sheet>
         </event-folder>
         <event-folder expanded="1" name="game">
             <event-sheet>MultiplayerTest.xml</event-sheet>
