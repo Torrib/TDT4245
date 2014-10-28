@@ -201,7 +201,7 @@
                                     <actions>
                                         <action id="0" name="Call function" sid="8552794246498682" type="Function">
                                             <param id="0" name="Name">&quot;updateChat&quot;</param>
-                                            <param id="1" name="Parameter {n}">&quot;&lt;&quot; &amp; Multiplayer.MyAlias &amp; &quot;&gt; &quot; &amp; ChatInput.Text</param>
+                                            <param id="1" name="Parameter {n}">Multiplayer.MyAlias &amp; &quot;: &quot; &amp; ChatInput.Text</param>
                                         </action>
                                         <action id="8" name="Send message" sid="6062444375369223" type="Multiplayer">
                                             <param id="0" name="Peer ID">&quot;&quot;</param>
@@ -399,7 +399,7 @@
                                     <actions>
                                         <action id="0" name="Call function" sid="7014134686956956" type="Function">
                                             <param id="0" name="Name">&quot;updateChat&quot;</param>
-                                            <param id="1" name="Parameter {n}">&quot;&lt;&quot; &amp; Multiplayer.MyAlias &amp; &quot;&gt; &quot; &amp; ChatInput.Text</param>
+                                            <param id="1" name="Parameter {n}">Multiplayer.MyAlias &amp; &quot;: &quot; &amp; ChatInput.Text</param>
                                         </action>
                                         <action id="9" name="Broadcast message" sid="590717105268599" type="Multiplayer">
                                             <param id="0" name="From ID">&quot;&quot;</param>
