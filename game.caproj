@@ -182,6 +182,45 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="HostTextGame" sid="453583829600656">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="IngameChat" sid="6246719838601663">
+                <plugin id="TextBox" />
+            </object-type>
+            <object-type name="IngameChatButton" sid="324500952680237">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="IngameChatInput" sid="4353541941095695">
+                <plugin id="TextBox" />
+            </object-type>
+            <object-type name="UsernameText" sid="1133383186947097">
+                <plugin id="Text" />
+                <container>
+                    <type>Player</type>
+                    <type>UsernameText</type>
+                </container>
+            </object-type>
+            <object-type name="Ping" sid="7752820676764451">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Fade" sid="7519505115737031">
+                        <behavior id="Fade" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="501269831237163" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\thb\Downloads\crosshair2.png">
+                            <collision-poly>
+                                <point x="0.5" y="0" />
+                                <point x="1" y="0.5" />
+                                <point x="0.5" y="1" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder expanded="0" name="user creation">
             <object-type name="ConfirmPasswordField" sid="8951545958808912">
@@ -220,45 +259,6 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
-        <object-type name="HostTextGame" sid="453583829600656">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="UsernameText" sid="1133383186947097">
-            <plugin id="Text" />
-            <container>
-                <type>Player</type>
-                <type>UsernameText</type>
-            </container>
-        </object-type>
-        <object-type name="IngameChat" sid="6246719838601663">
-            <plugin id="TextBox" />
-        </object-type>
-        <object-type name="IngameChatInput" sid="4353541941095695">
-            <plugin id="TextBox" />
-        </object-type>
-        <object-type name="IngameChatButton" sid="324500952680237">
-            <plugin id="Button" />
-        </object-type>
-        <object-type name="Ping" sid="7752820676764451">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Fade" sid="7519505115737031">
-                    <behavior id="Fade" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="501269831237163" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\thb\Downloads\crosshair2.png">
-                        <collision-poly>
-                            <point x="0.5" y="0" />
-                            <point x="1" y="0.5" />
-                            <point x="0.5" y="1" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
@@ -278,10 +278,10 @@
             <event-sheet>Login.xml</event-sheet>
             <event-sheet>Main.xml</event-sheet>
             <event-sheet>UserCreation.xml</event-sheet>
-            <event-sheet>IngameChat.xml</event-sheet>
         </event-folder>
         <event-folder expanded="1" name="game">
             <event-sheet>MultiplayerTest.xml</event-sheet>
+            <event-sheet>IngameChat.xml</event-sheet>
         </event-folder>
     </event-folder>
     <global-instances>
