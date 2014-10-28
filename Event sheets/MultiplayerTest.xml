@@ -29,12 +29,33 @@
                             <param id="3" name="Interpolation">0</param>
                             <param id="4" name="Client value tag">&quot;input&quot;</param>
                         </action>
-                        <action id="15" name="Add client input value" sid="8693232443715336" type="Multiplayer">
+                        <action id="-9" name="Destroy" sid="2545196647082029" type="Ping" />
+                        <action id="11" name="Sync object" sid="6257150638507021" type="Multiplayer">
+                            <param id="0" name="Object">Ping</param>
+                            <param id="1" name="Data">1</param>
+                            <param id="2" name="Precision">2</param>
+                            <param id="3" name="Bandwidth">0</param>
+                        </action>
+                        <action id="12" name="Sync instance variable" sid="4567312067380996" type="Multiplayer">
+                            <param id="0" name="Object">Player</param>
+                            <param id="1" name="Instance variable">Player|mousex</param>
+                            <param id="2" name="Precision">2</param>
+                            <param id="3" name="Interpolation">0</param>
+                            <param id="4" name="Client value tag">&quot;mousex&quot;</param>
+                        </action>
+                        <action id="12" name="Sync instance variable" sid="7969023252266743" type="Multiplayer">
+                            <param id="0" name="Object">Player</param>
+                            <param id="1" name="Instance variable">Player|mousey</param>
+                            <param id="2" name="Precision">2</param>
+                            <param id="3" name="Interpolation">0</param>
+                            <param id="4" name="Client value tag">&quot;mousey&quot;</param>
+                        </action>
+                        <action id="15" name="Add client input value" sid="1568438764016802" type="Multiplayer">
                             <param id="0" name="Tag">&quot;mousex&quot;</param>
                             <param id="1" name="Precision">2</param>
                             <param id="2" name="Interpolation">0</param>
                         </action>
-                        <action id="15" name="Add client input value" sid="5703226696278801" type="Multiplayer">
+                        <action id="15" name="Add client input value" sid="308250305228085" type="Multiplayer">
                             <param id="0" name="Tag">&quot;mousey&quot;</param>
                             <param id="1" name="Precision">2</param>
                             <param id="2" name="Interpolation">0</param>
@@ -129,7 +150,16 @@
                                     <param id="2" name="Value">Multiplayer.MyID</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="14" name="Set client state" sid="971270273470119" type="Multiplayer">
+                                    <param id="0" name="Tag">&quot;mousex&quot;</param>
+                                    <param id="1" name="Value">Mouse.X</param>
+                                </action>
+                                <action id="14" name="Set client state" sid="4942945711295296" type="Multiplayer">
+                                    <param id="0" name="Tag">&quot;mousey&quot;</param>
+                                    <param id="1" name="Value">Mouse.Y</param>
+                                </action>
+                            </actions>
                             <sub-events>
                                 <event-block any="1" sid="3078863497698436">
                                     <conditions>
@@ -212,6 +242,30 @@
                                         <action id="-10" name="Set value" sid="5007957747802933" type="Player">
                                             <param id="0" name="Instance variable">input</param>
                                             <param id="1" name="Value">setbit(Self.input, 2, 0)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="9783521646006359">
+                                    <conditions>
+                                        <condition id="2" name="Mouse button is down" sid="887706098751931" type="Mouse">
+                                            <param id="0" name="Mouse button">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="7376372795943758" type="Player">
+                                            <param id="0" name="Instance variable">input</param>
+                                            <param id="1" name="Value">setbit(Self.input, 3, 1)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="7794806794982678">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="5141682968225332" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="5342815152760572" type="Player">
+                                            <param id="0" name="Instance variable">input</param>
+                                            <param id="1" name="Value">setbit(Self.input, 3, 0)</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -305,7 +359,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block collapsed="1" sid="6981929290576743">
+                        <event-block sid="6981929290576743">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="4147017061745556" type="Player">
                                     <param id="0" name="Instance variable">peerid</param>
@@ -367,6 +421,22 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="6212087689122373">
+                                    <conditions>
+                                        <condition id="0" name="On click" sid="1688729630276001" type="Mouse">
+                                            <param id="0" name="Mouse button">2</param>
+                                            <param id="1" name="Click type">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="7476305345296965" type="System">
+                                            <param id="0" name="Object to create">Ping</param>
+                                            <param id="1" name="Layer">2</param>
+                                            <param id="2" name="X">Mouse.X</param>
+                                            <param id="3" name="Y">Mouse.Y</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-block>
                         <event-block sid="8436031249746423">
@@ -384,6 +454,14 @@
                                 <action id="-10" name="Set value" sid="9198566275911016" type="Player">
                                     <param id="0" name="Instance variable">input</param>
                                     <param id="1" name="Value">Multiplayer.PeerState(Player.peerid, &quot;input&quot;)</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="6616108544973449" type="Player">
+                                    <param id="0" name="Instance variable">mousex</param>
+                                    <param id="1" name="Value">Multiplayer.PeerState(Player.peerid, &quot;mousex&quot;)</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="5515180539813786" type="Player">
+                                    <param id="0" name="Instance variable">mousey</param>
+                                    <param id="1" name="Value">Multiplayer.PeerState(Player.peerid, &quot;mousey&quot;)</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -428,6 +506,16 @@
                                             <param id="0" name="Control">1</param>
                                         </action>
                                     </actions>
+                                </event-block>
+                                <event-block sid="5035899754121836">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="4000852479876412" type="System">
+                                            <param id="0" name="First value">getbit(Player.input, 3)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
                                 </event-block>
                             </sub-events>
                         </event-block>

@@ -22,6 +22,7 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -139,6 +140,8 @@
                 <instance-variables>
                     <instance-variable name="peerid" sid="4449089839012752" type="string" />
                     <instance-variable name="input" sid="5305508107057793" type="number" />
+                    <instance-variable name="mousex" sid="5908556350551348" type="number" />
+                    <instance-variable name="mousey" sid="1757739809008037" type="number" />
                 </instance-variables>
                 <behaviors>
                     <behavior-type name="Platform" sid="1223886742106707">
@@ -235,6 +238,26 @@
         </object-type>
         <object-type name="IngameChatButton" sid="324500952680237">
             <plugin id="Button" />
+        </object-type>
+        <object-type name="Ping" sid="7752820676764451">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="7519505115737031">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="501269831237163" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\thb\Downloads\crosshair2.png">
+                        <collision-poly>
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0.5" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
