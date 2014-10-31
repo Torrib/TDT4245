@@ -9,7 +9,7 @@
         <variable constant="0" name="ROOM_NAME" sid="1428368826137922" static="0" type="text">main</variable>
         <variable constant="0" name="INSTANCE_NAME" sid="9025334424391592" static="0" type="text">default</variable>
         <variable constant="1" name="GAME_NAME" sid="7098387866259919" static="0" type="text">grp8-temp</variable>
-        <event-group collapsed="1" description="" sid="3317249418782414" title="chat">
+        <event-group description="" sid="3317249418782414" title="chat">
             <sub-events>
                 <event-block sid="8674698341115371">
                     <conditions>
@@ -231,7 +231,7 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group collapsed="1" description="" sid="6668111447787783" title="peerInvite">
+                <event-group description="" sid="6668111447787783" title="peerInvite">
                     <sub-events>
                         <event-block sid="9700637452383176">
                             <conditions>

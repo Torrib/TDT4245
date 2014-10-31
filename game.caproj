@@ -8,7 +8,7 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>2m2oqhlgof90t</unique-id>
-    <saved-with-version>17800</saved-with-version>
+    <saved-with-version>18400</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
@@ -50,8 +50,8 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder expanded="1">
-        <object-folder expanded="0" name="login">
+    <object-folder>
+        <object-folder name="login">
             <object-type name="LoginBtn" sid="4538300239727753">
                 <plugin id="Button" />
             </object-type>
@@ -71,7 +71,7 @@
                 <plugin id="TextBox" />
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="main">
+        <object-folder name="main">
             <object-type name="LobbyTitle" sid="3020015787999585">
                 <plugin id="Text" />
             </object-type>
@@ -88,7 +88,7 @@
                 <plugin id="Button" />
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="game lobby">
+        <object-folder name="game lobby">
             <object-type name="Chat" sid="7211364043948355">
                 <plugin id="TextBox" />
             </object-type>
@@ -120,7 +120,7 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="misc">
+        <object-folder name="misc">
             <object-type name="Function" sid="4009609998066392">
                 <plugin id="Function" />
             </object-type>
@@ -134,7 +134,7 @@
                 <plugin id="Multiplayer" />
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="multiplayer test">
+        <object-folder name="multiplayer test">
             <object-type name="Player" sid="68388623007841">
                 <plugin id="Sprite" />
                 <instance-variables>
@@ -155,7 +155,7 @@
                     <type>Player</type>
                     <type>UsernameText</type>
                 </container>
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1988724425483089" speed="5">
                         <frame duration="1" hotspotX="0.283688" hotspotY="0.497006" original-source="C:\Users\thb\Downloads\character-color (1).png">
                             <collision-poly>
@@ -176,12 +176,13 @@
                         <behavior id="solid" />
                     </behavior-type>
                 </behaviors>
-                <animation-folder expanded="1">
+                <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2136123094556915" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.727273" />
                     </animation>
                 </animation-folder>
             </object-type>
+<<<<<<< HEAD
             <object-type name="HostTextGame" sid="453583829600656">
                 <plugin id="Text" />
             </object-type>
@@ -216,13 +217,47 @@
                                 <point x="1" y="0.5" />
                                 <point x="0.5" y="1" />
                                 <point x="0" y="0.5" />
+=======
+            <object-type name="Aim" sid="1745000068925471">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6660444003659329" speed="5">
+                        <frame duration="1" hotspotX="0.886598" hotspotY="0.453333" original-source="C:\Users\LarsTore\Google Drive\Cooperation Tech - Group 8\Images\Sprites\aim.png">
+                            <collision-poly>
+                                <point x="0.42268" y="0.111111" />
+                                <point x="0.886598" y="0.951111" />
+                                <point x="0.804124" y="0.346667" />
+                                <point x="0.814433" y="0.448889" />
+                                <point x="0.814433" y="0.56" />
+                                <point x="0.886598" y="0.991111" />
+                                <point x="0.340206" y="0.826667" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Bow" sid="622610273104444">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="99066408828468" speed="5">
+                        <frame duration="1" hotspotX="0.247934" hotspotY="0.490798" original-source="C:\Users\LarsTore\Google Drive\Cooperation Tech - Group 8\Images\Sprites\bow.png">
+                            <collision-poly>
+                                <point x="0.272727" y="0.184049" />
+                                <point x="0.528926" y="0.0245399" />
+                                <point x="0.826446" y="0.153374" />
+                                <point x="0.867769" y="0.503067" />
+                                <point x="0.818182" y="0.846626" />
+                                <point x="0.528926" y="0.969325" />
+                                <point x="0.297521" y="0.803681" />
+                                <point x="0.173554" y="0.503067" />
+>>>>>>> ec68431f2503ab093de10303c68e6928d8ad5c88
                             </collision-poly>
                         </frame>
                     </animation>
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="user creation">
+        <object-folder name="user creation">
             <object-type name="ConfirmPasswordField" sid="8951545958808912">
                 <plugin id="TextBox" />
             </object-type>
@@ -261,25 +296,25 @@
         </object-type>
     </object-folder>
     <families />
-    <layout-folder expanded="1">
-        <layout-folder expanded="1" name="menu">
+    <layout-folder>
+        <layout-folder name="menu">
             <layout>Login.xml</layout>
             <layout>Main.xml</layout>
             <layout>GameLobby.xml</layout>
             <layout>UserCreation.xml</layout>
         </layout-folder>
-        <layout-folder expanded="1" name="game">
+        <layout-folder name="game">
             <layout>MultiplayerTest.xml</layout>
         </layout-folder>
     </layout-folder>
-    <event-folder expanded="1">
-        <event-folder expanded="1" name="menu">
+    <event-folder>
+        <event-folder name="menu">
             <event-sheet>GameLobby.xml</event-sheet>
             <event-sheet>Login.xml</event-sheet>
             <event-sheet>Main.xml</event-sheet>
             <event-sheet>UserCreation.xml</event-sheet>
         </event-folder>
-        <event-folder expanded="1" name="game">
+        <event-folder name="game">
             <event-sheet>MultiplayerTest.xml</event-sheet>
             <event-sheet>IngameChat.xml</event-sheet>
         </event-folder>
@@ -290,10 +325,10 @@
         <global-instance type="Keyboard" uid="13" />
         <global-instance type="Function" uid="18" />
     </global-instances>
-    <sounds-folder expanded="1" />
-    <music-folder expanded="1" />
-    <files-folder expanded="0">
-        <file-folder expanded="1" name="Icons">
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
             <file name="icon-16.png" />
             <file name="icon-32.png" />
             <file name="icon-114.png" />

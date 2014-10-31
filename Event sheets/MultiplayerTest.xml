@@ -535,7 +535,15 @@
                 <action id="0" name="Set text" sid="1852539163347535" type="UsernameText">
                     <param id="0" name="Text">Multiplayer.PeerAliasFromID(Player.peerid)</param>
                 </action>
+                <action id="-22" name="Set angle toward position" sid="1781036253796745" type="Bow">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
             </actions>
+        </event-block>
+        <event-block sid="6337680191321392">
+            <conditions />
+            <actions />
         </event-block>
     </events>
 </c2eventsheet>
