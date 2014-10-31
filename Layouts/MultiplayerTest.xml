@@ -276,6 +276,7 @@
             </instances>
             <effects />
         </layer>
+<<<<<<< HEAD
         <layer name="Text" sid="9539434307439743">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
@@ -413,6 +414,8 @@
             </instances>
             <effects />
         </layer>
+=======
+>>>>>>> parent of 0804f92... Usernames over player implemented
     </layers>
     <nonworld-instances />
     <effects />
