@@ -758,6 +758,7 @@
             <layout>GameLobby.xml</layout>
             <layout>UserCreation.xml</layout>
             <layout>Unused.xml</layout>
+            <layout>About.xml</layout>
         </layout-folder>
         <layout-folder expanded="1" name="game">
             <layout>MultiplayerTest.xml</layout>
@@ -776,6 +777,7 @@
             <event-sheet>IngameChat.xml</event-sheet>
         </event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="2" />
