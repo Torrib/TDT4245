@@ -225,7 +225,7 @@
                             <actions>
                                 <action id="0" name="Call function" sid="3631304143939043" type="Function">
                                     <param id="0" name="Name">&quot;updateChat&quot;</param>
-                                    <param id="1" name="Parameter {n}">Multiplayer.FromAlias &amp; &quot;: &quot; &amp; Multiplayer.Message</param>
+                                    <param id="1" name="Parameter {n}">&quot;&lt;&quot; &amp; Multiplayer.FromAlias &amp; &quot;&gt; &quot; &amp; Multiplayer.Message</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -423,7 +423,7 @@
                             <actions>
                                 <action id="0" name="Call function" sid="4358806240954919" type="Function">
                                     <param id="0" name="Name">&quot;updateChat&quot;</param>
-                                    <param id="1" name="Parameter {n}">Multiplayer.FromAlias &amp; &quot;: &quot; &amp; Multiplayer.Message</param>
+                                    <param id="1" name="Parameter {n}">&quot;&lt;&quot; &amp; Multiplayer.FromAlias &amp; &quot;&gt; &quot; &amp; Multiplayer.Message</param>
                                 </action>
                                 <action id="9" name="Broadcast message" sid="3137636947083194" type="Multiplayer">
                                     <param id="0" name="From ID">Multiplayer.FromID</param>
