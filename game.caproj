@@ -251,6 +251,16 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
+        <object-folder expanded="1" name="howtoplay">
+            <object-type name="BackToMenu" sid="8508558397372695">
+                <plugin id="Button" />
+            </object-type>
+        </object-folder>
+        <object-folder expanded="0" name="about">
+            <object-type name="Back" sid="7538675299385733">
+                <plugin id="Button" />
+            </object-type>
+        </object-folder>
         <object-type name="TiledBackground" sid="6836145549299733">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\thb\Downloads\menu_background_new_002.png" />
@@ -267,6 +277,8 @@
             <layout>Main.xml</layout>
             <layout>GameLobby.xml</layout>
             <layout>UserCreation.xml</layout>
+            <layout>About.xml</layout>
+            <layout>HowToPlay.xml</layout>
         </layout-folder>
         <layout-folder expanded="1" name="game">
             <layout>MultiplayerTest.xml</layout>
@@ -278,6 +290,8 @@
             <event-sheet>Login.xml</event-sheet>
             <event-sheet>Main.xml</event-sheet>
             <event-sheet>UserCreation.xml</event-sheet>
+            <event-sheet>HowToPlay.xml</event-sheet>
+            <event-sheet>About.xml</event-sheet>
         </event-folder>
         <event-folder expanded="1" name="game">
             <event-sheet>MultiplayerTest.xml</event-sheet>
