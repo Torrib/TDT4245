@@ -2,7 +2,7 @@
 <c2layout>
     <name>AnimationTest</name>
     <sid>9568525590363957</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <event-sheet>Animations</event-sheet>
     <size>
         <width>1708</width>
         <height>960</height>
@@ -27,7 +27,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Archer" uid="54">
+                <instance type="ArcherOld" uid="54">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>defaultright</initial-animation>

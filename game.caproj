@@ -136,7 +136,7 @@
             </object-type>
         </object-folder>
         <object-folder expanded="0" name="multiplayer test">
-            <object-type name="Player" sid="68388623007841">
+            <object-type name="Archer" sid="68388623007841">
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="peerid" sid="4449089839012752" type="string" />
@@ -153,7 +153,7 @@
                     </behavior-type>
                 </behaviors>
                 <container>
-                    <type>Player</type>
+                    <type>Archer</type>
                     <type>UsernameText</type>
                 </container>
                 <animation-folder expanded="1">
@@ -198,7 +198,7 @@
             <object-type name="UsernameText" sid="1133383186947097">
                 <plugin id="Text" />
                 <container>
-                    <type>Player</type>
+                    <type>Archer</type>
                     <type>UsernameText</type>
                 </container>
             </object-type>
@@ -253,7 +253,7 @@
             </object-type>
         </object-folder>
         <object-folder expanded="1" name="animation test">
-            <object-type name="Archer" sid="148784455541471">
+            <object-type name="ArcherOld" sid="148784455541471">
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="TurnRight" sid="5446300573399562" type="boolean" />
@@ -775,7 +775,7 @@
             <event-sheet>MultiplayerTest.xml</event-sheet>
             <event-sheet>IngameChat.xml</event-sheet>
         </event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Animations.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="2" />
