@@ -201,53 +201,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Archer" uid="26">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <peerid></peerid>
-                        <input>0</input>
-                        <mousex>0</mousex>
-                        <mousey>0</mousey>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>330</max-speed>
-                                <acceleration>1500</acceleration>
-                                <deceleration>1500</deceleration>
-                                <jump-strength>650</jump-strength>
-                                <gravity>1500</gravity>
-                                <max-fall-speed>1000</max-fall-speed>
-                                <default-controls>No</default-controls>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>64</x>
-                        <y>377</y>
-                        <z>0</z>
-                        <width>141</width>
-                        <height>167</height>
-                        <depth>0</depth>
-                        <hotspotX>0.283687949</hotspotX>
-                        <hotspotY>0.497005999</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="HostTextGame" uid="27">
                     <properties>
                         <text>Host</text>
@@ -284,6 +237,10 @@
                     </properties>
                     <instance-variables>
                         <TurnRight>true</TurnRight>
+                        <input>0</input>
+                        <mousex>0</mousex>
+                        <mousey>0</mousey>
+                        <peerid></peerid>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">

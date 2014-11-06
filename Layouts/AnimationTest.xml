@@ -36,6 +36,10 @@
                     </properties>
                     <instance-variables>
                         <TurnRight>true</TurnRight>
+                        <input>0</input>
+                        <mousex>0</mousex>
+                        <mousey>0</mousey>
+                        <peerid></peerid>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Platform">
