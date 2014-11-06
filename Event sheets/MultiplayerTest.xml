@@ -443,9 +443,6 @@
                                     <param id="1" name="Comparison">1</param>
                                     <param id="2" name="Value">Multiplayer.MyID</param>
                                 </condition>
-                                <condition id="-11" name="For Each" sid="9003691586745617" type="System">
-                                    <param id="0" name="Object">Archer</param>
-                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-10" name="Set value" sid="9198566275911016" type="Archer">

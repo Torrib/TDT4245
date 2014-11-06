@@ -425,5 +425,48 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="7587680774850557">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="470456745821805" type="Archer" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="8676867361630779">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="2733100832095342" type="Archer">
+                            <param id="0" name="Instance variable">TurnRight</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7069785326905472" type="Archer">
+                            <param id="0" name="Animation">&quot;walkright&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9739519060700826">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="3470029452083697" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="4737122130846976" type="Archer">
+                            <param id="0" name="Animation">&quot;walkleft&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1827363709890946">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="3633442089972995" type="Archer" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8592727581889282" type="Archer">
+                    <param id="0" name="Animation">&quot;defaultright&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

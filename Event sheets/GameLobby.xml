@@ -26,7 +26,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="2825615770183548" title="Signaling">
+        <event-group description="" sid="2825615770183548" title="Signaling">
             <sub-events>
                 <event-block sid="7300063380420869">
                     <conditions>
@@ -95,9 +95,6 @@
                                     <param id="0" name="Group name">&quot;Peer&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
-                                <action id="7" name="Add item" sid="2739424601336924" type="PlayerList">
-                                    <param id="0" name="Text">Multiplayer.MyAlias</param>
-                                </action>
                                 <action id="2" name="Set visible" sid="8960057688943937" type="InviteBtn">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
@@ -118,7 +115,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="9090469954930364" title="Connection">
+        <event-group description="" sid="9090469954930364" title="Connection">
             <sub-events>
                 <event-block sid="5740772653454478">
                     <conditions>
