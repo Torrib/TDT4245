@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Animations</name>
     <events>
-        <event-group description="" sid="9229232168856188" title="Archer">
+        <event-group description="" inactive="1" sid="9229232168856188" title="Archer">
             <sub-events>
                 <event-block sid="9099726140494359">
                     <conditions>
@@ -12,11 +12,11 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="4791848762128623" type="ArcherOld">
+                        <action id="4" name="Set animation" sid="4791848762128623" type="Archer">
                             <param id="0" name="Animation">&quot;walkright&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="-13" name="Set boolean" sid="3819256278204838" type="ArcherOld">
+                        <action id="-13" name="Set boolean" sid="3819256278204838" type="Archer">
                             <param id="0" name="Instance variable">TurnRight</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -29,11 +29,11 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="644157603998737" type="ArcherOld">
+                        <action id="4" name="Set animation" sid="644157603998737" type="Archer">
                             <param id="0" name="Animation">&quot;walkleft&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="-13" name="Set boolean" sid="3364921637985105" type="ArcherOld">
+                        <action id="-13" name="Set boolean" sid="3364921637985105" type="Archer">
                             <param id="0" name="Instance variable">TurnRight</param>
                             <param id="1" name="Value">0</param>
                         </action>
@@ -46,10 +46,10 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="5" name="Set frame" sid="4668760094312663" type="ArcherOld">
+                        <action id="5" name="Set frame" sid="4668760094312663" type="Archer">
                             <param id="0" name="Frame number">0</param>
                         </action>
-                        <action id="2" name="Stop" sid="122366131219858" type="ArcherOld" />
+                        <action id="2" name="Stop" sid="122366131219858" type="Archer" />
                     </actions>
                 </event-block>
                 <event-block sid="4623316831972451">
@@ -59,10 +59,10 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="5" name="Set frame" sid="2960663384109669" type="ArcherOld">
+                        <action id="5" name="Set frame" sid="2960663384109669" type="Archer">
                             <param id="0" name="Frame number">0</param>
                         </action>
-                        <action id="2" name="Stop" sid="5914221105311839" type="ArcherOld" />
+                        <action id="2" name="Stop" sid="5914221105311839" type="Archer" />
                     </actions>
                 </event-block>
                 <event-block sid="7488726664919063">
@@ -72,7 +72,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="5344769118797333" type="ArcherOld">
+                        <action id="-15" name="Set visible" sid="5344769118797333" type="Archer">
                             <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
@@ -83,12 +83,12 @@
                             <param id="0" name="Mouse button">2</param>
                             <param id="1" name="Click type">0</param>
                         </condition>
-                        <condition id="-8" name="Is boolean instance variable set" sid="312984628314462" type="ArcherOld">
+                        <condition id="-8" name="Is boolean instance variable set" sid="312984628314462" type="Archer">
                             <param id="0" name="Instance variable">TurnRight</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Spawn another object" sid="3007329904175618" type="ArcherOld">
+                        <action id="0" name="Spawn another object" sid="3007329904175618" type="Archer">
                             <param id="0" name="Object">ArcherAimRight</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="Image point">1</param>
@@ -107,12 +107,12 @@
                             <param id="0" name="Mouse button">2</param>
                             <param id="1" name="Click type">0</param>
                         </condition>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="1764425142679662" type="ArcherOld">
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="1764425142679662" type="Archer">
                             <param id="0" name="Instance variable">TurnRight</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Spawn another object" sid="5974569442372564" type="ArcherOld">
+                        <action id="0" name="Spawn another object" sid="5974569442372564" type="Archer">
                             <param id="0" name="Object">ArcherAimLeft</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="Image point">1</param>
@@ -132,7 +132,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-15" name="Set visible" sid="6641978717506771" type="ArcherOld">
+                        <action id="-15" name="Set visible" sid="6641978717506771" type="Archer">
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="1654319573908588" type="ArcherAimRight" />
@@ -147,7 +147,7 @@
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                         </condition>
-                        <condition id="-8" name="Is boolean instance variable set" sid="7565155622779426" type="ArcherOld">
+                        <condition id="-8" name="Is boolean instance variable set" sid="7565155622779426" type="Archer">
                             <param id="0" name="Instance variable">TurnRight</param>
                         </condition>
                     </conditions>
@@ -165,7 +165,7 @@
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                         </condition>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="9671034096080436" type="ArcherOld">
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="9671034096080436" type="Archer">
                             <param id="0" name="Instance variable">TurnRight</param>
                         </condition>
                     </conditions>
@@ -182,7 +182,7 @@
                         <condition id="2" name="Mouse button is down" sid="8659532665765586" type="Mouse">
                             <param id="0" name="Mouse button">2</param>
                         </condition>
-                        <condition id="-8" name="Is boolean instance variable set" sid="9311096065269093" type="ArcherOld">
+                        <condition id="-8" name="Is boolean instance variable set" sid="9311096065269093" type="Archer">
                             <param id="0" name="Instance variable">TurnRight</param>
                         </condition>
                         <condition id="-1" name="Every tick" sid="5840529651250959" type="System" />
@@ -204,7 +204,7 @@
                         <condition id="2" name="Mouse button is down" sid="2869357814608422" type="Mouse">
                             <param id="0" name="Mouse button">2</param>
                         </condition>
-                        <condition id="-8" name="Is boolean instance variable set" sid="358303037303023" type="ArcherOld">
+                        <condition id="-8" name="Is boolean instance variable set" sid="358303037303023" type="Archer">
                             <param id="0" name="Instance variable">TurnRight</param>
                         </condition>
                         <condition id="-1" name="Every tick" sid="7701090394187787" type="System" />
@@ -230,7 +230,7 @@
                         <condition id="2" name="Mouse button is down" sid="907133759438582" type="Mouse">
                             <param id="0" name="Mouse button">2</param>
                         </condition>
-                        <condition id="-8" name="Is boolean instance variable set" sid="4905128672271129" type="ArcherOld">
+                        <condition id="-8" name="Is boolean instance variable set" sid="4905128672271129" type="Archer">
                             <param id="0" name="Instance variable">TurnRight</param>
                         </condition>
                         <condition id="-1" name="Every tick" sid="1855030016021089" type="System" />
@@ -256,7 +256,7 @@
                         <condition id="2" name="Mouse button is down" sid="7930622784816363" type="Mouse">
                             <param id="0" name="Mouse button">2</param>
                         </condition>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="5974070840073505" type="ArcherOld">
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="5974070840073505" type="Archer">
                             <param id="0" name="Instance variable">TurnRight</param>
                         </condition>
                         <condition id="-1" name="Every tick" sid="6354689009921945" type="System" />
@@ -278,7 +278,7 @@
                         <condition id="2" name="Mouse button is down" sid="9503124447214902" type="Mouse">
                             <param id="0" name="Mouse button">2</param>
                         </condition>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="1026725102601751" type="ArcherOld">
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="1026725102601751" type="Archer">
                             <param id="0" name="Instance variable">TurnRight</param>
                         </condition>
                         <condition id="-1" name="Every tick" sid="5243889720826712" type="System" />
@@ -304,7 +304,7 @@
                         <condition id="2" name="Mouse button is down" sid="1711794091762669" type="Mouse">
                             <param id="0" name="Mouse button">2</param>
                         </condition>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="4269411658961032" type="ArcherOld">
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="4269411658961032" type="Archer">
                             <param id="0" name="Instance variable">TurnRight</param>
                         </condition>
                         <condition id="-1" name="Every tick" sid="35399589659262" type="System" />
@@ -348,12 +348,12 @@
                         <condition id="2" name="Key is down" sid="2625144036506037" type="Keyboard">
                             <param id="0" name="Key">38 (Up arrow)</param>
                         </condition>
-                        <condition id="-8" name="Is boolean instance variable set" sid="9713284890053825" type="ArcherOld">
+                        <condition id="-8" name="Is boolean instance variable set" sid="9713284890053825" type="Archer">
                             <param id="0" name="Instance variable">TurnRight</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="1018801726579588" type="ArcherOld">
+                        <action id="4" name="Set animation" sid="1018801726579588" type="Archer">
                             <param id="0" name="Animation">&quot;jumpright&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -364,12 +364,12 @@
                         <condition id="2" name="Key is down" sid="4136075781976586" type="Keyboard">
                             <param id="0" name="Key">38 (Up arrow)</param>
                         </condition>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="2481365322375659" type="ArcherOld">
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="2481365322375659" type="Archer">
                             <param id="0" name="Instance variable">TurnRight</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="5616727795701331" type="ArcherOld">
+                        <action id="4" name="Set animation" sid="5616727795701331" type="Archer">
                             <param id="0" name="Animation">&quot;jumpleft&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -380,12 +380,12 @@
                         <condition id="3" name="On key released" sid="6009681227046418" type="Keyboard">
                             <param id="0" name="Key">38 (Up arrow)</param>
                         </condition>
-                        <condition id="-8" name="Is boolean instance variable set" sid="4695831180995778" type="ArcherOld">
+                        <condition id="-8" name="Is boolean instance variable set" sid="4695831180995778" type="Archer">
                             <param id="0" name="Instance variable">TurnRight</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="3907972469766273" type="ArcherOld">
+                        <action id="4" name="Set animation" sid="3907972469766273" type="Archer">
                             <param id="0" name="Animation">&quot;defaultright&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -396,12 +396,12 @@
                         <condition id="3" name="On key released" sid="6211424137029398" type="Keyboard">
                             <param id="0" name="Key">38 (Up arrow)</param>
                         </condition>
-                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="3622443838080076" type="ArcherOld">
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="3622443838080076" type="Archer">
                             <param id="0" name="Instance variable">TurnRight</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="9477683773404035" type="ArcherOld">
+                        <action id="4" name="Set animation" sid="9477683773404035" type="Archer">
                             <param id="0" name="Animation">&quot;defaultleft&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
@@ -409,16 +409,16 @@
                 </event-block>
                 <event-block sid="8063128527023978">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="9244730339586255" type="ArcherOld">
+                        <condition id="0" name="On collision with another object" sid="9244730339586255" type="Archer">
                             <param id="0" name="Object">Lava</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" sid="6583047782971531" type="ArcherOld">
+                        <action id="4" name="Set animation" sid="6583047782971531" type="Archer">
                             <param id="0" name="Animation">&quot;death&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action behavior="Platform" id="0" name="Set ignoring input" sid="4183138228200658" type="ArcherOld">
+                        <action behavior="Platform" id="0" name="Set ignoring input" sid="4183138228200658" type="Archer">
                             <param id="0" name="Input">1</param>
                         </action>
                     </actions>

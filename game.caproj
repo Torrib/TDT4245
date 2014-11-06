@@ -135,7 +135,7 @@
                 <plugin id="Multiplayer" />
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="multiplayer test">
+        <object-folder expanded="0" name="multiplayer test">
             <object-type name="Terain" sid="6565937249814746">
                 <plugin id="Sprite" />
                 <behaviors>
@@ -214,7 +214,7 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="animation test">
+        <object-folder expanded="0" name="animation test">
             <object-type name="ArcherAimRight" sid="140344868667587">
                 <plugin id="Sprite" />
                 <animation-folder expanded="1">
@@ -350,7 +350,7 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
-        <object-type name="ArcherOld" sid="148784455541471">
+        <object-type name="Archer" sid="148784455541471">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="TurnRight" sid="5446300573399562" type="boolean" />
