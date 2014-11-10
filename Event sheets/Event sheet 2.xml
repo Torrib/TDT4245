@@ -10,19 +10,7 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-15" name="Set visible" sid="1030871732616563" type="Sprite5">
-                    <param id="0" name="Visibility">1</param>
-                </action>
                 <action id="7" name="Set mirrored" sid="9438014110373222" type="lever">
-                    <param id="0" name="State">0</param>
-                </action>
-                <action behavior="Solid" id="0" name="Set enabled" sid="4070605516099412" type="Sprite5">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action id="-15" name="Set visible" sid="9650977217325297" type="Sprite7">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-                <action behavior="Solid" id="0" name="Set enabled" sid="5858346298784688" type="Sprite7">
                     <param id="0" name="State">0</param>
                 </action>
             </actions>
