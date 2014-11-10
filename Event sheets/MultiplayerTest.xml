@@ -20,7 +20,7 @@
                         <action id="11" name="Sync object" sid="6226304059406829" type="Multiplayer">
                             <param id="0" name="Object">Archer</param>
                             <param id="1" name="Data">1</param>
-                            <param id="2" name="Precision">2</param>
+                            <param id="2" name="Precision">0</param>
                             <param id="3" name="Bandwidth">0</param>
                         </action>
                         <action id="12" name="Sync instance variable" sid="4794241790976404" type="Multiplayer">
@@ -63,6 +63,12 @@
                         </action>
                         <action id="11" name="Sync object" sid="3217018530209397" type="Multiplayer">
                             <param id="0" name="Object">Bow</param>
+                            <param id="1" name="Data">3</param>
+                            <param id="2" name="Precision">1</param>
+                            <param id="3" name="Bandwidth">0</param>
+                        </action>
+                        <action id="11" name="Sync object" sid="8983754322179805" type="Multiplayer">
+                            <param id="0" name="Object">Arrow</param>
                             <param id="1" name="Data">3</param>
                             <param id="2" name="Precision">1</param>
                             <param id="3" name="Bandwidth">0</param>
