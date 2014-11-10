@@ -984,6 +984,11 @@
         </object-type>
         <object-type name="Sprite6" sid="6879588736759181">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1133374684816183">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8228114561128428" speed="0">
                     <frame duration="1" hotspotX="0.503937" hotspotY="0.503876" />
@@ -1009,6 +1014,14 @@
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9442307641425618" speed="5">
                     <frame duration="1" hotspotX="2.35714" hotspotY="-0.106195" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lever" sid="1678637909455948">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2857194728082504" speed="5">
+                    <frame duration="1" hotspotX="0.808333" hotspotY="0.301887" />
                 </animation>
             </animation-folder>
         </object-type>
