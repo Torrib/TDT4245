@@ -4,11 +4,7 @@
     <name>Event sheet 2</name>
     <events>
         <event-block sid="7064761995466656">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="3850025920942475" type="TestPlayer">
-                    <param id="0" name="Object">lever</param>
-                </condition>
-            </conditions>
+            <conditions />
             <actions>
                 <action id="7" name="Set mirrored" sid="8820856378026766" type="lever">
                     <param id="0" name="State">0</param>
@@ -28,11 +24,7 @@
             </actions>
         </event-block>
         <event-block sid="734894368603409">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="3998709630066003" type="TestPlayer">
-                    <param id="0" name="Object">leverArrow</param>
-                </condition>
-            </conditions>
+            <conditions />
             <actions>
                 <action id="7" name="Set mirrored" sid="2819086913552502" type="Sprite3">
                     <param id="0" name="State">0</param>

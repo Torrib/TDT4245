@@ -27,7 +27,6 @@
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
-        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
@@ -960,32 +959,6 @@
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3814527553726552" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TestPlayer" sid="4528783790713066">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="ScrollTo" sid="6095973826227713">
-                    <behavior id="scrollto" />
-                </behavior-type>
-                <behavior-type name="Platform" sid="2960754859060942">
-                    <behavior id="Platform" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1195925410304975" speed="5">
-                    <frame duration="1" hotspotX="0.559748" hotspotY="0.377778" original-source="D:\Dropbox\Skole\Trondheim\Master\Samhandlingsteknologi\wr97endk23d\Sprites\Jungle Platformer\Player\Idle\pl0000.png">
-                        <collision-poly>
-                            <point x="0" y="0.148148" />
-                            <point x="0.559748" y="0.133333" />
-                            <point x="1" y="0.22963" />
-                            <point x="1" y="0.666667" />
-                            <point x="0.559748" y="0.8" />
-                            <point x="0" y="0.540741" />
-                            <point x="0" y="0.377778" />
-                        </collision-poly>
-                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
