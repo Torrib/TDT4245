@@ -2,7 +2,7 @@
 <c2layout>
     <name>MultiplayerTest</name>
     <sid>522498819483264</sid>
-    <event-sheet>MultiplayerTest</event-sheet>
+    <event-sheet>Multiplayer</event-sheet>
     <size>
         <width>1708</width>
         <height>960</height>
@@ -255,6 +255,11 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="ScrollTo">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -293,6 +298,41 @@
                         <depth>0</depth>
                         <hotspotX>0.253968269</hotspotX>
                         <hotspotY>0.494047612</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Arrow" uid="53">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>500</speed>
+                                <acceleration>-100</acceleration>
+                                <gravity>200</gravity>
+                                <bounce-off-solids>Yes</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="DestroyOutsideLayout" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-45</x>
+                        <y>465</y>
+                        <z>0</z>
+                        <width>43.807723999</width>
+                        <height>4.503597736</height>
+                        <depth>0</depth>
+                        <hotspotX>0.504672885</hotspotX>
+                        <hotspotY>0.545454562</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

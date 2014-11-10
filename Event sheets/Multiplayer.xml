@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>MultiplayerTest</name>
+    <name>Multiplayer</name>
     <events>
         <include>Animations</include>
-        <include>IngameChat</include>
         <event-group description="" sid="7675116793019805" title="Setup">
             <sub-events>
                 <event-block sid="4877001345771824">
@@ -101,6 +100,9 @@
                                 <action id="-15" name="Set visible" sid="2930488382094199" type="HostTextGame">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
+                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="7828398835135887" type="Archer">
+                                    <param id="0" name="State">1</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="1593117585668665">
@@ -149,6 +151,9 @@
                                     <actions>
                                         <action id="16" name="Enable local input prediction" sid="4549125137089755" type="Multiplayer">
                                             <param id="0" name="Object">Archer</param>
+                                        </action>
+                                        <action behavior="ScrollTo" id="1" name="Set enabled" sid="6818299872920956" type="Archer">
+                                            <param id="0" name="State">1</param>
                                         </action>
                                     </actions>
                                 </event-block>

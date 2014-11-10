@@ -27,6 +27,7 @@
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
@@ -34,8 +35,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>1280</width>
-        <height>720</height>
+        <width>656</width>
+        <height>515</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -137,7 +138,7 @@
                 <plugin id="Multiplayer" />
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="multiplayer test">
+        <object-folder expanded="1" name="multiplayer test">
             <object-type name="Terain" sid="6565937249814746">
                 <plugin id="Sprite" />
                 <behaviors>
@@ -187,7 +188,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="animation test">
+        <object-folder expanded="1" name="animation test">
             <object-type name="Archer" sid="148784455541471">
                 <plugin id="Sprite" />
                 <instance-variables>
@@ -200,6 +201,9 @@
                 <behaviors>
                     <behavior-type name="Platform" sid="6209338839819198">
                         <behavior id="Platform" />
+                    </behavior-type>
+                    <behavior-type name="ScrollTo" sid="5845731178063521">
+                        <behavior id="scrollto" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder expanded="1">
@@ -750,12 +754,10 @@
             <layout>Main.xml</layout>
             <layout>GameLobby.xml</layout>
             <layout>UserCreation.xml</layout>
-            <layout>Unused.xml</layout>
         </layout-folder>
         <layout-folder expanded="1" name="game">
             <layout>MultiplayerTest.xml</layout>
-            <layout>AnimationTest.xml</layout>
-            <layout>MapTest.xml</layout>
+            <layout>Map.xml</layout>
         </layout-folder>
     </layout-folder>
     <event-folder expanded="1">
@@ -766,17 +768,18 @@
             <event-sheet>UserCreation.xml</event-sheet>
         </event-folder>
         <event-folder expanded="1" name="game">
-            <event-sheet>MultiplayerTest.xml</event-sheet>
+            <event-sheet>Multiplayer.xml</event-sheet>
             <event-sheet>IngameChat.xml</event-sheet>
+            <event-sheet>Game.xml</event-sheet>
+            <event-sheet>Animations.xml</event-sheet>
         </event-folder>
         <event-sheet>Event sheet 2.xml</event-sheet>
-        <event-sheet>Animations.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="2" />
-        <global-instance type="Multiplayer" uid="12" />
-        <global-instance type="Keyboard" uid="13" />
-        <global-instance type="Function" uid="18" />
+        <global-instance type="Mouse" uid="13" />
+        <global-instance type="Multiplayer" uid="18" />
+        <global-instance type="Keyboard" uid="51" />
+        <global-instance type="Function" uid="52" />
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />

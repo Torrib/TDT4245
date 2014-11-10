@@ -500,7 +500,7 @@
                     <param id="3" name="Max peers">2</param>
                 </action>
                 <action id="-2" name="Go to layout" sid="5211955427544346" type="System">
-                    <param id="0" name="Layout">MultiplayerTest</param>
+                    <param id="0" name="Layout">Map</param>
                 </action>
             </actions>
         </event-block>

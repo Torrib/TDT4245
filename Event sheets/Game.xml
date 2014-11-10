@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game</name>
+    <events>
+        <include>Animations</include>
+        <include>IngameChat</include>
+        <include>Multiplayer</include>
+        <event-block sid="5689512446109279">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9992810595201144" type="System" />
+            </conditions>
+            <actions>
+                <action id="-28" name="Set canvas size" sid="4473106431177216" type="System">
+                    <param id="0" name="Width">1200</param>
+                    <param id="1" name="Height">720</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
