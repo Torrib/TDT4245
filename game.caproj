@@ -51,7 +51,7 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder expanded="1">
-        <object-folder expanded="0" name="login">
+        <object-folder expanded="1" name="login">
             <object-type name="LoginBtn" sid="4538300239727753">
                 <plugin id="Button" />
             </object-type>
@@ -71,7 +71,7 @@
                 <plugin id="TextBox" />
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="main">
+        <object-folder expanded="1" name="main">
             <object-type name="LobbyTitle" sid="3020015787999585">
                 <plugin id="Text" />
             </object-type>
@@ -120,7 +120,7 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="misc">
+        <object-folder expanded="1" name="misc">
             <object-type name="Function" sid="4009609998066392">
                 <plugin id="Function" />
             </object-type>
@@ -134,7 +134,7 @@
                 <plugin id="Multiplayer" />
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="multiplayer test">
+        <object-folder expanded="1" name="multiplayer test">
             <object-type name="Player" sid="68388623007841">
                 <plugin id="Sprite" />
                 <instance-variables>
@@ -222,7 +222,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="user creation">
+        <object-folder expanded="1" name="user creation">
             <object-type name="ConfirmPasswordField" sid="8951545958808912">
                 <plugin id="TextBox" />
             </object-type>
@@ -252,12 +252,119 @@
             </object-type>
         </object-folder>
         <object-folder expanded="1" name="howtoplay">
-            <object-type name="BackToMenu" sid="8508558397372695">
+            <object-type name="nextpage1" sid="1956522532230609">
                 <plugin id="Button" />
+            </object-type>
+            <object-type name="adkeys" sid="3717172251302408">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4244240078225169" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\ad-keys.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="mousepointer" sid="4691381887712607">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1228384697343966" speed="5">
+                        <frame duration="1" hotspotX="0.506024" hotspotY="0.5" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\mousepointer.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="arrows" sid="8536424769106097">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8318321878926328" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\arrows.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="space" sid="3215612032558907">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7102907351664204" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\space.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Text3" sid="9585869032977978">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text" sid="4683759763172744">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text2" sid="9740603524494604">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="upkeys" sid="7596034534299271">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5605222595196801" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.514286" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\up-keys.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="wkeys2" sid="5411010161781603">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4774769431661275" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.517241" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\w-keys.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="wkeys" sid="616917221982458">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7721990393755572" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.517241" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\w-keys.png" />
+                    </animation>
+                </animation-folder>
             </object-type>
         </object-folder>
         <object-folder expanded="0" name="about">
             <object-type name="Back" sid="7538675299385733">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="Developed" sid="2844538881329279">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="About" sid="8933293136350865">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+        <object-folder expanded="1" name="howToplay2">
+            <object-type name="howToplay2" sid="8628010502887655">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="BackToMenu1" sid="2371653227685482">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="Text4" sid="622587642807542">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text5" sid="4860436097559351">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text6" sid="9375951952920619">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="enter" sid="3107468775551333">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1112089992944596" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\enter.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="datamouse" sid="6188203922679395">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1010825400242819" speed="5">
+                        <frame duration="1" hotspotX="0.501124" hotspotY="0.5" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\datamouse.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PreviousSide1" sid="8508558397372695">
                 <plugin id="Button" />
             </object-type>
         </object-folder>
@@ -277,15 +384,16 @@
             <layout>Main.xml</layout>
             <layout>GameLobby.xml</layout>
             <layout>UserCreation.xml</layout>
-            <layout>About.xml</layout>
             <layout>HowToPlay.xml</layout>
+            <layout>About.xml</layout>
+            <layout>HowToPlay2.xml</layout>
         </layout-folder>
         <layout-folder expanded="1" name="game">
             <layout>MultiplayerTest.xml</layout>
         </layout-folder>
     </layout-folder>
     <event-folder expanded="1">
-        <event-folder expanded="1" name="menu">
+        <event-folder expanded="0" name="menu">
             <event-sheet>GameLobby.xml</event-sheet>
             <event-sheet>Login.xml</event-sheet>
             <event-sheet>Main.xml</event-sheet>
@@ -297,6 +405,8 @@
             <event-sheet>MultiplayerTest.xml</event-sheet>
             <event-sheet>IngameChat.xml</event-sheet>
         </event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="2" />
@@ -307,7 +417,7 @@
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />
     <files-folder expanded="0">
-        <file-folder expanded="1" name="Icons">
+        <file-folder expanded="0" name="Icons">
             <file name="icon-16.png" />
             <file name="icon-32.png" />
             <file name="icon-114.png" />
