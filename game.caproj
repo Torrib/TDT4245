@@ -162,7 +162,7 @@
             <object-type name="IngameChatInput" sid="4353541941095695">
                 <plugin id="TextBox" />
             </object-type>
-            <object-type name="UsernameText" sid="1133383186947097">
+            <object-type name="MyUsernameText" sid="1133383186947097">
                 <plugin id="Text" />
             </object-type>
             <object-type name="Ping" sid="7752820676764451">
@@ -722,6 +722,9 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="OtherUsernameText" sid="2771699921853602">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

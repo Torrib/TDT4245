@@ -20,7 +20,7 @@
                         <action id="11" name="Sync object" sid="6226304059406829" type="Multiplayer">
                             <param id="0" name="Object">Archer</param>
                             <param id="1" name="Data">1</param>
-                            <param id="2" name="Precision">0</param>
+                            <param id="2" name="Precision">2</param>
                             <param id="3" name="Bandwidth">0</param>
                         </action>
                         <action id="12" name="Sync instance variable" sid="4794241790976404" type="Multiplayer">
@@ -575,20 +575,6 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-block sid="9447692465877277">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="1640403871646346" type="System" />
-            </conditions>
-            <actions>
-                <action id="-3" name="Set position" sid="1427473251115854" type="UsernameText">
-                    <param id="0" name="X">Archer.X - 40</param>
-                    <param id="1" name="Y">Archer.Y - 110</param>
-                </action>
-                <action id="0" name="Set text" sid="1852539163347535" type="UsernameText">
-                    <param id="0" name="Text">Multiplayer.PeerAliasFromID(Archer.peerid)</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="5458520064897371">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="4012121311123042" type="System">
@@ -601,6 +587,58 @@
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="1915826857712325">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="3939233162743873" type="Archer">
+                    <param id="0" name="Instance variable">peerid</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">Multiplayer.MyID</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="9447692465877277">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="1640403871646346" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="1852539163347535" type="MyUsernameText">
+                            <param id="0" name="Text">Multiplayer.PeerAliasFromID(Archer.peerid)</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="4130724006508917" type="MyUsernameText">
+                            <param id="0" name="X">Archer.X - 55</param>
+                            <param id="1" name="Y">Archer.Y - 75</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9247964886066557">
+            <conditions>
+                <condition id="-7" inverted="1" name="Compare instance variable" sid="8855343957539841" type="Archer">
+                    <param id="0" name="Instance variable">peerid</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">Multiplayer.MyID</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="9798806734265556">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="2067527763472928" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="1082868221392282" type="OtherUsernameText">
+                            <param id="0" name="Text">Multiplayer.PeerAliasFromID(Archer.peerid)</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="9316990450702601" type="OtherUsernameText">
+                            <param id="0" name="X">Archer.X  - 55</param>
+                            <param id="1" name="Y">Archer.Y - 75</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

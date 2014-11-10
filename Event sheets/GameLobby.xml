@@ -266,7 +266,7 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="6653788829787621" title="peerResponse">
+                <event-group collapsed="1" description="" sid="6653788829787621" title="peerResponse">
                     <sub-events>
                         <event-block sid="3906053976587992">
                             <conditions>
