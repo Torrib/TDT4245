@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Physics</name>
+    <events>
+        <event-block sid="1079799234483957">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6227596075927755" type="Arrow">
+                    <param id="0" name="Object">rope</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1482122019558777" type="rope" />
+                <action behavior="Physics" id="27" name="Set enabled" sid="7036884104572225" type="rollingBall">
+                    <param id="0" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5632789456057308">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8120118315175075" type="Sprite">
+                    <param id="0" name="Object">rollingBall</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="3" name="Apply impulse" sid="5081392067235202" type="rollingBall">
+                    <param id="0" name="Impulse X">10</param>
+                    <param id="1" name="Implulse Y">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
