@@ -231,7 +231,7 @@
                 <instance type="Archer" uid="56">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>defaultright</initial-animation>
+                        <initial-animation>default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -260,13 +260,13 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>249</x>
-                        <y>340</y>
+                        <y>306</y>
                         <z>0</z>
-                        <width>84.12953186</width>
-                        <height>104.006286621</height>
+                        <width>89.67653656</width>
+                        <height>118.798294067</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.50222224</hotspotY>
+                        <hotspotX>0.417525768</hotspotX>
+                        <hotspotY>0.350194544</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
