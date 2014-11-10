@@ -27,28 +27,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="ArcherBowLeft" uid="60">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>266.221069336</x>
-                        <y>224.283050537</y>
-                        <z>0</z>
-                        <width>45</width>
-                        <height>60</height>
-                        <depth>0</depth>
-                        <hotspotX>0.253968269</hotspotX>
-                        <hotspotY>0.505952358</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Bow" uid="61">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -71,50 +49,6 @@
                         <depth>0</depth>
                         <hotspotX>0.253968269</hotspotX>
                         <hotspotY>0.494047612</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="ArcherAimRight" uid="62">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>78</x>
-                        <y>246</y>
-                        <z>0</z>
-                        <width>88</width>
-                        <height>116</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.501945496</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="ArcherAimLeft" uid="63">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>341.221069336</x>
-                        <y>250.283050537</y>
-                        <z>0</z>
-                        <width>88</width>
-                        <height>116</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.501945496</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

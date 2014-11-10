@@ -88,16 +88,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Spawn another object" sid="3007329904175618" type="Archer">
-                            <param id="0" name="Object">ArcherAimRight</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">1</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="3459836918246581" type="ArcherAimRight">
-                            <param id="0" name="Object">Bow</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">1</param>
-                        </action>
                         <action id="-25" name="Move to bottom" sid="6743915108546644" type="Bow" />
                     </actions>
                 </event-block>
@@ -111,19 +101,7 @@
                             <param id="0" name="Instance variable">TurnRight</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="0" name="Spawn another object" sid="5974569442372564" type="Archer">
-                            <param id="0" name="Object">ArcherAimLeft</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">1</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="9641983333991593" type="ArcherAimLeft">
-                            <param id="0" name="Object">ArcherBowLeft</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">1</param>
-                        </action>
-                        <action id="-25" name="Move to bottom" sid="6812593289861942" type="ArcherBowLeft" />
-                    </actions>
+                    <actions />
                 </event-block>
                 <event-block sid="6248316946177906">
                     <conditions>
@@ -135,10 +113,7 @@
                         <action id="-15" name="Set visible" sid="6641978717506771" type="Archer">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="1654319573908588" type="ArcherAimRight" />
                         <action id="-9" name="Destroy" sid="6270199629054799" type="Bow" />
-                        <action id="-9" name="Destroy" sid="6402912349512064" type="ArcherAimLeft" />
-                        <action id="-9" name="Destroy" sid="2173636810026868" type="ArcherBowLeft" />
                     </actions>
                 </event-block>
                 <event-block sid="8432794498383246">
@@ -169,13 +144,7 @@
                             <param id="0" name="Instance variable">TurnRight</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="0" name="Spawn another object" sid="5989566765516861" type="ArcherBowLeft">
-                            <param id="0" name="Object">Arrow</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">1</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
                 <event-block sid="1148442247005749">
                     <conditions>
@@ -186,11 +155,6 @@
                             <param id="0" name="Instance variable">TurnRight</param>
                         </condition>
                         <condition id="-1" name="Every tick" sid="5840529651250959" type="System" />
-                        <condition id="-8" name="Compare two values" sid="5333079035654348" type="System">
-                            <param id="0" name="First value">Mouse.X</param>
-                            <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Second value">ArcherAimRight.X</param>
-                        </condition>
                     </conditions>
                     <actions>
                         <action id="-22" name="Set angle toward position" sid="2938620371840935" type="Bow">
@@ -260,18 +224,8 @@
                             <param id="0" name="Instance variable">TurnRight</param>
                         </condition>
                         <condition id="-1" name="Every tick" sid="6354689009921945" type="System" />
-                        <condition id="-8" name="Compare two values" sid="8979392247073265" type="System">
-                            <param id="0" name="First value">Mouse.X</param>
-                            <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Second value">ArcherAimLeft.X</param>
-                        </condition>
                     </conditions>
-                    <actions>
-                        <action id="-22" name="Set angle toward position" sid="9110353468361589" type="ArcherBowLeft">
-                            <param id="0" name="X">Mouse.X</param>
-                            <param id="1" name="Y">Mouse.Y</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
                 <event-block sid="4659763351541425">
                     <conditions>
@@ -282,22 +236,8 @@
                             <param id="0" name="Instance variable">TurnRight</param>
                         </condition>
                         <condition id="-1" name="Every tick" sid="5243889720826712" type="System" />
-                        <condition id="-8" name="Compare two values" sid="821356406580217" type="System">
-                            <param id="0" name="First value">Mouse.X</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Second value">ArcherBowLeft.X</param>
-                        </condition>
-                        <condition id="-8" name="Compare two values" sid="8517906578495089" type="System">
-                            <param id="0" name="First value">Mouse.Y</param>
-                            <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Second value">ArcherBowLeft.Y</param>
-                        </condition>
                     </conditions>
-                    <actions>
-                        <action id="-8" name="Set angle" sid="4925715977163079" type="ArcherBowLeft">
-                            <param id="0" name="Angle">90</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
                 <event-block sid="8648747646255867">
                     <conditions>
@@ -308,22 +248,8 @@
                             <param id="0" name="Instance variable">TurnRight</param>
                         </condition>
                         <condition id="-1" name="Every tick" sid="35399589659262" type="System" />
-                        <condition id="-8" name="Compare two values" sid="2120813467914602" type="System">
-                            <param id="0" name="First value">Mouse.X</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Second value">ArcherBowLeft.X</param>
-                        </condition>
-                        <condition id="-8" name="Compare two values" sid="1442472335841397" type="System">
-                            <param id="0" name="First value">Mouse.Y</param>
-                            <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Second value">ArcherBowLeft.Y</param>
-                        </condition>
                     </conditions>
-                    <actions>
-                        <action id="-8" name="Set angle" sid="1610504053370379" type="ArcherBowLeft">
-                            <param id="0" name="Angle">-90</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
                 <event-block sid="4568870154915592">
                     <conditions>
@@ -334,11 +260,7 @@
                     </actions>
                 </event-block>
                 <event-block sid="473993959252681">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="3887730040588107" type="Arrow">
-                            <param id="0" name="Object">Terrain2</param>
-                        </condition>
-                    </conditions>
+                    <conditions />
                     <actions>
                         <action id="-9" name="Destroy" sid="6869555330145933" type="Arrow" />
                     </actions>
@@ -408,11 +330,7 @@
                     </actions>
                 </event-block>
                 <event-block sid="8063128527023978">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="9244730339586255" type="Archer">
-                            <param id="0" name="Object">Lava</param>
-                        </condition>
-                    </conditions>
+                    <conditions />
                     <actions>
                         <action id="4" name="Set animation" sid="6583047782971531" type="Archer">
                             <param id="0" name="Animation">&quot;death&quot;</param>
