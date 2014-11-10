@@ -1067,6 +1067,48 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="plankup" sid="5565501437495927">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="6465375160660745">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3764448902194566" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\loka\Downloads\plank2.png">
+                        <collision-poly>
+                            <point x="0.00673401" y="0.0444444" />
+                            <point x="0.983165" y="0.111111" />
+                            <point x="0.983165" y="0.888889" />
+                            <point x="0.5" y="0.922222" />
+                            <point x="0.0218855" y="0.855556" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="plankdown" sid="3479299345942425">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2403921561129682">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="244116676547641" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\loka\Downloads\plank.png">
+                        <collision-poly>
+                            <point x="0.00673401" y="0.0444444" />
+                            <point x="0.983165" y="0.111111" />
+                            <point x="0.983165" y="0.888889" />
+                            <point x="0.5" y="0.922222" />
+                            <point x="0.0218855" y="0.855556" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
