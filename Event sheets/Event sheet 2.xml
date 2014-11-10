@@ -26,10 +26,10 @@
         <event-block sid="734894368603409">
             <conditions />
             <actions>
-                <action id="7" name="Set mirrored" sid="2819086913552502" type="Sprite3">
+                <action id="7" name="Set mirrored" sid="2819086913552502" type="Gate">
                     <param id="0" name="State">0</param>
                 </action>
-                <action behavior="Solid" id="0" name="Set enabled" sid="3430996210029501" type="Sprite3">
+                <action behavior="Solid" id="0" name="Set enabled" sid="3430996210029501" type="Gate">
                     <param id="0" name="State">0</param>
                 </action>
                 <action id="7" name="Set mirrored" sid="2807250390246167" type="leverArrow">
