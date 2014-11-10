@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 2</name>
+    <events>
+        <event-block sid="7064761995466656">
+            <conditions />
+            <actions>
+                <action id="7" name="Set mirrored" sid="8820856378026766" type="lever">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="2015357076993245" type="plankup">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8754340018874109" type="plankup">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5824203734160438" type="plankdown">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="6321552183791438" type="plankdown">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="734894368603409">
+            <conditions />
+            <actions>
+                <action id="7" name="Set mirrored" sid="2819086913552502" type="Gate">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="3430996210029501" type="Gate">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="2807250390246167" type="leverArrow">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
