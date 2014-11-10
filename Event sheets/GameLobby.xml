@@ -26,7 +26,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="2825615770183548" title="Signaling">
+        <event-group description="" sid="2825615770183548" title="Signaling">
             <sub-events>
                 <event-block sid="7300063380420869">
                     <conditions>
@@ -65,12 +65,7 @@
                     <conditions>
                         <condition id="5" name="On joined room" sid="7797189719957919" type="Multiplayer" />
                     </conditions>
-                    <actions>
-                        <action id="0" name="Call function" sid="2912143846563004" type="Function">
-                            <param id="0" name="Name">&quot;updateChat&quot;</param>
-                            <param id="1" name="Parameter {n}">&quot;Joined room&quot;</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
                         <event-block sid="5994141669202775">
                             <conditions>
@@ -95,9 +90,6 @@
                                     <param id="0" name="Group name">&quot;Peer&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
-                                <action id="7" name="Add item" sid="2739424601336924" type="PlayerList">
-                                    <param id="0" name="Text">Multiplayer.MyAlias</param>
-                                </action>
                                 <action id="2" name="Set visible" sid="8960057688943937" type="InviteBtn">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
@@ -118,9 +110,9 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="9090469954930364" title="Connection">
+        <event-group description="" sid="9090469954930364" title="Connection">
             <sub-events>
-                <event-block sid="5740772653454478">
+                <event-block collapsed="1" sid="5740772653454478">
                     <conditions>
                         <condition id="11" name="On peer connected" sid="1038800918636632" type="Multiplayer" />
                     </conditions>
@@ -150,12 +142,7 @@
                     <conditions>
                         <condition id="13" name="On peer disconnected" sid="4664506806576327" type="Multiplayer" />
                     </conditions>
-                    <actions>
-                        <action id="0" name="Call function" sid="6241945255361818" type="Function">
-                            <param id="0" name="Name">&quot;updateChat&quot;</param>
-                            <param id="1" name="Parameter {n}">&quot;&apos;&quot; &amp; Multiplayer.PeerAlias &amp; &quot;&apos; disconected&quot;</param>
-                        </action>
-                    </actions>
+                    <actions />
                     <sub-events>
                         <event-block sid="6092799481399919">
                             <conditions>
@@ -178,7 +165,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" inactive="1" sid="651134760143068" title="Peer">
+        <event-group collapsed="1" description="" inactive="1" sid="651134760143068" title="Peer">
             <sub-events>
                 <event-group description="" sid="593305898753941" title="peerChat">
                     <sub-events>
@@ -279,7 +266,7 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="6653788829787621" title="peerResponse">
+                <event-group collapsed="1" description="" sid="6653788829787621" title="peerResponse">
                     <sub-events>
                         <event-block sid="3906053976587992">
                             <conditions>

@@ -84,7 +84,12 @@
                             <conditions>
                                 <condition id="-22" name="Else" sid="6900191689667444" type="System" />
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="7737842352373351" type="System">
+                                    <param id="0" name="Layer">3</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                            </actions>
                             <sub-events>
                                 <event-block sid="7694941415138061">
                                     <conditions>
@@ -106,10 +111,6 @@
                                         </action>
                                         <action id="0" name="Set text" sid="1096213931778191" type="IngameChatInput">
                                             <param id="0" name="Text">&quot;&quot;</param>
-                                        </action>
-                                        <action id="-4" name="Set layer visible" sid="7737842352373351" type="System">
-                                            <param id="0" name="Layer">3</param>
-                                            <param id="1" name="Visibility">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -161,7 +162,12 @@
                             <conditions>
                                 <condition id="-22" name="Else" sid="603802536241603" type="System" />
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="5503202876025541" type="System">
+                                    <param id="0" name="Layer">3</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                            </actions>
                             <sub-events>
                                 <event-block sid="1798045690633741">
                                     <conditions>
@@ -183,10 +189,6 @@
                                         </action>
                                         <action id="0" name="Set text" sid="2497883290061345" type="IngameChatInput">
                                             <param id="0" name="Text">&quot;&quot;</param>
-                                        </action>
-                                        <action id="-4" name="Set layer visible" sid="5503202876025541" type="System">
-                                            <param id="0" name="Layer">3</param>
-                                            <param id="1" name="Visibility">0</param>
                                         </action>
                                     </actions>
                                 </event-block>

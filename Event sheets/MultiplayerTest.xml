@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>MultiplayerTest</name>
     <events>
+        <include>Animations</include>
         <include>IngameChat</include>
         <event-group description="" sid="7675116793019805" title="Setup">
             <sub-events>
@@ -17,14 +18,14 @@
                             <param id="2" name="Interpolation">0</param>
                         </action>
                         <action id="11" name="Sync object" sid="6226304059406829" type="Multiplayer">
-                            <param id="0" name="Object">Player</param>
+                            <param id="0" name="Object">Archer</param>
                             <param id="1" name="Data">1</param>
                             <param id="2" name="Precision">2</param>
                             <param id="3" name="Bandwidth">0</param>
                         </action>
                         <action id="12" name="Sync instance variable" sid="4794241790976404" type="Multiplayer">
-                            <param id="0" name="Object">Player</param>
-                            <param id="1" name="Instance variable">Player|input</param>
+                            <param id="0" name="Object">Archer</param>
+                            <param id="1" name="Instance variable">Archer|input</param>
                             <param id="2" name="Precision">3</param>
                             <param id="3" name="Interpolation">0</param>
                             <param id="4" name="Client value tag">&quot;input&quot;</param>
@@ -37,15 +38,15 @@
                             <param id="3" name="Bandwidth">0</param>
                         </action>
                         <action id="12" name="Sync instance variable" sid="4567312067380996" type="Multiplayer">
-                            <param id="0" name="Object">Player</param>
-                            <param id="1" name="Instance variable">Player|mousex</param>
+                            <param id="0" name="Object">Archer</param>
+                            <param id="1" name="Instance variable">Archer|mousex</param>
                             <param id="2" name="Precision">2</param>
                             <param id="3" name="Interpolation">0</param>
                             <param id="4" name="Client value tag">&quot;mousex&quot;</param>
                         </action>
                         <action id="12" name="Sync instance variable" sid="7969023252266743" type="Multiplayer">
-                            <param id="0" name="Object">Player</param>
-                            <param id="1" name="Instance variable">Player|mousey</param>
+                            <param id="0" name="Object">Archer</param>
+                            <param id="1" name="Instance variable">Archer|mousey</param>
                             <param id="2" name="Precision">2</param>
                             <param id="3" name="Interpolation">0</param>
                             <param id="4" name="Client value tag">&quot;mousey&quot;</param>
@@ -59,6 +60,18 @@
                             <param id="0" name="Tag">&quot;mousey&quot;</param>
                             <param id="1" name="Precision">2</param>
                             <param id="2" name="Interpolation">0</param>
+                        </action>
+                        <action id="11" name="Sync object" sid="3217018530209397" type="Multiplayer">
+                            <param id="0" name="Object">Bow</param>
+                            <param id="1" name="Data">3</param>
+                            <param id="2" name="Precision">1</param>
+                            <param id="3" name="Bandwidth">0</param>
+                        </action>
+                        <action id="11" name="Sync object" sid="8983754322179805" type="Multiplayer">
+                            <param id="0" name="Object">Arrow</param>
+                            <param id="1" name="Data">3</param>
+                            <param id="2" name="Precision">1</param>
+                            <param id="3" name="Bandwidth">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -77,12 +90,12 @@
                                     <param id="0" name="Group name">&quot;GameHost&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
-                                <action id="-10" name="Set value" sid="6416173271233772" type="Player">
+                                <action id="-10" name="Set value" sid="6416173271233772" type="Archer">
                                     <param id="0" name="Instance variable">peerid</param>
                                     <param id="1" name="Value">Multiplayer.MyID</param>
                                 </action>
                                 <action id="13" name="Associate object with peer" sid="1925667985168737" type="Multiplayer">
-                                    <param id="0" name="Object">Player</param>
+                                    <param id="0" name="Object">Archer</param>
                                     <param id="1" name="Peer ID">Multiplayer.MyID</param>
                                 </action>
                                 <action id="-15" name="Set visible" sid="2930488382094199" type="HostTextGame">
@@ -99,7 +112,7 @@
                                     <param id="0" name="Group name">&quot;GamePeer&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
-                                <action id="-9" name="Destroy" sid="6230466905340162" type="Player" />
+                                <action id="-9" name="Destroy" sid="6230466905340162" type="Archer" />
                             </actions>
                         </event-block>
                     </sub-events>
@@ -112,22 +125,22 @@
                     <sub-events>
                         <event-block sid="9579428919206325">
                             <conditions>
-                                <condition id="-18" name="On created" sid="362125330475127" type="Player" />
+                                <condition id="-18" name="On created" sid="362125330475127" type="Archer" />
                             </conditions>
                             <actions>
-                                <action id="-10" name="Set value" sid="1257881658110563" type="Player">
+                                <action id="-10" name="Set value" sid="1257881658110563" type="Archer">
                                     <param id="0" name="Instance variable">peerid</param>
                                     <param id="1" name="Value">Multiplayer.PeerID</param>
                                 </action>
                                 <action id="13" name="Associate object with peer" sid="6483704131401242" type="Multiplayer">
-                                    <param id="0" name="Object">Player</param>
+                                    <param id="0" name="Object">Archer</param>
                                     <param id="1" name="Peer ID">Multiplayer.PeerID</param>
                                 </action>
                             </actions>
                             <sub-events>
                                 <event-block sid="5563256049404384">
                                     <conditions>
-                                        <condition id="-7" name="Compare instance variable" sid="2340827720099197" type="Player">
+                                        <condition id="-7" name="Compare instance variable" sid="2340827720099197" type="Archer">
                                             <param id="0" name="Instance variable">peerid</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Value">Multiplayer.MyID</param>
@@ -135,7 +148,7 @@
                                     </conditions>
                                     <actions>
                                         <action id="16" name="Enable local input prediction" sid="4549125137089755" type="Multiplayer">
-                                            <param id="0" name="Object">Player</param>
+                                            <param id="0" name="Object">Archer</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -144,7 +157,7 @@
                         <event-block sid="8124313722668813">
                             <conditions>
                                 <condition id="17" name="On client update" sid="2186369365002224" type="Multiplayer" />
-                                <condition id="-7" name="Compare instance variable" sid="6862997021186609" type="Player">
+                                <condition id="-7" name="Compare instance variable" sid="6862997021186609" type="Archer">
                                     <param id="0" name="Instance variable">peerid</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">Multiplayer.MyID</param>
@@ -171,7 +184,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Set value" sid="7513583783332835" type="Player">
+                                        <action id="-10" name="Set value" sid="7513583783332835" type="Archer">
                                             <param id="0" name="Instance variable">input</param>
                                             <param id="1" name="Value">setbit(Self.input, 0,1)</param>
                                         </action>
@@ -182,7 +195,7 @@
                                         <condition id="-22" name="Else" sid="2650069309943557" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Set value" sid="3677690571188006" type="Player">
+                                        <action id="-10" name="Set value" sid="3677690571188006" type="Archer">
                                             <param id="0" name="Instance variable">input</param>
                                             <param id="1" name="Value">setbit(Self.input, 0, 0)</param>
                                         </action>
@@ -201,7 +214,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Set value" sid="2923376652169794" type="Player">
+                                        <action id="-10" name="Set value" sid="2923376652169794" type="Archer">
                                             <param id="0" name="Instance variable">input</param>
                                             <param id="1" name="Value">setbit(Self.input, 1,1)</param>
                                         </action>
@@ -212,7 +225,7 @@
                                         <condition id="-22" name="Else" sid="8683976212875812" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Set value" sid="5474211834127973" type="Player">
+                                        <action id="-10" name="Set value" sid="5474211834127973" type="Archer">
                                             <param id="0" name="Instance variable">input</param>
                                             <param id="1" name="Value">setbit(Self.input, 1, 0)</param>
                                         </action>
@@ -228,7 +241,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Set value" sid="6880383800568023" type="Player">
+                                        <action id="-10" name="Set value" sid="6880383800568023" type="Archer">
                                             <param id="0" name="Instance variable">input</param>
                                             <param id="1" name="Value">setbit(Self.input, 2, 1)</param>
                                         </action>
@@ -239,7 +252,7 @@
                                         <condition id="-22" name="Else" sid="8330033533081605" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Set value" sid="5007957747802933" type="Player">
+                                        <action id="-10" name="Set value" sid="5007957747802933" type="Archer">
                                             <param id="0" name="Instance variable">input</param>
                                             <param id="1" name="Value">setbit(Self.input, 2, 0)</param>
                                         </action>
@@ -252,7 +265,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Set value" sid="7376372795943758" type="Player">
+                                        <action id="-10" name="Set value" sid="7376372795943758" type="Archer">
                                             <param id="0" name="Instance variable">input</param>
                                             <param id="1" name="Value">setbit(Self.input, 3, 1)</param>
                                         </action>
@@ -263,7 +276,7 @@
                                         <condition id="-22" name="Else" sid="5141682968225332" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="-10" name="Set value" sid="5342815152760572" type="Player">
+                                        <action id="-10" name="Set value" sid="5342815152760572" type="Archer">
                                             <param id="0" name="Instance variable">input</param>
                                             <param id="1" name="Value">setbit(Self.input, 3, 0)</param>
                                         </action>
@@ -274,7 +287,7 @@
                                     <actions>
                                         <action id="14" name="Set client state" sid="8236879944345967" type="Multiplayer">
                                             <param id="0" name="Tag">&quot;input&quot;</param>
-                                            <param id="1" name="Value">Player.input</param>
+                                            <param id="1" name="Value">Archer.input</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -282,7 +295,7 @@
                         </event-block>
                         <event-block sid="3110822550879289">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="7835598323526276" type="Player">
+                                <condition id="-7" name="Compare instance variable" sid="7835598323526276" type="Archer">
                                     <param id="0" name="Instance variable">peerid</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">Multiplayer.MyID</param>
@@ -293,13 +306,13 @@
                                 <event-block sid="3333131606156616">
                                     <conditions>
                                         <condition id="-8" name="Compare two values" sid="382635351082682" type="System">
-                                            <param id="0" name="First value">getbit(Player.input, 0)</param>
+                                            <param id="0" name="First value">getbit(Archer.input, 0)</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Second value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="224227715166208" type="Player">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="224227715166208" type="Archer">
                                             <param id="0" name="Control">0</param>
                                         </action>
                                     </actions>
@@ -307,13 +320,13 @@
                                 <event-block sid="3065950199530216">
                                     <conditions>
                                         <condition id="-8" name="Compare two values" sid="9473109508142516" type="System">
-                                            <param id="0" name="First value">getbit(Player.input,1)</param>
+                                            <param id="0" name="First value">getbit(Archer.input,1)</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Second value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="6933597584665009" type="Player">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="692546654331903" type="Archer">
                                             <param id="0" name="Control">2</param>
                                         </action>
                                     </actions>
@@ -321,13 +334,13 @@
                                 <event-block sid="1992182208474503">
                                     <conditions>
                                         <condition id="-8" name="Compare two values" sid="5649538106604253" type="System">
-                                            <param id="0" name="First value">getbit(Player.input, 2)</param>
+                                            <param id="0" name="First value">getbit(Archer.input, 2)</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Second value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="8112260129508134" type="Player">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="2976884495428421" type="Archer">
                                             <param id="0" name="Control">1</param>
                                         </action>
                                     </actions>
@@ -344,24 +357,24 @@
                             </conditions>
                             <actions>
                                 <action id="-3" name="Create object" sid="9484300169970367" type="System">
-                                    <param id="0" name="Object to create">Player</param>
+                                    <param id="0" name="Object to create">Archer</param>
                                     <param id="1" name="Layer">0</param>
                                     <param id="2" name="X">200</param>
                                     <param id="3" name="Y">20</param>
                                 </action>
-                                <action id="-10" name="Set value" sid="3471477034221871" type="Player">
+                                <action id="-10" name="Set value" sid="3471477034221871" type="Archer">
                                     <param id="0" name="Instance variable">peerid</param>
                                     <param id="1" name="Value">Multiplayer.PeerID</param>
                                 </action>
                                 <action id="13" name="Associate object with peer" sid="9263694029842369" type="Multiplayer">
-                                    <param id="0" name="Object">Player</param>
+                                    <param id="0" name="Object">Archer</param>
                                     <param id="1" name="Peer ID">Multiplayer.PeerID</param>
                                 </action>
                             </actions>
                         </event-block>
                         <event-block sid="6981929290576743">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="4147017061745556" type="Player">
+                                <condition id="-7" name="Compare instance variable" sid="4147017061745556" type="Archer">
                                     <param id="0" name="Instance variable">peerid</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">Multiplayer.MyID</param>
@@ -379,14 +392,10 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="290631649951641" type="Player">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="9068463574880422" type="Archer">
                                             <param id="0" name="Control">0</param>
                                         </action>
                                     </actions>
-                                </event-block>
-                                <event-block sid="7846161705934182">
-                                    <conditions />
-                                    <actions />
                                 </event-block>
                                 <event-block any="1" sid="2958026929371595">
                                     <conditions>
@@ -401,7 +410,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="5082718580952291" type="Player">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="1738835426075268" type="Archer">
                                             <param id="0" name="Control">2</param>
                                         </action>
                                     </actions>
@@ -416,7 +425,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="5675896098615535" type="Player">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="6949262966133921" type="Archer">
                                             <param id="0" name="Control">1</param>
                                         </action>
                                     </actions>
@@ -437,44 +446,80 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="5873760684232843">
+                                    <conditions>
+                                        <condition id="-1" name="Every tick" sid="48142092177776" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-4" name="Set position to another object" sid="3554475447838945" type="Bow">
+                                            <param id="0" name="Object">Archer</param>
+                                            <param id="1" name="Image point (optional)">30</param>
+                                        </action>
+                                        <action id="-22" name="Set angle toward position" sid="5872776881931832" type="Bow">
+                                            <param id="0" name="X">Mouse.X</param>
+                                            <param id="1" name="Y">Mouse.Y</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="9044818210892586">
+                                    <conditions>
+                                        <condition id="0" name="On click" sid="9242657475826165" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="1927033257802519" type="Bow">
+                                            <param id="0" name="Instance variable">ArrowTimer</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="8288625164392483" type="Bow">
+                                            <param id="0" name="Object">Arrow</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="1863573864381968" type="Bow">
+                                            <param id="0" name="Instance variable">ArrowTimer</param>
+                                            <param id="1" name="Value">Bow.ArrowDelay</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-block>
                         <event-block sid="8436031249746423">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="1790325302302952" type="Player">
+                                <condition id="-7" name="Compare instance variable" sid="1790325302302952" type="Archer">
                                     <param id="0" name="Instance variable">peerid</param>
                                     <param id="1" name="Comparison">1</param>
                                     <param id="2" name="Value">Multiplayer.MyID</param>
                                 </condition>
-                                <condition id="-11" name="For Each" sid="9003691586745617" type="System">
-                                    <param id="0" name="Object">Player</param>
-                                </condition>
                             </conditions>
                             <actions>
-                                <action id="-10" name="Set value" sid="9198566275911016" type="Player">
+                                <action id="-10" name="Set value" sid="9198566275911016" type="Archer">
                                     <param id="0" name="Instance variable">input</param>
-                                    <param id="1" name="Value">Multiplayer.PeerState(Player.peerid, &quot;input&quot;)</param>
+                                    <param id="1" name="Value">Multiplayer.PeerState(Archer.peerid, &quot;input&quot;)</param>
                                 </action>
-                                <action id="-10" name="Set value" sid="6616108544973449" type="Player">
+                                <action id="-10" name="Set value" sid="6616108544973449" type="Archer">
                                     <param id="0" name="Instance variable">mousex</param>
-                                    <param id="1" name="Value">Multiplayer.PeerState(Player.peerid, &quot;mousex&quot;)</param>
+                                    <param id="1" name="Value">Multiplayer.PeerState(Archer.peerid, &quot;mousex&quot;)</param>
                                 </action>
-                                <action id="-10" name="Set value" sid="5515180539813786" type="Player">
+                                <action id="-10" name="Set value" sid="5515180539813786" type="Archer">
                                     <param id="0" name="Instance variable">mousey</param>
-                                    <param id="1" name="Value">Multiplayer.PeerState(Player.peerid, &quot;mousey&quot;)</param>
+                                    <param id="1" name="Value">Multiplayer.PeerState(Archer.peerid, &quot;mousey&quot;)</param>
                                 </action>
                             </actions>
                             <sub-events>
                                 <event-block sid="8733248487690023">
                                     <conditions>
                                         <condition id="-8" name="Compare two values" sid="2698780028540045" type="System">
-                                            <param id="0" name="First value">getbit(Player.input, 0)</param>
+                                            <param id="0" name="First value">getbit(Archer.input, 0)</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Second value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="9934277458870133" type="Player">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="4701684319420153" type="Archer">
                                             <param id="0" name="Control">0</param>
                                         </action>
                                     </actions>
@@ -482,13 +527,13 @@
                                 <event-block sid="6939450043629775">
                                     <conditions>
                                         <condition id="-8" name="Compare two values" sid="6295990972909549" type="System">
-                                            <param id="0" name="First value">getbit(Player.input,1)</param>
+                                            <param id="0" name="First value">getbit(Archer.input,1)</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Second value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="7561905160619506" type="Player">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="7262544501241977" type="Archer">
                                             <param id="0" name="Control">2</param>
                                         </action>
                                     </actions>
@@ -496,13 +541,13 @@
                                 <event-block sid="1297509897848228">
                                     <conditions>
                                         <condition id="-8" name="Compare two values" sid="757192021524436" type="System">
-                                            <param id="0" name="First value">getbit(Player.input, 2)</param>
+                                            <param id="0" name="First value">getbit(Archer.input, 2)</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Second value">1</param>
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action behavior="Platform" id="7" name="Simulate control" sid="3100322029533489" type="Player">
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="199392216865158" type="Archer">
                                             <param id="0" name="Control">1</param>
                                         </action>
                                     </actions>
@@ -510,12 +555,19 @@
                                 <event-block sid="5035899754121836">
                                     <conditions>
                                         <condition id="-8" name="Compare two values" sid="4000852479876412" type="System">
-                                            <param id="0" name="First value">getbit(Player.input, 3)</param>
+                                            <param id="0" name="First value">getbit(Archer.input, 3)</param>
                                             <param id="1" name="Comparison">0</param>
                                             <param id="2" name="Second value">1</param>
                                         </condition>
                                     </conditions>
-                                    <actions />
+                                    <actions>
+                                        <action id="-3" name="Create object" sid="6050473479835507" type="System">
+                                            <param id="0" name="Object to create">Ping</param>
+                                            <param id="1" name="Layer">2</param>
+                                            <param id="2" name="X">Archer.mousex</param>
+                                            <param id="3" name="Y">Archer.mousey</param>
+                                        </action>
+                                    </actions>
                                 </event-block>
                             </sub-events>
                         </event-block>
@@ -523,19 +575,70 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-block sid="9447692465877277">
+        <event-block sid="5458520064897371">
             <conditions>
-                <condition id="-1" name="Every tick" sid="1640403871646346" type="System" />
+                <condition id="-6" name="Every X seconds" sid="4012121311123042" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="-3" name="Set position" sid="1427473251115854" type="UsernameText">
-                    <param id="0" name="X">Player.X - 40</param>
-                    <param id="1" name="Y">Player.Y - 110</param>
-                </action>
-                <action id="0" name="Set text" sid="1852539163347535" type="UsernameText">
-                    <param id="0" name="Text">Multiplayer.PeerAliasFromID(Player.peerid)</param>
+                <action id="-12" name="Subtract from" sid="876802370832149" type="Bow">
+                    <param id="0" name="Instance variable">ArrowTimer</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="1915826857712325">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="3939233162743873" type="Archer">
+                    <param id="0" name="Instance variable">peerid</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">Multiplayer.MyID</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="9447692465877277">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="1640403871646346" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="1852539163347535" type="MyUsernameText">
+                            <param id="0" name="Text">Multiplayer.PeerAliasFromID(Archer.peerid)</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="4130724006508917" type="MyUsernameText">
+                            <param id="0" name="X">Archer.X - 55</param>
+                            <param id="1" name="Y">Archer.Y - 75</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9247964886066557">
+            <conditions>
+                <condition id="-7" inverted="1" name="Compare instance variable" sid="8855343957539841" type="Archer">
+                    <param id="0" name="Instance variable">peerid</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">Multiplayer.MyID</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="9798806734265556">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="2067527763472928" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="1082868221392282" type="OtherUsernameText">
+                            <param id="0" name="Text">Multiplayer.PeerAliasFromID(Archer.peerid)</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="9316990450702601" type="OtherUsernameText">
+                            <param id="0" name="X">Archer.X  - 55</param>
+                            <param id="1" name="Y">Archer.Y - 75</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
