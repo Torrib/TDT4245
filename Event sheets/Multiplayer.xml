@@ -3,7 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Multiplayer</name>
     <events>
-        <include>Animations</include>
         <event-group description="" sid="7675116793019805" title="Setup">
             <sub-events>
                 <event-block sid="4877001345771824">
@@ -29,7 +28,6 @@
                             <param id="3" name="Interpolation">0</param>
                             <param id="4" name="Client value tag">&quot;input&quot;</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="2545196647082029" type="Ping" />
                         <action id="11" name="Sync object" sid="6257150638507021" type="Multiplayer">
                             <param id="0" name="Object">Ping</param>
                             <param id="1" name="Data">1</param>
@@ -100,9 +98,6 @@
                                 <action id="-15" name="Set visible" sid="2930488382094199" type="HostTextGame">
                                     <param id="0" name="Visibility">1</param>
                                 </action>
-                                <action behavior="ScrollTo" id="1" name="Set enabled" sid="7828398835135887" type="Archer">
-                                    <param id="0" name="State">1</param>
-                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="1593117585668665">
@@ -123,7 +118,7 @@
         </event-group>
         <event-group description="" sid="479740519335512" title="Game">
             <sub-events>
-                <event-group description="" inactive="1" sid="8601797289685352" title="GamePeer">
+                <event-group collapsed="1" description="" inactive="1" sid="8601797289685352" title="GamePeer">
                     <sub-events>
                         <event-block sid="9579428919206325">
                             <conditions>
@@ -151,9 +146,6 @@
                                     <actions>
                                         <action id="16" name="Enable local input prediction" sid="4549125137089755" type="Multiplayer">
                                             <param id="0" name="Object">Archer</param>
-                                        </action>
-                                        <action behavior="ScrollTo" id="1" name="Set enabled" sid="6818299872920956" type="Archer">
-                                            <param id="0" name="State">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -354,7 +346,7 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" inactive="1" sid="5517442506619262" title="GameHost">
+                <event-group collapsed="1" description="" inactive="1" sid="5517442506619262" title="GameHost">
                     <sub-events>
                         <event-block sid="9541214752858669">
                             <conditions>
@@ -580,70 +572,103 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-block sid="5458520064897371">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="4012121311123042" type="System">
-                    <param id="0" name="Interval (seconds)">1.0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Subtract from" sid="876802370832149" type="Bow">
-                    <param id="0" name="Instance variable">ArrowTimer</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="1915826857712325">
-            <conditions>
-                <condition id="-7" name="Compare instance variable" sid="3939233162743873" type="Archer">
-                    <param id="0" name="Instance variable">peerid</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">Multiplayer.MyID</param>
-                </condition>
-            </conditions>
-            <actions />
+        <event-group collapsed="1" description="" sid="1790471388092763" title="ArrowHandling">
             <sub-events>
-                <event-block sid="9447692465877277">
+                <event-block sid="8568100983503464">
                     <conditions>
-                        <condition id="-1" name="Every tick" sid="1640403871646346" type="System" />
+                        <condition id="0" name="On collision with another object" sid="9421267122523256" type="Arrow">
+                            <param id="0" name="Object">Sprite2</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="1852539163347535" type="MyUsernameText">
-                            <param id="0" name="Text">Multiplayer.PeerAliasFromID(Archer.peerid)</param>
+                        <action id="-9" name="Destroy" sid="6637186072543424" type="Arrow" />
+                    </actions>
+                </event-block>
+                <event-block sid="5458520064897371">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="4012121311123042" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="876802370832149" type="Bow">
+                            <param id="0" name="Instance variable">ArrowTimer</param>
+                            <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-3" name="Set position" sid="4130724006508917" type="MyUsernameText">
-                            <param id="0" name="X">Archer.X - 55</param>
-                            <param id="1" name="Y">Archer.Y - 75</param>
+                    </actions>
+                </event-block>
+                <event-block sid="1915826857712325">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="3939233162743873" type="Archer">
+                            <param id="0" name="Instance variable">peerid</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Multiplayer.MyID</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="9447692465877277">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="1640403871646346" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="1852539163347535" type="MyUsernameText">
+                                    <param id="0" name="Text">Multiplayer.PeerAliasFromID(Archer.peerid)</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="4130724006508917" type="MyUsernameText">
+                                    <param id="0" name="X">Archer.X - 55</param>
+                                    <param id="1" name="Y">Archer.Y - 75</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="9247964886066557">
+                    <conditions>
+                        <condition id="-7" inverted="1" name="Compare instance variable" sid="8855343957539841" type="Archer">
+                            <param id="0" name="Instance variable">peerid</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Multiplayer.MyID</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="9798806734265556">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="2067527763472928" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="1082868221392282" type="OtherUsernameText">
+                                    <param id="0" name="Text">Multiplayer.PeerAliasFromID(Archer.peerid)</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="9316990450702601" type="OtherUsernameText">
+                                    <param id="0" name="X">Archer.X  - 55</param>
+                                    <param id="1" name="Y">Archer.Y - 75</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="2975482045636625" title="Scrolling">
+            <sub-events>
+                <event-block sid="4322810364126168">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="5449002217437314" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="3661740937119747" type="Archer">
+                            <param id="0" name="Instance variable">peerid</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Multiplayer.MyID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Scroll to object" sid="9117288130625814" type="System">
+                            <param id="0" name="Object">Archer</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="9247964886066557">
-            <conditions>
-                <condition id="-7" inverted="1" name="Compare instance variable" sid="8855343957539841" type="Archer">
-                    <param id="0" name="Instance variable">peerid</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">Multiplayer.MyID</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="9798806734265556">
-                    <conditions>
-                        <condition id="-1" name="Every tick" sid="2067527763472928" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="1082868221392282" type="OtherUsernameText">
-                            <param id="0" name="Text">Multiplayer.PeerAliasFromID(Archer.peerid)</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="9316990450702601" type="OtherUsernameText">
-                            <param id="0" name="X">Archer.X  - 55</param>
-                            <param id="1" name="Y">Archer.Y - 75</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
+        </event-group>
     </events>
 </c2eventsheet>

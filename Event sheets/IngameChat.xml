@@ -46,15 +46,6 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block any="1" sid="2036600706451251">
-            <conditions>
-                <condition id="0" name="On key pressed" sid="603268355164217" type="Keyboard">
-                    <param id="0" name="Key">13 (Return)</param>
-                </condition>
-                <condition id="0" name="On clicked" sid="7672081814722673" type="IngameChatButton" />
-            </conditions>
-            <actions />
-        </event-block>
         <event-group description="" inactive="1" sid="4500442019417524" title="IngameChatPeer">
             <sub-events>
                 <event-block any="1" sid="5652558939646848">
@@ -69,12 +60,12 @@
                         <event-block sid="7915502980718931">
                             <conditions>
                                 <condition id="-9" inverted="1" name="Layer is visible" sid="8478211100272023" type="System">
-                                    <param id="0" name="Layer">3</param>
+                                    <param id="0" name="Layer">&quot;ChatInput&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="-4" name="Set layer visible" sid="5763976991490426" type="System">
-                                    <param id="0" name="Layer">3</param>
+                                    <param id="0" name="Layer">&quot;ChatInput&quot;</param>
                                     <param id="1" name="Visibility">1</param>
                                 </action>
                                 <action id="6" name="Set focused" sid="2730399001113242" type="IngameChatInput" />
@@ -86,7 +77,7 @@
                             </conditions>
                             <actions>
                                 <action id="-4" name="Set layer visible" sid="7737842352373351" type="System">
-                                    <param id="0" name="Layer">3</param>
+                                    <param id="0" name="Layer">&quot;ChatInput&quot;</param>
                                     <param id="1" name="Visibility">0</param>
                                 </action>
                             </actions>
@@ -147,12 +138,12 @@
                         <event-block sid="3482772062517439">
                             <conditions>
                                 <condition id="-9" inverted="1" name="Layer is visible" sid="8824935140434945" type="System">
-                                    <param id="0" name="Layer">3</param>
+                                    <param id="0" name="Layer">&quot;ChatInput&quot;</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="-4" name="Set layer visible" sid="3734646388813383" type="System">
-                                    <param id="0" name="Layer">3</param>
+                                    <param id="0" name="Layer">&quot;ChatInput&quot;</param>
                                     <param id="1" name="Visibility">1</param>
                                 </action>
                                 <action id="6" name="Set focused" sid="9112246784995194" type="IngameChatInput" />
@@ -164,7 +155,7 @@
                             </conditions>
                             <actions>
                                 <action id="-4" name="Set layer visible" sid="5503202876025541" type="System">
-                                    <param id="0" name="Layer">3</param>
+                                    <param id="0" name="Layer">&quot;ChatInput&quot;</param>
                                     <param id="1" name="Visibility">0</param>
                                 </action>
                             </actions>
