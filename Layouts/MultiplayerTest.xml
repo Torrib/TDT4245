@@ -228,7 +228,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Archer" uid="56">
+                <instance type="Player" uid="56">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>default</initial-animation>

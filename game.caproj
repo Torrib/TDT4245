@@ -156,12 +156,27 @@
             </object-type>
             <object-type name="IngameChat" sid="6246719838601663">
                 <plugin id="TextBox" />
+                <container>
+                    <type>IngameChat</type>
+                    <type>IngameChatInput</type>
+                    <type>IngameChatButton</type>
+                </container>
             </object-type>
             <object-type name="IngameChatButton" sid="324500952680237">
                 <plugin id="Button" />
+                <container>
+                    <type>IngameChat</type>
+                    <type>IngameChatInput</type>
+                    <type>IngameChatButton</type>
+                </container>
             </object-type>
             <object-type name="IngameChatInput" sid="4353541941095695">
                 <plugin id="TextBox" />
+                <container>
+                    <type>IngameChat</type>
+                    <type>IngameChatInput</type>
+                    <type>IngameChatButton</type>
+                </container>
             </object-type>
             <object-type name="MyUsernameText" sid="1133383186947097">
                 <plugin id="Text" />
@@ -188,7 +203,7 @@
             </object-type>
         </object-folder>
         <object-folder expanded="1" name="animation test">
-            <object-type name="Archer" sid="148784455541471">
+            <object-type name="Player" sid="148784455541471">
                 <plugin id="Sprite" />
                 <instance-variables>
                     <instance-variable name="TurnRight" sid="5446300573399562" type="boolean" />
