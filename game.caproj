@@ -325,7 +325,7 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="9" loop="0" name="walkright" pingpong="0" repeatcount="1" repeatto="0" sid="6330027423329727" speed="10">
-                    <frame duration="1" hotspotX="0.510989" hotspotY="0.502222" original-source="C:\Users\LarsTore\Google Drive\Cooperation Tech - Group 8\Images\Sprites\archer\0.png">
+                    <frame duration="1" hotspotX="0.510989" hotspotY="0.502222" original-source="C:\Users\Lars Tore\Desktop\Images\Sprites\archer\0.png">
                         <collision-poly>
                             <point x="0.346154" y="0.28" />
                             <point x="0.5" y="0.0844444" />
@@ -336,7 +336,7 @@
                             <point x="0.285714" y="0.497778" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\LarsTore\Google Drive\Cooperation Tech - Group 8\Images\Sprites\archer\1.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\Lars Tore\Desktop\Images\Sprites\archer\1.png">
                         <collision-poly>
                             <point x="0.39011" y="0.315556" />
                             <point x="0.5" y="0.0977778" />
@@ -347,7 +347,7 @@
                             <point x="0.0824176" y="0.497778" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\LarsTore\Google Drive\Cooperation Tech - Group 8\Images\Sprites\archer\2.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\Lars Tore\Desktop\Images\Sprites\archer\2.png">
                         <collision-poly>
                             <point x="0.32967" y="0.266667" />
                             <point x="0.5" y="0.0222222" />
@@ -358,7 +358,7 @@
                             <point x="0.351648" y="0.715556" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\LarsTore\Google Drive\Cooperation Tech - Group 8\Images\Sprites\archer\3.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\Lars Tore\Desktop\Images\Sprites\archer\3.png">
                         <collision-poly>
                             <point x="0.296703" y="0.24" />
                             <point x="0.5" y="0.0711111" />
@@ -370,7 +370,7 @@
                             <point x="0.351648" y="0.497778" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\LarsTore\Google Drive\Cooperation Tech - Group 8\Images\Sprites\archer\4.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\Lars Tore\Desktop\Images\Sprites\archer\4.png">
                         <collision-poly>
                             <point x="0.379121" y="0.306667" />
                             <point x="0.5" y="0.0844444" />
@@ -381,7 +381,7 @@
                             <point x="0.395604" y="0.497778" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\LarsTore\Google Drive\Cooperation Tech - Group 8\Images\Sprites\archer\5.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\Lars Tore\Desktop\Images\Sprites\archer\5.png">
                         <collision-poly>
                             <point x="0.395604" y="0.32" />
                             <point x="0.5" y="0.124444" />
@@ -392,7 +392,7 @@
                             <point x="0.236264" y="0.497778" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\LarsTore\Google Drive\Cooperation Tech - Group 8\Images\Sprites\archer\6.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\Lars Tore\Desktop\Images\Sprites\archer\6.png">
                         <collision-poly>
                             <point x="0.395604" y="0.32" />
                             <point x="0.5" y="0.0977778" />
@@ -404,7 +404,7 @@
                             <point x="0.032967" y="0.497778" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\LarsTore\Google Drive\Cooperation Tech - Group 8\Images\Sprites\archer\7.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\Lars Tore\Desktop\Images\Sprites\archer\7.png">
                         <collision-poly>
                             <point x="0.412088" y="0.333333" />
                             <point x="0.5" y="0.111111" />
@@ -416,7 +416,7 @@
                             <point x="0.032967" y="0.497778" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\LarsTore\Google Drive\Cooperation Tech - Group 8\Images\Sprites\archer\8.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\Lars Tore\Desktop\Images\Sprites\archer\8.png">
                         <collision-poly>
                             <point x="0.412088" y="0.333333" />
                             <point x="0.5" y="0.128889" />
@@ -725,6 +725,25 @@
         </object-type>
         <object-type name="OtherUsernameText" sid="2771699921853602">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="Shield" sid="1957431222563561">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6740002168509846" speed="5">
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.5" original-source="C:\Users\Lars Tore\Desktop\Images\Sprites\shield\shield.png">
+                        <collision-poly>
+                            <point x="0.185185" y="0.138889" />
+                            <point x="0.481481" y="0.138889" />
+                            <point x="0.925926" y="0.0555556" />
+                            <point x="0.962963" y="0.5" />
+                            <point x="0.777778" y="0.833333" />
+                            <point x="0.481481" y="0.944444" />
+                            <point x="0.296296" y="0.777778" />
+                            <point x="0.0740741" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
