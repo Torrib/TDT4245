@@ -49,13 +49,17 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ArcherBowRight" uid="61">
+                <instance type="Bow" uid="61">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <ArrowDelay>2</ArrowDelay>
+                        <ArrowTimer>0</ArrowTimer>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -128,11 +132,12 @@
                                 <speed>500</speed>
                                 <acceleration>-100</acceleration>
                                 <gravity>200</gravity>
-                                <bounce-off-solids>No</bounce-off-solids>
+                                <bounce-off-solids>Yes</bounce-off-solids>
                                 <set-angle>Yes</set-angle>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="DestroyOutsideLayout" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

@@ -25,6 +25,7 @@
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
@@ -214,7 +215,7 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="animation test">
+        <object-folder expanded="1" name="animation test">
             <object-type name="ArcherAimRight" sid="140344868667587">
                 <plugin id="Sprite" />
                 <animation-folder expanded="1">
@@ -229,26 +230,6 @@
                                 <point x="0.463918" y="0.595331" />
                                 <point x="0.5" y="0.972763" />
                                 <point x="0.226804" y="0.828794" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="ArcherBowRight" sid="4971437854948378">
-                <plugin id="Sprite" />
-                <animation-folder expanded="1">
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2166525129692018" speed="5">
-                        <frame duration="1" hotspotX="0.253968" hotspotY="0.494048" original-source="C:\Users\LarsTore\Google Drive\Cooperation Tech - Group 8\Images\Sprites\bow.png">
-                            <image-point name="Imagepoint 1" x="0.579365" y="0.446429" />
-                            <collision-poly>
-                                <point x="0.253968" y="0.190476" />
-                                <point x="0.5" y="0.0357143" />
-                                <point x="0.785714" y="0.160714" />
-                                <point x="0.825397" y="0.5" />
-                                <point x="0.777778" y="0.833333" />
-                                <point x="0.5" y="0.952381" />
-                                <point x="0.277778" y="0.791667" />
-                                <point x="0.15873" y="0.5" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -288,28 +269,6 @@
                                 <point x="0.785714" y="0.839286" />
                                 <point x="0.5" y="0.964286" />
                                 <point x="0.253968" y="0.809524" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="Arrow" sid="9536439654714399">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Bullet" sid="6737342159785397">
-                        <behavior id="Bullet" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder expanded="1">
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="436035014769263" speed="5">
-                        <frame duration="1" hotspotX="0.504673" hotspotY="0.545455" original-source="C:\Users\LarsTore\Google Drive\Cooperation Tech - Group 8\Images\Sprites\arrow.png">
-                            <collision-poly>
-                                <point x="0.495327" y="0.454545" />
-                                <point x="0.962617" y="0.363636" />
-                                <point x="1" y="0.454545" />
-                                <point x="0.962617" y="0.636364" />
-                                <point x="0.0373832" y="0.636364" />
-                                <point x="0" y="0.454545" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -710,6 +669,55 @@
                             <point x="0.541237" y="0.40856" />
                             <point x="0.5" y="0.937743" />
                             <point x="0.731959" y="0.202335" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Bow" sid="4971437854948378">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="ArrowDelay" sid="785020942111218" type="number" />
+                <instance-variable name="ArrowTimer" sid="5073080468679296" type="number" />
+            </instance-variables>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2166525129692018" speed="5">
+                    <frame duration="1" hotspotX="0.253968" hotspotY="0.494048" original-source="C:\Users\LarsTore\Google Drive\Cooperation Tech - Group 8\Images\Sprites\bow.png">
+                        <image-point name="Imagepoint 1" x="0.579365" y="0.446429" />
+                        <collision-poly>
+                            <point x="0.253968" y="0.190476" />
+                            <point x="0.5" y="0.0357143" />
+                            <point x="0.785714" y="0.160714" />
+                            <point x="0.825397" y="0.5" />
+                            <point x="0.777778" y="0.833333" />
+                            <point x="0.5" y="0.952381" />
+                            <point x="0.277778" y="0.791667" />
+                            <point x="0.15873" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Arrow" sid="9536439654714399">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="6737342159785397">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="7853873032971583">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="436035014769263" speed="5">
+                    <frame duration="1" hotspotX="0.504673" hotspotY="0.545455" original-source="C:\Users\LarsTore\Google Drive\Cooperation Tech - Group 8\Images\Sprites\arrow.png">
+                        <collision-poly>
+                            <point x="0.495327" y="0.454545" />
+                            <point x="0.962617" y="0.363636" />
+                            <point x="1" y="0.454545" />
+                            <point x="0.962617" y="0.636364" />
+                            <point x="0.0373832" y="0.636364" />
+                            <point x="0" y="0.454545" />
                         </collision-poly>
                     </frame>
                 </animation>

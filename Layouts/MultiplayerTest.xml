@@ -271,6 +271,32 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Bow" uid="26">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <ArrowDelay>2</ArrowDelay>
+                        <ArrowTimer>0</ArrowTimer>
+                    </instance-variables>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-49</x>
+                        <y>327</y>
+                        <z>0</z>
+                        <width>45</width>
+                        <height>59.598999023</height>
+                        <depth>0</depth>
+                        <hotspotX>0.253968269</hotspotX>
+                        <hotspotY>0.494047612</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>

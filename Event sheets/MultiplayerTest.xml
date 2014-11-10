@@ -61,6 +61,12 @@
                             <param id="1" name="Precision">2</param>
                             <param id="2" name="Interpolation">0</param>
                         </action>
+                        <action id="11" name="Sync object" sid="3217018530209397" type="Multiplayer">
+                            <param id="0" name="Object">Bow</param>
+                            <param id="1" name="Data">3</param>
+                            <param id="2" name="Precision">1</param>
+                            <param id="3" name="Bandwidth">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="3784300953611292">
@@ -434,6 +440,45 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="5873760684232843">
+                                    <conditions>
+                                        <condition id="-1" name="Every tick" sid="48142092177776" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-4" name="Set position to another object" sid="3554475447838945" type="Bow">
+                                            <param id="0" name="Object">Archer</param>
+                                            <param id="1" name="Image point (optional)">30</param>
+                                        </action>
+                                        <action id="-22" name="Set angle toward position" sid="5872776881931832" type="Bow">
+                                            <param id="0" name="X">Mouse.X</param>
+                                            <param id="1" name="Y">Mouse.Y</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="9044818210892586">
+                                    <conditions>
+                                        <condition id="0" name="On click" sid="9242657475826165" type="Mouse">
+                                            <param id="0" name="Mouse button">0</param>
+                                            <param id="1" name="Click type">0</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="1927033257802519" type="Bow">
+                                            <param id="0" name="Instance variable">ArrowTimer</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="8288625164392483" type="Bow">
+                                            <param id="0" name="Object">Arrow</param>
+                                            <param id="1" name="Layer">0</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="1863573864381968" type="Bow">
+                                            <param id="0" name="Instance variable">ArrowTimer</param>
+                                            <param id="1" name="Value">Bow.ArrowDelay</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-block>
                         <event-block sid="8436031249746423">
@@ -535,6 +580,19 @@
                 </action>
                 <action id="0" name="Set text" sid="1852539163347535" type="UsernameText">
                     <param id="0" name="Text">Multiplayer.PeerAliasFromID(Archer.peerid)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5458520064897371">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="4012121311123042" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Subtract from" sid="876802370832149" type="Bow">
+                    <param id="0" name="Instance variable">ArrowTimer</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>

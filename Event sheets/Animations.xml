@@ -94,11 +94,11 @@
                             <param id="2" name="Image point">1</param>
                         </action>
                         <action id="0" name="Spawn another object" sid="3459836918246581" type="ArcherAimRight">
-                            <param id="0" name="Object">ArcherBowRight</param>
+                            <param id="0" name="Object">Bow</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="Image point">1</param>
                         </action>
-                        <action id="-25" name="Move to bottom" sid="6743915108546644" type="ArcherBowRight" />
+                        <action id="-25" name="Move to bottom" sid="6743915108546644" type="Bow" />
                     </actions>
                 </event-block>
                 <event-block sid="1393909563457877">
@@ -136,7 +136,7 @@
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="1654319573908588" type="ArcherAimRight" />
-                        <action id="-9" name="Destroy" sid="6270199629054799" type="ArcherBowRight" />
+                        <action id="-9" name="Destroy" sid="6270199629054799" type="Bow" />
                         <action id="-9" name="Destroy" sid="6402912349512064" type="ArcherAimLeft" />
                         <action id="-9" name="Destroy" sid="2173636810026868" type="ArcherBowLeft" />
                     </actions>
@@ -152,7 +152,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Spawn another object" sid="6538479020418393" type="ArcherBowRight">
+                        <action id="0" name="Spawn another object" sid="6538479020418393" type="Bow">
                             <param id="0" name="Object">Arrow</param>
                             <param id="1" name="Layer">0</param>
                             <param id="2" name="Image point">1</param>
@@ -193,7 +193,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-22" name="Set angle toward position" sid="2938620371840935" type="ArcherBowRight">
+                        <action id="-22" name="Set angle toward position" sid="2938620371840935" type="Bow">
                             <param id="0" name="X">Mouse.X</param>
                             <param id="1" name="Y">Mouse.Y</param>
                         </action>
@@ -211,16 +211,16 @@
                         <condition id="-8" name="Compare two values" sid="4825189944068606" type="System">
                             <param id="0" name="First value">Mouse.X</param>
                             <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Second value">ArcherBowRight.X</param>
+                            <param id="2" name="Second value">Bow.X</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="6375953347723264" type="System">
                             <param id="0" name="First value">Mouse.Y</param>
                             <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Second value">ArcherBowRight.Y</param>
+                            <param id="2" name="Second value">Bow.Y</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-8" name="Set angle" sid="6208465209796283" type="ArcherBowRight">
+                        <action id="-8" name="Set angle" sid="6208465209796283" type="Bow">
                             <param id="0" name="Angle">90</param>
                         </action>
                     </actions>
@@ -237,16 +237,16 @@
                         <condition id="-8" name="Compare two values" sid="2464397565068907" type="System">
                             <param id="0" name="First value">Mouse.X</param>
                             <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Second value">ArcherBowRight.X</param>
+                            <param id="2" name="Second value">Bow.X</param>
                         </condition>
                         <condition id="-8" name="Compare two values" sid="4485593641431061" type="System">
                             <param id="0" name="First value">Mouse.Y</param>
                             <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Second value">ArcherBowRight.Y</param>
+                            <param id="2" name="Second value">Bow.Y</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-8" name="Set angle" sid="7809735392427222" type="ArcherBowRight">
+                        <action id="-8" name="Set angle" sid="7809735392427222" type="Bow">
                             <param id="0" name="Angle">-90</param>
                         </action>
                     </actions>
@@ -467,6 +467,14 @@
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="7595868787617295">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="5709989028476252" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions />
         </event-block>
     </events>
 </c2eventsheet>
