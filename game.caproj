@@ -999,23 +999,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sword" sid="5198985855559021">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8075500425378139" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.500838" original-source="D:\Dropbox\Skole\Trondheim\Master\Samhandlingsteknologi\wr97endk23d\Sprites\Jungle Platformer\Tiles\knife.png">
-                        <collision-poly>
-                            <point x="0.5" y="0.390285" />
-                            <point x="1" y="0" />
-                            <point x="0.641844" y="0.499162" />
-                            <point x="0.5" y="0.634841" />
-                            <point x="0.0656028" y="0.938023" />
-                            <point x="0.402482" y="0.499162" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Sprite3" sid="5083328310987035">
             <plugin id="Sprite" />
             <behaviors>
