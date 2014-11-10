@@ -2,18 +2,5 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 2</name>
-    <events>
-        <event-block sid="6819893363393578">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="1860089669300096" type="TestPlayer">
-                    <param id="0" name="Object">lever</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="7" name="Set mirrored" sid="9438014110373222" type="lever">
-                    <param id="0" name="State">0</param>
-                </action>
-            </actions>
-        </event-block>
-    </events>
+    <events />
 </c2eventsheet>
