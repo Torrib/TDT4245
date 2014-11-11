@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Sound</name>
+    <events>
+        <event-block sid="262929336295956">
+            <conditions>
+                <condition id="-18" name="On created" sid="6638014796229789" type="Ping" />
+                <condition id="5" inverted="1" name="Is tag playing" sid="2907831221589195" type="Audio">
+                    <param id="0" name="Tag">&quot;ping&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="37199137864881" type="Audio">
+                    <param id="0" name="Audio file">ping</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;ping&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4177339561584676">
+            <conditions>
+                <condition id="-18" name="On created" sid="5859397732310629" type="Arrow" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="3200214452586509" type="Audio">
+                    <param id="0" name="Audio file">arrow_fired</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;arrow_fired&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4387820296407931">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="5902849649347911" type="Arrow" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="2179497992808803" type="Audio">
+                    <param id="0" name="Audio file">arrow_impact</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;arrow_impact&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -10,6 +10,7 @@
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>17800</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
@@ -764,6 +765,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Audio" sid="1446354950444193">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
@@ -789,6 +793,7 @@
             <event-sheet>IngameChat.xml</event-sheet>
             <event-sheet>Game.xml</event-sheet>
             <event-sheet>Animations.xml</event-sheet>
+            <event-sheet>Sound.xml</event-sheet>
         </event-folder>
         <event-sheet>Event sheet 2.xml</event-sheet>
     </event-folder>
@@ -797,8 +802,31 @@
         <global-instance type="Multiplayer" uid="18" />
         <global-instance type="Keyboard" uid="51" />
         <global-instance type="Function" uid="52" />
+        <global-instance type="Audio" uid="21">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+                <speed-of-sound>5000</speed-of-sound>
+                <doppler-factor>1</doppler-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder expanded="1" />
+    <sounds-folder expanded="1">
+        <file name="ping.m4a" />
+        <file name="ping.ogg" />
+        <file name="arrow_fired.m4a" />
+        <file name="arrow_fired.ogg" />
+        <file name="arrow_bauncing.m4a" />
+        <file name="arrow_impact.m4a" />
+        <file name="arrow_impact.ogg" />
+    </sounds-folder>
     <music-folder expanded="1" />
     <files-folder expanded="0">
         <file-folder expanded="1" name="Icons">
