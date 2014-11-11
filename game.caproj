@@ -206,107 +206,107 @@
                 </behaviors>
                 <animation-folder expanded="1">
                     <animation framecount="9" loop="0" name="walk" pingpong="0" repeatcount="1" repeatto="0" sid="6330027423329727" speed="10">
-                        <frame duration="1" hotspotX="0.510989" hotspotY="0.502222" original-source="C:\Users\thb\Downloads\Sprites-2014-11-10\Sprites\archer\0.png">
+                        <frame duration="1" hotspotX="0.693333" hotspotY="0.361991" original-source="C:\Users\thb\Downloads\Sprites-2014-11-10\Sprites\archer\0.png">
                             <collision-poly>
-                                <point x="0.346154" y="0.28" />
-                                <point x="0.5" y="0.0844444" />
-                                <point x="0.631868" y="0.497778" />
-                                <point x="0.653846" y="0.72" />
-                                <point x="0.681319" y="1" />
-                                <point x="0.291208" y="0.999999" />
-                                <point x="0.412088" y="0.728889" />
+                                <point x="0.146667" y="0.262443" />
+                                <point x="0.52" y="0.0633484" />
+                                <point x="0.84" y="0.484163" />
+                                <point x="0.893333" y="0.710407" />
+                                <point x="0.960002" y="0.995475" />
+                                <point x="0.0133324" y="0.995474" />
+                                <point x="0.306666" y="0.719457" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\thb\Downloads\Sprites-2014-11-10\Sprites\archer\1.png">
+                        <frame duration="1" hotspotX="0.766355" hotspotY="0.339207" original-source="C:\Users\thb\Downloads\Sprites-2014-11-10\Sprites\archer\1.png">
                             <collision-poly>
-                                <point x="0.39011" y="0.315556" />
-                                <point x="0.565934" y="0.0133334" />
-                                <point x="0.620879" y="0.306667" />
-                                <point x="0.736263" y="1" />
-                                <point x="0.532966" y="1" />
-                                <point x="0.214286" y="0.96" />
-                                <point x="0.164835" y="0.497778" />
+                                <point x="0.392523" y="0.317181" />
+                                <point x="0.691589" y="0.0176212" />
+                                <point x="0.785047" y="0.30837" />
+                                <point x="0.981307" y="0.995595" />
+                                <point x="0.635513" y="0.995595" />
+                                <point x="0.0934576" y="0.955947" />
+                                <point x="0.00934583" y="0.497798" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\thb\Downloads\Sprites-2014-11-10\Sprites\archer\2.png">
+                        <frame duration="1" hotspotX="0.662651" hotspotY="0.355556" original-source="C:\Users\thb\Downloads\Sprites-2014-11-10\Sprites\archer\2.png">
                             <collision-poly>
-                                <point x="0.32967" y="0.266667" />
-                                <point x="0.5" y="0.0222222" />
-                                <point x="0.587912" y="0.333333" />
-                                <point x="0.774725" y="0.497778" />
-                                <point x="0.708791" y="0.995555" />
-                                <point x="0.302198" y="1" />
-                                <point x="0.351648" y="0.715556" />
+                                <point x="0.0722885" y="0.262223" />
+                                <point x="0.445783" y="0.0177778" />
+                                <point x="0.638554" y="0.328889" />
+                                <point x="1" y="0.493334" />
+                                <point x="0.903614" y="0.991111" />
+                                <point x="0.0120482" y="0.995556" />
+                                <point x="0.120481" y="0.711112" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\thb\Downloads\Sprites-2014-11-10\Sprites\archer\3.png">
+                        <frame duration="1" hotspotX="0.581081" hotspotY="0.333333" original-source="C:\Users\thb\Downloads\Sprites-2014-11-10\Sprites\archer\3.png">
                             <collision-poly>
-                                <point x="0.296703" y="0.24" />
-                                <point x="0.5" y="0.0711111" />
-                                <point x="0.769231" y="0.186667" />
-                                <point x="0.758242" y="0.497778" />
-                                <point x="0.631867" y="0.995555" />
-                                <point x="0.516484" y="1" />
-                                <point x="0.401099" y="0.751112" />
-                                <point x="0.351648" y="0.497778" />
+                                <point x="0.236486" y="0.225225" />
+                                <point x="0.486486" y="0.054054" />
+                                <point x="0.817568" y="0.171172" />
+                                <point x="0.804054" y="0.486487" />
+                                <point x="0.648647" y="0.99099" />
+                                <point x="0.506757" y="0.995495" />
+                                <point x="0.364865" y="0.743244" />
+                                <point x="0.304054" y="0.486487" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\thb\Downloads\Sprites-2014-11-10\Sprites\archer\4.png">
+                        <frame duration="1" hotspotX="0.727941" hotspotY="0.32" original-source="C:\Users\thb\Downloads\Sprites-2014-11-10\Sprites\archer\4.png">
                             <collision-poly>
-                                <point x="0.379121" y="0.306667" />
-                                <point x="0.5" y="0.0844444" />
-                                <point x="0.78022" y="0.177778" />
-                                <point x="0.763736" y="0.497778" />
-                                <point x="0.824177" y="1" />
-                                <point x="0.450549" y="0.995555" />
-                                <point x="0.395604" y="0.497778" />
+                                <point x="0.404412" y="0.302223" />
+                                <point x="0.566176" y="0.08" />
+                                <point x="0.941177" y="0.173334" />
+                                <point x="0.919117" y="0.493334" />
+                                <point x="1" y="0.995556" />
+                                <point x="0.5" y="0.991111" />
+                                <point x="0.42647" y="0.493334" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\thb\Downloads\Sprites-2014-11-10\Sprites\archer\5.png">
+                        <frame duration="1" hotspotX="0.786408" hotspotY="0.343612" original-source="C:\Users\thb\Downloads\Sprites-2014-11-10\Sprites\archer\5.png">
                             <collision-poly>
-                                <point x="0.395604" y="0.32" />
-                                <point x="0.5" y="0.124444" />
-                                <point x="0.631868" y="0.297778" />
-                                <point x="0.868132" y="0.497778" />
-                                <point x="0.741759" y="0.995556" />
-                                <point x="0.214286" y="0.995555" />
-                                <point x="0.236264" y="0.497778" />
+                                <point x="0.388349" y="0.321586" />
+                                <point x="0.572816" y="0.127753" />
+                                <point x="0.805825" y="0.29956" />
+                                <point x="1" y="0.497798" />
+                                <point x="1" y="0.991189" />
+                                <point x="0.0679608" y="0.991189" />
+                                <point x="0.106797" y="0.497798" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\thb\Downloads\Sprites-2014-11-10\Sprites\archer\6.png">
+                        <frame duration="1" hotspotX="0.604651" hotspotY="0.357143" original-source="C:\Users\thb\Downloads\Sprites-2014-11-10\Sprites\archer\6.png">
                             <collision-poly>
-                                <point x="0.395604" y="0.32" />
-                                <point x="0.5" y="0.0977778" />
-                                <point x="0.620879" y="0.306667" />
-                                <point x="0.857143" y="0.497778" />
-                                <point x="0.747253" y="0.982222" />
-                                <point x="0.340659" y="1" />
-                                <point x="0.450549" y="0.635556" />
-                                <point x="0.362637" y="0.48" />
+                                <point x="0.116278" y="0.3125" />
+                                <point x="0.337209" y="0.0892857" />
+                                <point x="0.593023" y="0.299107" />
+                                <point x="1" y="0.491072" />
+                                <point x="0.860466" y="0.977678" />
+                                <point x="0" y="0.995536" />
+                                <point x="0.232557" y="0.629465" />
+                                <point x="0.0465115" y="0.473214" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\thb\Downloads\Sprites-2014-11-10\Sprites\archer\7.png">
+                        <frame duration="1" hotspotX="0.589404" hotspotY="0.351351" original-source="C:\Users\thb\Downloads\Sprites-2014-11-10\Sprites\archer\7.png">
                             <collision-poly>
-                                <point x="0.412088" y="0.333333" />
-                                <point x="0.5" y="0.111111" />
-                                <point x="0.626374" y="0.302222" />
-                                <point x="0.67033" y="0.497778" />
-                                <point x="0.81868" y="1" />
-                                <point x="0.197802" y="1" />
-                                <point x="0.43956" y="0.644444" />
-                                <point x="0.362637" y="0.484445" />
+                                <point x="0.284768" y="0.319819" />
+                                <point x="0.390728" y="0.0945945" />
+                                <point x="0.543047" y="0.288288" />
+                                <point x="0.596027" y="0.486487" />
+                                <point x="0.774833" y="0.995495" />
+                                <point x="0.0264901" y="0.995495" />
+                                <point x="0.31788" y="0.635135" />
+                                <point x="0.225166" y="0.472973" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.502222" original-source="C:\Users\thb\Downloads\Sprites-2014-11-10\Sprites\archer\8.png">
+                        <frame duration="1" hotspotX="0.717391" hotspotY="0.352679" original-source="C:\Users\thb\Downloads\Sprites-2014-11-10\Sprites\archer\8.png">
                             <collision-poly>
-                                <point x="0.412088" y="0.333333" />
-                                <point x="0.5" y="0.128889" />
-                                <point x="0.631868" y="0.297778" />
-                                <point x="0.664835" y="0.506667" />
-                                <point x="0.851649" y="1" />
-                                <point x="0.593407" y="0.991111" />
-                                <point x="0.434066" y="0.737778" />
-                                <point x="0.395604" y="0.488889" />
+                                <point x="0.434783" y="0.325893" />
+                                <point x="0.550725" y="0.120536" />
+                                <point x="0.724638" y="0.290179" />
+                                <point x="0.768115" y="0.5" />
+                                <point x="1" y="0.995536" />
+                                <point x="0.673914" y="0.986607" />
+                                <point x="0.463768" y="0.732143" />
+                                <point x="0.413044" y="0.482143" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -369,15 +369,15 @@
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="default" pingpong="0" repeatcount="1" repeatto="0" sid="6600602298729806" speed="5">
-                        <frame duration="1" hotspotX="0.417526" hotspotY="0.350195" original-source="C:\Users\LarsTore\Google Drive\Cooperation Tech - Group 8\Images\Sprites\aim.png">
+                        <frame duration="1" hotspotX="0.71134" hotspotY="0.364444" original-source="C:\Users\LarsTore\Google Drive\Cooperation Tech - Group 8\Images\Sprites\aim.png">
                             <collision-poly>
-                                <point x="0.283505" y="0.712063" />
-                                <point x="0.257732" y="0.287938" />
-                                <point x="0.335052" y="0.140078" />
-                                <point x="0.463918" y="0.498054" />
-                                <point x="0.463918" y="0.595331" />
-                                <point x="0.5" y="0.972763" />
-                                <point x="0.175258" y="0.976654" />
+                                <point x="0.453608" y="0.693334" />
+                                <point x="0.402062" y="0.208889" />
+                                <point x="0.556701" y="0.0399996" />
+                                <point x="0.814434" y="0.448888" />
+                                <point x="0.814434" y="0.56" />
+                                <point x="0.886598" y="0.991112" />
+                                <point x="0.237113" y="0.995556" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -740,10 +740,34 @@
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\thb\Downloads\menu_background_new_002.png" />
         </object-type>
+        <object-type name="Shield" sid="6331601630207675">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9651703824019363">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1290562989576375" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.333333" original-source="C:\Users\thb\Downloads\shield.png">
+                        <collision-poly>
+                            <point x="0.768518" y="0.177083" />
+                            <point x="0.708333" y="0.0104167" />
+                            <point x="0.912037" y="0" />
+                            <point x="0.962963" y="0.5" />
+                            <point x="0.791667" y="0.857639" />
+                            <point x="0.546296" y="0.986111" />
+                            <point x="0.666667" y="0.763889" />
+                            <point x="0.787037" y="0.4375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
-        <layout-folder expanded="1" name="menu">
+        <layout-folder expanded="0" name="menu">
             <layout>Login.xml</layout>
             <layout>Main.xml</layout>
             <layout>GameLobby.xml</layout>

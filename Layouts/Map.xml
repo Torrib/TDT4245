@@ -10227,11 +10227,11 @@
                         <x>361</x>
                         <y>613</y>
                         <z>0</z>
-                        <width>89.67653656</width>
-                        <height>118.798294067</height>
+                        <width>44.83826828</width>
+                        <height>104.006286621</height>
                         <depth>0</depth>
-                        <hotspotX>0.417525768</hotspotX>
-                        <hotspotY>0.350194544</hotspotY>
+                        <hotspotX>0.711340189</hotspotX>
+                        <hotspotY>0.364444435</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -10258,7 +10258,7 @@
                         <depth>0</depth>
                         <hotspotX>0.253968269</hotspotX>
                         <hotspotY>0.494047612</hotspotY>
-                        <angle>0</angle>
+                        <angle>0.047635715</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -10272,12 +10272,12 @@
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
-                                <speed>800</speed>
-                                <acceleration>-100</acceleration>
-                                <gravity>400</gravity>
+                                <speed>600</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>200</gravity>
                                 <bounce-off-solids>No</bounce-off-solids>
                                 <set-angle>Yes</set-angle>
-                                <initial-state>Disabled</initial-state>
+                                <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="DestroyOutsideLayout" />
@@ -10285,8 +10285,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-38</x>
-                        <y>460</y>
+                        <x>-53</x>
+                        <y>703</y>
                         <z>0</z>
                         <width>43.807723999</width>
                         <height>4.503597736</height>
@@ -10390,6 +10390,35 @@
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Shield" uid="20">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-49</x>
+                        <y>584</y>
+                        <z>0</z>
+                        <width>54.744861603</width>
+                        <height>72.993148804</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.333333343</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

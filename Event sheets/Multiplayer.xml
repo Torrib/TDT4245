@@ -70,6 +70,12 @@
                             <param id="2" name="Precision">1</param>
                             <param id="3" name="Bandwidth">0</param>
                         </action>
+                        <action id="11" name="Sync object" sid="7355147374531997" type="Multiplayer">
+                            <param id="0" name="Object">Shield</param>
+                            <param id="1" name="Data">3</param>
+                            <param id="2" name="Precision">2</param>
+                            <param id="3" name="Bandwidth">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="3784300953611292">
@@ -450,7 +456,7 @@
                                     <actions>
                                         <action id="-4" name="Set position to another object" sid="3554475447838945" type="Bow">
                                             <param id="0" name="Object">Player</param>
-                                            <param id="1" name="Image point (optional)">30</param>
+                                            <param id="1" name="Image point (optional)">0</param>
                                         </action>
                                         <action id="-22" name="Set angle toward position" sid="5872776881931832" type="Bow">
                                             <param id="0" name="X">Mouse.X</param>
@@ -566,13 +572,28 @@
                                         </action>
                                     </actions>
                                 </event-block>
+                                <event-block sid="2245233697071419">
+                                    <conditions>
+                                        <condition id="-1" name="Every tick" sid="9759795670392595" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-4" name="Set position to another object" sid="4348926425181523" type="Shield">
+                                            <param id="0" name="Object">Player</param>
+                                            <param id="1" name="Image point (optional)">0</param>
+                                        </action>
+                                        <action id="-22" name="Set angle toward position" sid="4934684720687463" type="Shield">
+                                            <param id="0" name="X">Player.mousex</param>
+                                            <param id="1" name="Y">Player.mousey</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
                             </sub-events>
                         </event-block>
                     </sub-events>
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" sid="1790471388092763" title="ArrowHandling">
+        <event-group description="" sid="1790471388092763" title="ArrowHandling">
             <sub-events>
                 <event-block sid="8568100983503464">
                     <conditions>
