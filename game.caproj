@@ -251,7 +251,7 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="howtoplay">
+        <object-folder expanded="1" name="howtoplay">
             <object-type name="nextpage1" sid="1956522532230609">
                 <plugin id="Button" />
             </object-type>
@@ -260,14 +260,6 @@
                 <animation-folder expanded="1">
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4244240078225169" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\ad-keys.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
-            <object-type name="mousepointer" sid="4691381887712607">
-                <plugin id="Sprite" />
-                <animation-folder expanded="1">
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1228384697343966" speed="5">
-                        <frame duration="1" hotspotX="0.506024" hotspotY="0.5" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\mousepointer.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -304,14 +296,6 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="wkeys2" sid="5411010161781603">
-                <plugin id="Sprite" />
-                <animation-folder expanded="1">
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4774769431661275" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.517241" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\w-keys.png" />
-                    </animation>
-                </animation-folder>
-            </object-type>
             <object-type name="wkeys" sid="616917221982458">
                 <plugin id="Sprite" />
                 <animation-folder expanded="1">
@@ -319,6 +303,9 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="0.517241" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\w-keys.png" />
                     </animation>
                 </animation-folder>
+            </object-type>
+            <object-type name="PreviousSide1" sid="8508558397372695">
+                <plugin id="Button" />
             </object-type>
         </object-folder>
         <object-folder expanded="0" name="about">
@@ -356,9 +343,6 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="PreviousSide1" sid="8508558397372695">
-                <plugin id="Button" />
-            </object-type>
             <object-type name="leftClick" sid="9654769022684861">
                 <plugin id="Sprite" />
                 <animation-folder expanded="1">
@@ -383,6 +367,9 @@
         <object-type name="TiledBackground2" sid="651347329426731">
             <plugin id="TiledBg" />
             <texture />
+        </object-type>
+        <object-type name="Text7" sid="6609096292432485">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
@@ -414,7 +401,7 @@
             <event-sheet>IngameChat.xml</event-sheet>
         </event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>HowToplay2.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="2" />
