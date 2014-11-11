@@ -74,7 +74,7 @@
                             <param id="0" name="Object">Shield</param>
                             <param id="1" name="Data">3</param>
                             <param id="2" name="Precision">2</param>
-                            <param id="3" name="Bandwidth">1</param>
+                            <param id="3" name="Bandwidth">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -152,6 +152,9 @@
                                     <actions>
                                         <action id="16" name="Enable local input prediction" sid="4549125137089755" type="Multiplayer">
                                             <param id="0" name="Object">Player</param>
+                                        </action>
+                                        <action disabled="1" id="16" name="Enable local input prediction" sid="621319306319463" type="Multiplayer">
+                                            <param id="0" name="Object">Shield</param>
                                         </action>
                                     </actions>
                                 </event-block>

@@ -25,9 +25,11 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects />
@@ -747,8 +749,11 @@
         <object-type name="Shield" sid="6331601630207675">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Solid" sid="9651703824019363">
-                    <behavior id="solid" />
+                <behavior-type name="Jumpthru" sid="8050335226399706">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="4981889081139907">
+                    <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
@@ -771,13 +776,13 @@
     </object-folder>
     <families />
     <layout-folder expanded="1">
-        <layout-folder expanded="0" name="menu">
+        <layout-folder expanded="1" name="menu">
             <layout>Login.xml</layout>
             <layout>Main.xml</layout>
             <layout>GameLobby.xml</layout>
             <layout>UserCreation.xml</layout>
         </layout-folder>
-        <layout-folder expanded="0" name="game">
+        <layout-folder expanded="1" name="game">
             <layout>Map.xml</layout>
         </layout-folder>
     </layout-folder>
@@ -788,7 +793,7 @@
             <event-sheet>Main.xml</event-sheet>
             <event-sheet>UserCreation.xml</event-sheet>
         </event-folder>
-        <event-folder expanded="0" name="game">
+        <event-folder expanded="1" name="game">
             <event-sheet>Multiplayer.xml</event-sheet>
             <event-sheet>IngameChat.xml</event-sheet>
             <event-sheet>Game.xml</event-sheet>
