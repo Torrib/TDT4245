@@ -231,7 +231,7 @@
                 <instance type="Archer" uid="56">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>defaultright</initial-animation>
+                        <initial-animation>default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -259,14 +259,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>249</x>
-                        <y>340</y>
+                        <x>245</x>
+                        <y>320</y>
                         <z>0</z>
-                        <width>84.12953186</width>
+                        <width>42.527015686</width>
                         <height>104.006286621</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.50222224</hotspotY>
+                        <hotspotX>0.706521749</hotspotX>
+                        <hotspotY>0.280000001</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -293,6 +293,36 @@
                         <depth>0</depth>
                         <hotspotX>0.253968269</hotspotX>
                         <hotspotY>0.494047612</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Shield" uid="58">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>246.56350708</x>
+                        <y>321.273529053</y>
+                        <z>0</z>
+                        <width>32.57641983</width>
+                        <height>43.43522644</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.333333343</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

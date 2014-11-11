@@ -640,5 +640,16 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="7027540722909618">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4147850493442813" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="4703939504551866" type="Shield">
+                    <param id="0" name="Pin to">Archer</param>
+                    <param id="1" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
