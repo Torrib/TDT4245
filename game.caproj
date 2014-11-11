@@ -51,7 +51,7 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder expanded="1">
-        <object-folder expanded="1" name="login">
+        <object-folder expanded="0" name="login">
             <object-type name="LoginBtn" sid="4538300239727753">
                 <plugin id="Button" />
             </object-type>
@@ -71,7 +71,7 @@
                 <plugin id="TextBox" />
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="main">
+        <object-folder expanded="0" name="main">
             <object-type name="LobbyTitle" sid="3020015787999585">
                 <plugin id="Text" />
             </object-type>
@@ -134,7 +134,7 @@
                 <plugin id="Multiplayer" />
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="multiplayer test">
+        <object-folder expanded="0" name="multiplayer test">
             <object-type name="Player" sid="68388623007841">
                 <plugin id="Sprite" />
                 <instance-variables>
@@ -222,7 +222,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="user creation">
+        <object-folder expanded="0" name="user creation">
             <object-type name="ConfirmPasswordField" sid="8951545958808912">
                 <plugin id="TextBox" />
             </object-type>
@@ -251,7 +251,7 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="howtoplay">
+        <object-folder expanded="0" name="howtoplay">
             <object-type name="nextpage1" sid="1956522532230609">
                 <plugin id="Button" />
             </object-type>
@@ -356,16 +356,24 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="datamouse" sid="6188203922679395">
+            <object-type name="PreviousSide1" sid="8508558397372695">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="leftClick" sid="9654769022684861">
                 <plugin id="Sprite" />
                 <animation-folder expanded="1">
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1010825400242819" speed="5">
-                        <frame duration="1" hotspotX="0.501124" hotspotY="0.5" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\datamouse.jpg" />
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="283696205997731" speed="5">
+                        <frame duration="1" hotspotX="0.501567" hotspotY="0.500888" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\left click.png" />
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="PreviousSide1" sid="8508558397372695">
-                <plugin id="Button" />
+            <object-type name="rightClick" sid="4799441090166604">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3830482325530814" speed="5">
+                        <frame duration="1" hotspotX="0.501577" hotspotY="0.500901" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\right click.png" />
+                    </animation>
+                </animation-folder>
             </object-type>
         </object-folder>
         <object-type name="TiledBackground" sid="6836145549299733">
