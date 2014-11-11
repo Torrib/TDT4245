@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="1572934328778071">
+            <conditions>
+                <condition id="0" name="On clicked" sid="5915828749309787" type="BackToMenu" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3495705726881471" type="System">
+                    <param id="0" name="Layout">Main</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9271832392236495">
+            <conditions>
+                <condition id="0" name="On clicked" sid="6161511141430641" type="Nextpage" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="4678517848789443" type="System">
+                    <param id="0" name="Layout">HowToPlay2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -24,6 +24,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
@@ -736,6 +737,85 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder expanded="0" name="howToplay">
+            <object-type name="BackToMenu" sid="1987682102265609">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="Nextpage" sid="3800012216328417">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="Tittle" sid="9518210693061976">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="adkeys" sid="1966212028473943">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6055644352483846" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lars Tore\Downloads\ad-keys.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="arrows" sid="7700595242598833">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5549979919779213" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lars Tore\Downloads\arrows.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="upkeys" sid="3199984895062467">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="613234760880086" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.514286" original-source="C:\Users\Lars Tore\Downloads\up-keys.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Text" sid="9904330879388574">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text2" sid="9287568797193518">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="space" sid="105953056181172">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4929040176902021" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lars Tore\Downloads\space.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="wkeys" sid="4514758045610464">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9494371133157483" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.517241" original-source="C:\Users\Lars Tore\Downloads\w-keys.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Text3" sid="1485490828663965">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+        <object-folder expanded="1" name="howToplay2">
+            <object-type name="previouspage" sid="1024423136855202">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="toMenu" sid="37457960777692">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="leftClick" sid="6997165617738463">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2758067059436178" speed="5">
+                        <frame duration="1" hotspotX="0.501567" hotspotY="0.500888" original-source="C:\Users\Lars Tore\Downloads\left click.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Text4" sid="9308115942960993">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
         <object-type name="TiledBackground" sid="6836145549299733">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\thb\Downloads\menu_background_new_002.png" />
@@ -745,6 +825,9 @@
             <behaviors>
                 <behavior-type name="Solid" sid="9651703824019363">
                     <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="3801693728641677">
+                    <behavior id="Pin" />
                 </behavior-type>
             </behaviors>
             <animation-folder expanded="1">
@@ -764,6 +847,31 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Text5" sid="2620813198553226">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="enter" sid="1346982421860468">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6652445787553441" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lars Tore\Downloads\enter.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text6" sid="6673989783381872">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="rightClick" sid="2470379843059834">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410643739140562" speed="5">
+                    <frame duration="1" hotspotX="0.501577" hotspotY="0.500901" original-source="C:\Users\Lars Tore\Downloads\right click.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text7" sid="5454868427564626">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
@@ -772,12 +880,15 @@
             <layout>Main.xml</layout>
             <layout>GameLobby.xml</layout>
             <layout>UserCreation.xml</layout>
+            <layout>HowToPlay.xml</layout>
+            <layout>HowToPlay2.xml</layout>
+            <layout>About.xml</layout>
         </layout-folder>
         <layout-folder expanded="1" name="game">
             <layout>Map.xml</layout>
         </layout-folder>
     </layout-folder>
-    <event-folder expanded="1">
+    <event-folder expanded="0">
         <event-folder expanded="1" name="menu">
             <event-sheet>GameLobby.xml</event-sheet>
             <event-sheet>Login.xml</event-sheet>
@@ -791,6 +902,9 @@
             <event-sheet>Animations.xml</event-sheet>
         </event-folder>
         <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>Event sheet 4.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="13" />

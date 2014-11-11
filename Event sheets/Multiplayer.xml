@@ -153,6 +153,10 @@
                                         <action id="16" name="Enable local input prediction" sid="4549125137089755" type="Multiplayer">
                                             <param id="0" name="Object">Player</param>
                                         </action>
+                                        <action behavior="Pin" id="0" name="Pin to object" sid="7446190759096119" type="Shield">
+                                            <param id="0" name="Pin to">Player</param>
+                                            <param id="1" name="Mode">1</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -577,10 +581,6 @@
                                         <condition id="-1" name="Every tick" sid="9759795670392595" type="System" />
                                     </conditions>
                                     <actions>
-                                        <action id="-4" name="Set position to another object" sid="4348926425181523" type="Shield">
-                                            <param id="0" name="Object">Player</param>
-                                            <param id="1" name="Image point (optional)">0</param>
-                                        </action>
                                         <action id="-22" name="Set angle toward position" sid="4934684720687463" type="Shield">
                                             <param id="0" name="X">Player.mousex</param>
                                             <param id="1" name="Y">Player.mousey</param>

@@ -10407,15 +10407,16 @@
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
+                        <behavior-instance type="Pin" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-49</x>
-                        <y>584</y>
+                        <x>362.399230957</x>
+                        <y>607.182983398</y>
                         <z>0</z>
-                        <width>54.744861603</width>
-                        <height>72.993148804</height>
+                        <width>44.14257431</width>
+                        <height>58.856765747</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0.333333343</hotspotY>
