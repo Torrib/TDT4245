@@ -18,9 +18,6 @@
                 <action id="-15" name="Set visible" sid="5824203734160438" type="plankdown">
                     <param id="0" name="Visibility">1</param>
                 </action>
-                <action behavior="Solid" id="0" name="Set enabled" sid="6321552183791438" type="plankdown">
-                    <param id="0" name="State">1</param>
-                </action>
             </actions>
         </event-block>
         <event-block sid="734894368603409">

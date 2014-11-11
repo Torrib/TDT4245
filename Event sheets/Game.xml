@@ -43,14 +43,126 @@
         <event-block sid="2605775873717045">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="2634834967931303" type="Arrow">
-                    <param id="0" name="Object">Sprite3</param>
+                    <param id="0" name="Object">Rope1</param>
                 </condition>
             </conditions>
             <actions>
                 <action behavior="Physics" id="27" name="Set enabled" sid="9030197663011367" type="plankdown2">
                     <param id="0" name="Mode">1</param>
                 </action>
-                <action id="-9" name="Destroy" sid="8141432635065137" type="Sprite3" />
+                <action id="-9" name="Destroy" sid="8141432635065137" type="Rope1" />
+            </actions>
+        </event-block>
+        <event-block sid="7076536739292794">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9962814772801819" type="Arrow">
+                    <param id="0" name="Object">Rope2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="27" name="Set enabled" sid="1029789736318995" type="Rock">
+                    <param id="0" name="Mode">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9673059271457819" type="Rope2" />
+            </actions>
+        </event-block>
+        <event-block sid="9181739575916167">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="9055125676193846" type="System">
+                    <param id="0" name="Interval (seconds)">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="670108182918354" type="ArrowSpawn">
+                    <param id="0" name="Object">EnemyArrow</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1197649197376485">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2537447601588769" type="EnemyArrow">
+                    <param id="0" name="Object">Sprite2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="7632142431228453" type="EnemyArrow" />
+            </actions>
+        </event-block>
+        <event-block sid="1981870831258547">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6977359593774224" type="EnemyArrow">
+                    <param id="0" name="Object">Shield</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="4" name="Bounce off object" sid="842775225849774" type="EnemyArrow">
+                    <param id="0" name="Object">Shield</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1097301309453409">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2410180606195911" type="EnemyArrow">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="7362320084868106" type="Player">
+                    <param id="0" name="X">1000</param>
+                    <param id="1" name="Y">400</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8592366184118137">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="7164649161672129" type="Player">
+                    <param id="0" name="Object">lever</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="8073885571272017" type="lever">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Physics" id="27" name="Set enabled" sid="4326079696851964" type="plankdown">
+                    <param id="0" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="244412090241343">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="934605117847368" type="Player">
+                    <param id="0" name="Object">Helmet</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="1169660670837705" type="SpartacusInfo">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="3028747679364795">
+            <conditions>
+                <condition id="1" inverted="1" name="Is overlapping another object" sid="7964600640367534" type="Player">
+                    <param id="0" name="Object">Helmet</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="7442395420411278" type="SpartacusInfo">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="394776920178092">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="4098794344385865" type="Player" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="6308575196214507" type="Player">
+                    <param id="0" name="X">1000</param>
+                    <param id="1" name="Y">400</param>
+                </action>
             </actions>
         </event-block>
     </events>

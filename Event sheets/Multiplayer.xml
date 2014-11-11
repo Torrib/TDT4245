@@ -76,6 +76,30 @@
                             <param id="2" name="Precision">2</param>
                             <param id="3" name="Bandwidth">0</param>
                         </action>
+                        <action id="11" name="Sync object" sid="3720099731324557" type="Multiplayer">
+                            <param id="0" name="Object">plankdown2</param>
+                            <param id="1" name="Data">3</param>
+                            <param id="2" name="Precision">1</param>
+                            <param id="3" name="Bandwidth">0</param>
+                        </action>
+                        <action id="11" name="Sync object" sid="2126183925628481" type="Multiplayer">
+                            <param id="0" name="Object">Rope1</param>
+                            <param id="1" name="Data">3</param>
+                            <param id="2" name="Precision">1</param>
+                            <param id="3" name="Bandwidth">0</param>
+                        </action>
+                        <action id="11" name="Sync object" sid="2469443136016658" type="Multiplayer">
+                            <param id="0" name="Object">Rock</param>
+                            <param id="1" name="Data">1</param>
+                            <param id="2" name="Precision">1</param>
+                            <param id="3" name="Bandwidth">0</param>
+                        </action>
+                        <action id="11" name="Sync object" sid="1295533729409361" type="Multiplayer">
+                            <param id="0" name="Object">Rope2</param>
+                            <param id="1" name="Data">1</param>
+                            <param id="2" name="Precision">1</param>
+                            <param id="3" name="Bandwidth">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="3784300953611292">
@@ -116,6 +140,10 @@
                                     <param id="1" name="State">1</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="6230466905340162" type="Player" />
+                                <action id="-9" name="Destroy" sid="636807997861425" type="Rock" />
+                                <action id="-9" name="Destroy" sid="8815445949965534" type="Rope1" />
+                                <action id="-9" name="Destroy" sid="4359509909999647" type="Rope2" />
+                                <action id="-9" name="Destroy" sid="9905004659027996" type="plankdown2" />
                             </actions>
                         </event-block>
                     </sub-events>
@@ -478,6 +506,8 @@
                                             <param id="1" name="Comparison">3</param>
                                             <param id="2" name="Value">0</param>
                                         </condition>
+                                        <condition behavior="Platform" id="3" inverted="1" name="Is jumping" sid="6682113001021305" type="Player" />
+                                        <condition behavior="Platform" id="4" inverted="1" name="Is falling" sid="9773778840618299" type="Player" />
                                     </conditions>
                                     <actions>
                                         <action id="0" name="Spawn another object" sid="8288625164392483" type="Bow">
