@@ -40,5 +40,18 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="2605775873717045">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2634834967931303" type="Arrow">
+                    <param id="0" name="Object">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="27" name="Set enabled" sid="9030197663011367" type="plankdown2">
+                    <param id="0" name="Mode">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="8141432635065137" type="Sprite3" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
