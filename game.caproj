@@ -137,20 +137,7 @@
                 <plugin id="Multiplayer" />
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="multiplayer test">
-            <object-type name="Terain" sid="6565937249814746">
-                <plugin id="Sprite" />
-                <behaviors>
-                    <behavior-type name="Solid" sid="7825500806814212">
-                        <behavior id="solid" />
-                    </behavior-type>
-                </behaviors>
-                <animation-folder expanded="1">
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2136123094556915" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.727273" />
-                    </animation>
-                </animation-folder>
-            </object-type>
+        <object-folder expanded="0" name="multiplayer">
             <object-type name="HostTextGame" sid="453583829600656">
                 <plugin id="Text" />
             </object-type>
@@ -202,7 +189,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="animation test">
+        <object-folder expanded="0" name="player">
             <object-type name="Player" sid="148784455541471">
                 <plugin id="Sprite" />
                 <instance-variables>
@@ -753,10 +740,6 @@
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\thb\Downloads\menu_background_new_002.png" />
         </object-type>
-        <object-type name="TiledBackground2" sid="651347329426731">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
@@ -767,7 +750,6 @@
             <layout>UserCreation.xml</layout>
         </layout-folder>
         <layout-folder expanded="1" name="game">
-            <layout>MultiplayerTest.xml</layout>
             <layout>Map.xml</layout>
         </layout-folder>
     </layout-folder>
