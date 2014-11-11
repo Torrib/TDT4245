@@ -357,7 +357,7 @@
                                     <param id="0" name="Object to create">Player</param>
                                     <param id="1" name="Layer">0</param>
                                     <param id="2" name="X">200</param>
-                                    <param id="3" name="Y">20</param>
+                                    <param id="3" name="Y">600</param>
                                 </action>
                                 <action id="-10" name="Set value" sid="3471477034221871" type="Player">
                                     <param id="0" name="Instance variable">peerid</param>

@@ -25,5 +25,17 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="9894486559691473">
+            <conditions>
+                <condition id="4" name="On finished" sid="2906799584142057" type="Player">
+                    <param id="0" name="Animation">&quot;walk&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="8247946117030371" type="Player">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

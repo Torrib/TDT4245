@@ -10274,7 +10274,7 @@
                             <properties>
                                 <speed>800</speed>
                                 <acceleration>-100</acceleration>
-                                <gravity>200</gravity>
+                                <gravity>400</gravity>
                                 <bounce-off-solids>No</bounce-off-solids>
                                 <set-angle>Yes</set-angle>
                                 <initial-state>Disabled</initial-state>
