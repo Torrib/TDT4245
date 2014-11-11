@@ -151,24 +151,24 @@
                 <plugin id="TextBox" />
                 <container>
                     <type>IngameChat</type>
-                    <type>IngameChatInput</type>
                     <type>IngameChatButton</type>
+                    <type>IngameChatInput</type>
                 </container>
             </object-type>
             <object-type name="IngameChatButton" sid="324500952680237">
                 <plugin id="Button" />
                 <container>
                     <type>IngameChat</type>
-                    <type>IngameChatInput</type>
                     <type>IngameChatButton</type>
+                    <type>IngameChatInput</type>
                 </container>
             </object-type>
             <object-type name="IngameChatInput" sid="4353541941095695">
                 <plugin id="TextBox" />
                 <container>
                     <type>IngameChat</type>
-                    <type>IngameChatInput</type>
                     <type>IngameChatButton</type>
+                    <type>IngameChatInput</type>
                 </container>
             </object-type>
             <object-type name="MyUsernameText" sid="1133383186947097">

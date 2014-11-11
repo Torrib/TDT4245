@@ -150,7 +150,7 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="16" name="Enable local input prediction" sid="4549125137089755" type="Multiplayer">
+                                        <action disabled="1" id="16" name="Enable local input prediction" sid="4549125137089755" type="Multiplayer">
                                             <param id="0" name="Object">Player</param>
                                         </action>
                                         <action disabled="1" id="16" name="Enable local input prediction" sid="621319306319463" type="Multiplayer">
