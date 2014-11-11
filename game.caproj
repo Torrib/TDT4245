@@ -120,7 +120,7 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="misc">
+        <object-folder expanded="0" name="misc">
             <object-type name="Function" sid="4009609998066392">
                 <plugin id="Function" />
             </object-type>
@@ -251,7 +251,7 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="howtoplay">
+        <object-folder expanded="0" name="howtoplay">
             <object-type name="nextpage1" sid="1956522532230609">
                 <plugin id="Button" />
             </object-type>
@@ -318,8 +318,11 @@
             <object-type name="About" sid="8933293136350865">
                 <plugin id="Text" />
             </object-type>
+            <object-type name="Text7" sid="6609096292432485">
+                <plugin id="Text" />
+            </object-type>
         </object-folder>
-        <object-folder expanded="1" name="howToplay2">
+        <object-folder expanded="0" name="howToplay2">
             <object-type name="howToplay2" sid="8628010502887655">
                 <plugin id="Text" />
             </object-type>
@@ -368,9 +371,6 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
-        <object-type name="Text7" sid="6609096292432485">
-            <plugin id="Text" />
-        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
@@ -388,20 +388,20 @@
         </layout-folder>
     </layout-folder>
     <event-folder expanded="1">
-        <event-folder expanded="0" name="menu">
+        <event-folder expanded="1" name="menu">
             <event-sheet>GameLobby.xml</event-sheet>
             <event-sheet>Login.xml</event-sheet>
             <event-sheet>Main.xml</event-sheet>
             <event-sheet>UserCreation.xml</event-sheet>
             <event-sheet>HowToPlay.xml</event-sheet>
             <event-sheet>About.xml</event-sheet>
+            <event-sheet>HowToplay2.xml</event-sheet>
         </event-folder>
         <event-folder expanded="1" name="game">
             <event-sheet>MultiplayerTest.xml</event-sheet>
             <event-sheet>IngameChat.xml</event-sheet>
         </event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>HowToplay2.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="2" />
