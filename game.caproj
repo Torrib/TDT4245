@@ -54,7 +54,7 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder expanded="1">
+    <object-folder expanded="0">
         <object-folder expanded="0" name="login">
             <object-type name="LoginBtn" sid="4538300239727753">
                 <plugin id="Button" />
@@ -797,7 +797,7 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="howToplay2">
+        <object-folder expanded="0" name="howToplay2">
             <object-type name="previouspage" sid="1024423136855202">
                 <plugin id="Button" />
             </object-type>
@@ -813,6 +813,31 @@
                 </animation-folder>
             </object-type>
             <object-type name="Text4" sid="9308115942960993">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="rightClick" sid="2470379843059834">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410643739140562" speed="5">
+                        <frame duration="1" hotspotX="0.501577" hotspotY="0.500901" original-source="C:\Users\Lars Tore\Downloads\right click.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="enter" sid="1346982421860468">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6652445787553441" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lars Tore\Downloads\enter.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Text5" sid="2620813198553226">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text7" sid="5454868427564626">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text6" sid="6673989783381872">
                 <plugin id="Text" />
             </object-type>
         </object-folder>
@@ -847,35 +872,25 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Text5" sid="2620813198553226">
+        <object-type name="Button" sid="501643288505933">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Text8" sid="860224555126241">
             <plugin id="Text" />
         </object-type>
-        <object-type name="enter" sid="1346982421860468">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6652445787553441" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Lars Tore\Downloads\enter.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Text6" sid="6673989783381872">
+        <object-type name="Text9" sid="3041317862278058">
             <plugin id="Text" />
         </object-type>
-        <object-type name="rightClick" sid="2470379843059834">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="410643739140562" speed="5">
-                    <frame duration="1" hotspotX="0.501577" hotspotY="0.500901" original-source="C:\Users\Lars Tore\Downloads\right click.png" />
-                </animation>
-            </animation-folder>
+        <object-type name="Text10" sid="8857505260314312">
+            <plugin id="Text" />
         </object-type>
-        <object-type name="Text7" sid="5454868427564626">
+        <object-type name="Text11" sid="715448870405492">
             <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
-        <layout-folder expanded="0" name="menu">
+        <layout-folder expanded="1" name="menu">
             <layout>Login.xml</layout>
             <layout>Main.xml</layout>
             <layout>GameLobby.xml</layout>
