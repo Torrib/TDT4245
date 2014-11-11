@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>About</name>
+    <events>
+        <event-block sid="1933675983383007">
+            <conditions>
+                <condition id="0" name="On clicked" sid="9193547961313253" type="Back" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="6266891286110748" type="System">
+                    <param id="0" name="Layout">Main</param>
+                </action>
+                <action id="0" name="Set text" sid="1083310123742309" type="Developed">
+                    <param id="0" name="Text">&quot; The is developed by  Tor Håkon Bonsaken, Terje  André Bratlie, Aravinthan Yogarajah, Lars Tore Vassli and Dawn Alphonse Jose &quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
