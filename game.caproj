@@ -841,6 +841,23 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
+        <object-folder expanded="1" name="about">
+            <object-type name="Button" sid="501643288505933">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="Text10" sid="8857505260314312">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text9" sid="3041317862278058">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text11" sid="715448870405492">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Text8" sid="860224555126241">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
         <object-type name="TiledBackground" sid="6836145549299733">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\thb\Downloads\menu_background_new_002.png" />
@@ -872,25 +889,10 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Button" sid="501643288505933">
-            <plugin id="Button" />
-        </object-type>
-        <object-type name="Text8" sid="860224555126241">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="Text9" sid="3041317862278058">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="Text10" sid="8857505260314312">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="Text11" sid="715448870405492">
-            <plugin id="Text" />
-        </object-type>
     </object-folder>
     <families />
-    <layout-folder expanded="1">
-        <layout-folder expanded="1" name="menu">
+    <layout-folder expanded="0">
+        <layout-folder expanded="0" name="menu">
             <layout>Login.xml</layout>
             <layout>Main.xml</layout>
             <layout>GameLobby.xml</layout>
@@ -899,7 +901,7 @@
             <layout>HowToPlay2.xml</layout>
             <layout>About.xml</layout>
         </layout-folder>
-        <layout-folder expanded="1" name="game">
+        <layout-folder expanded="0" name="game">
             <layout>Map.xml</layout>
         </layout-folder>
     </layout-folder>
