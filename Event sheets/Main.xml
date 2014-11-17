@@ -78,5 +78,25 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="9228669608502168">
+            <conditions>
+                <condition id="0" name="On clicked" sid="4059759501519472" type="HelpBtn" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7270997437009133" type="System">
+                    <param id="0" name="Layout">HowToPlay</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3119934076564223">
+            <conditions>
+                <condition id="0" name="On clicked" sid="1230901888829088" type="AboutBtn" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="5396179429116614" type="System">
+                    <param id="0" name="Layout">About</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
