@@ -56,7 +56,7 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder expanded="1">
+    <object-folder expanded="0">
         <object-folder expanded="0" name="login">
             <object-type name="LoginBtn" sid="4538300239727753">
                 <plugin id="Button" />
@@ -496,7 +496,7 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="map">
+        <object-folder expanded="0" name="map">
             <object-type name="Background" sid="5087279055405724">
                 <plugin id="TiledBg" />
                 <texture original-source="D:\Dropbox\Skole\Trondheim\Master\Samhandlingsteknologi\wr97endk23d\Sprites\Jungle Platformer\Background Image\BackgroundEdited.png" />
@@ -771,6 +771,139 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder expanded="0" name="about">
+            <object-type name="BackToMenu" sid="8985062296269445">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="Tittle_about" sid="7827887803017104">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="The_game_was" sid="5215474564704612">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Aravinthan" sid="6816408674118723">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Lars" sid="3064511151870697">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Tor" sid="6786012966670234">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Terje" sid="168970942142323">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Dawn" sid="8898084962692239">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="In_the_course" sid="3542393436485879">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+        <object-folder expanded="0" name="howToPlay">
+            <object-type name="BackTomenu1" sid="1364216068703897">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="HowToPlay" sid="9999059935203775">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Nextpage" sid="5588065532334053">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="adkeys" sid="2884681420211727">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4204834288860771" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\ad-keys.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="arrows" sid="4439936541222101">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4583877467637523" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\arrows.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="A_and_D_or_arrows" sid="6555180131241397">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Space_W_Up" sid="6608458913598664">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Mouse_pointer" sid="7209005891754731">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="upkeys" sid="149192290720561">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9607897583452874" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.514286" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\up-keys.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="wkeys" sid="6558340261779148">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6567568347220428" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.517241" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\w-keys.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="space" sid="5442748069988851">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1740818479773197" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\space.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder expanded="0" name="howToPlay2">
+            <object-type name="enter" sid="9952814920348651">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3751968827239985" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\enter.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="backtomenu2" sid="373012619248486">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="leftClick" sid="9927354819265534">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4017893431323837" speed="5">
+                        <frame duration="1" hotspotX="0.501567" hotspotY="0.500888" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\left click.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PreviousPage" sid="4463533616211068">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="rightClick" sid="8688147678181436">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5907157102382812" speed="5">
+                        <frame duration="1" hotspotX="0.501577" hotspotY="0.500901" original-source="C:\Users\Aravinthan Yogarajah\Dropbox\Informatikk\1.semester\Samhandlingsteknologi og sosiale medier\bruk\right click.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Tittle_howToplay2" sid="657188374479794">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Mouse_button_one" sid="4994749775545085">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Enter_to_open" sid="747355118478598">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Second_mouse_button" sid="6287367308960162">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
         <object-type name="TiledBackground" sid="6836145549299733">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\thb\Downloads\menu_background_new_002.png" />
@@ -911,6 +1044,9 @@
             <layout>Main.xml</layout>
             <layout>GameLobby.xml</layout>
             <layout>UserCreation.xml</layout>
+            <layout>HowToPlay.xml</layout>
+            <layout>HowToPlay2.xml</layout>
+            <layout>About.xml</layout>
         </layout-folder>
         <layout-folder expanded="1" name="game">
             <layout>Map.xml</layout>
@@ -931,6 +1067,9 @@
             <event-sheet>Sound.xml</event-sheet>
         </event-folder>
         <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>HowToPlay.xml</event-sheet>
+        <event-sheet>HowToPlay2.xml</event-sheet>
+        <event-sheet>About.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="13" />
