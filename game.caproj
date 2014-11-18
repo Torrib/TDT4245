@@ -56,7 +56,7 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder expanded="0">
+    <object-folder expanded="1">
         <object-folder expanded="0" name="login">
             <object-type name="LoginBtn" sid="4538300239727753">
                 <plugin id="Button" />
@@ -94,7 +94,7 @@
                 <plugin id="Button" />
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="game lobby">
+        <object-folder expanded="0" name="game lobby">
             <object-type name="Chat" sid="7211364043948355">
                 <plugin id="TextBox" />
             </object-type>
@@ -770,6 +770,118 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="Rock" sid="4533248625379201">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="1666037051893515">
+                        <behavior id="solid" />
+                    </behavior-type>
+                    <behavior-type name="Physics" sid="7009820810788039">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2365083491418496" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501089" original-source="C:\Users\thb\Downloads\rollingBall.png">
+                            <collision-poly>
+                                <point x="0.148707" y="0.150327" />
+                                <point x="0.5" y="0.0108932" />
+                                <point x="0.862069" y="0.139434" />
+                                <point x="0.991379" y="0.498911" />
+                                <point x="0.87069" y="0.869281" />
+                                <point x="0.5" y="0.995643" />
+                                <point x="0.127155" y="0.87146" />
+                                <point x="0.00646552" y="0.498911" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Rope1" sid="5681385691115258">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2128823505806081" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\thb\Downloads\rope.png">
+                            <collision-poly>
+                                <point x="0.25" y="0.0246914" />
+                                <point x="0.5" y="0.00617284" />
+                                <point x="0.9375" y="0.00617284" />
+                                <point x="0.5" y="0.5" />
+                                <point x="0.625" y="0.962963" />
+                                <point x="0.5" y="0.993827" />
+                                <point x="0.125" y="0.987654" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Rope2" sid="3565678198009789">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5662321195938936" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\thb\Downloads\rope.png">
+                            <collision-poly>
+                                <point x="0.25" y="0.0246914" />
+                                <point x="0.5" y="0.00617284" />
+                                <point x="0.9375" y="0.00617284" />
+                                <point x="0.5" y="0.5" />
+                                <point x="0.625" y="0.962963" />
+                                <point x="0.5" y="0.993827" />
+                                <point x="0.125" y="0.987654" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Shield" sid="6331601630207675">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Jumpthru" sid="8050335226399706">
+                        <behavior id="jumpthru" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="4981889081139907">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                    <behavior-type name="Physics" sid="8636187785158275">
+                        <behavior id="Physics" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1290562989576375" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.38" original-source="C:\Users\thb\Downloads\shield.png">
+                            <collision-poly>
+                                <point x="0.768518" y="0.2675" />
+                                <point x="0.685185" y="0.0225" />
+                                <point x="0.912037" y="0.14" />
+                                <point x="0.962963" y="0.5" />
+                                <point x="0.791667" y="0.7575" />
+                                <point x="0.472222" y="0.9475" />
+                                <point x="0.666667" y="0.69" />
+                                <point x="0.787037" y="0.455" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite3" sid="4984822598870818">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1666707950879111" speed="5">
+                        <frame duration="1" hotspotX="0.96" hotspotY="0.16" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ArrowSpawn" sid="3287146727696727">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1254766249258586" speed="5">
+                        <frame duration="1" hotspotX="0.891892" hotspotY="0.512195" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SpartacusInfo" sid="9150364509853433">
+                <plugin id="Text" />
+            </object-type>
         </object-folder>
         <object-folder expanded="0" name="about">
             <object-type name="BackToMenu" sid="8985062296269445">
@@ -797,6 +909,9 @@
                 <plugin id="Text" />
             </object-type>
             <object-type name="In_the_course" sid="3542393436485879">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Tittle" sid="3258474657941561">
                 <plugin id="Text" />
             </object-type>
         </object-folder>
@@ -908,138 +1023,28 @@
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\thb\Downloads\menu_background_new_002.png" />
         </object-type>
-        <object-type name="Shield" sid="6331601630207675">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Jumpthru" sid="8050335226399706">
-                    <behavior id="jumpthru" />
-                </behavior-type>
-                <behavior-type name="Pin" sid="4981889081139907">
-                    <behavior id="Pin" />
-                </behavior-type>
-                <behavior-type name="Physics" sid="8636187785158275">
-                    <behavior id="Physics" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1290562989576375" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0.38" original-source="C:\Users\thb\Downloads\shield.png">
-                        <collision-poly>
-                            <point x="0.768518" y="0.2675" />
-                            <point x="0.685185" y="0.0225" />
-                            <point x="0.912037" y="0.14" />
-                            <point x="0.962963" y="0.5" />
-                            <point x="0.791667" y="0.7575" />
-                            <point x="0.472222" y="0.9475" />
-                            <point x="0.666667" y="0.69" />
-                            <point x="0.787037" y="0.455" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite" sid="2815677849639914">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4818156257598307" speed="5">
-                    <frame duration="1" hotspotX="0.50365" hotspotY="0.502618" original-source="C:\Users\thb\Downloads\gate.png">
-                        <collision-poly>
-                            <point x="0.0364963" y="0.026178" />
-                            <point x="0.49635" y="0.0052356" />
-                            <point x="0.970803" y="0.0209424" />
-                            <point x="0.978102" y="0.984293" />
-                            <point x="0.0218978" y="0.984293" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Rope1" sid="5681385691115258">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2128823505806081" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\thb\Downloads\rope.png">
-                        <collision-poly>
-                            <point x="0.25" y="0.0246914" />
-                            <point x="0.5" y="0.00617284" />
-                            <point x="0.9375" y="0.00617284" />
-                            <point x="0.5" y="0.5" />
-                            <point x="0.625" y="0.962963" />
-                            <point x="0.5" y="0.993827" />
-                            <point x="0.125" y="0.987654" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Rope2" sid="3565678198009789">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5662321195938936" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\thb\Downloads\rope.png">
-                        <collision-poly>
-                            <point x="0.25" y="0.0246914" />
-                            <point x="0.5" y="0.00617284" />
-                            <point x="0.9375" y="0.00617284" />
-                            <point x="0.5" y="0.5" />
-                            <point x="0.625" y="0.962963" />
-                            <point x="0.5" y="0.993827" />
-                            <point x="0.125" y="0.987654" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Rock" sid="4533248625379201">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="1666037051893515">
-                    <behavior id="solid" />
-                </behavior-type>
-                <behavior-type name="Physics" sid="7009820810788039">
-                    <behavior id="Physics" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2365083491418496" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501089" original-source="C:\Users\thb\Downloads\rollingBall.png">
-                        <collision-poly>
-                            <point x="0.148707" y="0.150327" />
-                            <point x="0.5" y="0.0108932" />
-                            <point x="0.862069" y="0.139434" />
-                            <point x="0.991379" y="0.498911" />
-                            <point x="0.87069" y="0.869281" />
-                            <point x="0.5" y="0.995643" />
-                            <point x="0.127155" y="0.87146" />
-                            <point x="0.00646552" y="0.498911" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="ArrowSpawn" sid="3287146727696727">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1254766249258586" speed="5">
-                    <frame duration="1" hotspotX="0.891892" hotspotY="0.512195" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="SpartacusInfo" sid="9150364509853433">
+        <object-type name="Text" sid="6068499196232684">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite3" sid="4984822598870818">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1666707950879111" speed="5">
-                    <frame duration="1" hotspotX="0.96" hotspotY="0.16" />
-                </animation>
-            </animation-folder>
+        <object-type name="Died" sid="9368371125047242">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text2" sid="7294847228823515">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text3" sid="253503269599091">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Tips1" sid="9516209908486797">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Tips2" sid="2510085240079585">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
-    <layout-folder expanded="1">
-        <layout-folder expanded="1" name="menu">
+    <layout-folder expanded="0">
+        <layout-folder expanded="0" name="menu">
             <layout>Login.xml</layout>
             <layout>Main.xml</layout>
             <layout>GameLobby.xml</layout>
@@ -1047,12 +1052,13 @@
             <layout>HowToPlay.xml</layout>
             <layout>HowToPlay2.xml</layout>
             <layout>About.xml</layout>
+            <layout>Reflection.xml</layout>
         </layout-folder>
         <layout-folder expanded="1" name="game">
             <layout>Map.xml</layout>
         </layout-folder>
     </layout-folder>
-    <event-folder expanded="1">
+    <event-folder expanded="0">
         <event-folder expanded="1" name="menu">
             <event-sheet>GameLobby.xml</event-sheet>
             <event-sheet>Login.xml</event-sheet>

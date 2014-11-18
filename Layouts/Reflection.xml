@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>About</name>
-    <sid>9370267954542429</sid>
+    <name>Reflection</name>
+    <sid>4722081896801966</sid>
     <event-sheet>About</event-sheet>
     <size>
         <width>1708</width>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="2719003339652969">
+        <layer name="Background" sid="6872405751490386">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -27,7 +27,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="TiledBackground" uid="495">
+                <instance type="TiledBackground" uid="333">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -38,8 +38,8 @@
                         <x>-17</x>
                         <y>-20</y>
                         <z>0</z>
-                        <width>686</width>
-                        <height>551</height>
+                        <width>706</width>
+                        <height>548</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -47,33 +47,26 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BackToMenu" uid="496">
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Layer 1" sid="3976386250416797">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Tittle" uid="334">
                     <properties>
-                        <type>Button</type>
-                        <text>Back to menu</text>
-                        <tooltip></tooltip>
-                        <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                        <checked>No</checked>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>12</x>
-                        <y>9</y>
-                        <z>0</z>
-                        <width>96</width>
-                        <height>24</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
-                <instance type="Tittle_about" uid="497">
-                    <properties>
-                        <text>About</text>
+                        <text>Summary</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-24,400,0</font>
                         <color>0,0,0</color>
@@ -86,10 +79,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>261</x>
-                        <y>29</y>
+                        <x>273</x>
+                        <y>19</y>
                         <z>0</z>
-                        <width>71</width>
+                        <width>135</width>
                         <height>40</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -98,9 +91,9 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="The_game_was" uid="498">
+                <instance type="Text" uid="335">
                     <properties>
-                        <text>The game was developed by</text>
+                        <text>You died </text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>0,0,0</color>
@@ -113,10 +106,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>39</x>
-                        <y>85</y>
+                        <x>58</x>
+                        <y>70</y>
                         <z>0</z>
-                        <width>226</width>
+                        <width>79</width>
                         <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -125,11 +118,11 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Aravinthan" uid="499">
+                <instance type="Died" uid="336">
                     <properties>
-                        <text>- Aravinthan Yogarajah</text>
+                        <text>6</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
+                        <font>Arial Black,-16,900,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -140,10 +133,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>79</x>
-                        <y>122</y>
+                        <x>141</x>
+                        <y>67</y>
                         <z>0</z>
-                        <width>200</width>
+                        <width>38</width>
                         <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -152,9 +145,9 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Lars" uid="500">
+                <instance type="Text2" uid="337">
                     <properties>
-                        <text>- Lars Tore Vassli</text>
+                        <text>times this level!</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>0,0,0</color>
@@ -167,10 +160,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>79</x>
-                        <y>148</y>
+                        <x>176</x>
+                        <y>70</y>
                         <z>0</z>
-                        <width>200</width>
+                        <width>115</width>
                         <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -179,9 +172,36 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Tor" uid="501">
+                <instance type="Text3" uid="338">
                     <properties>
-                        <text>- Tor Håkon Bonsaken</text>
+                        <text>Is there anything you could&apos;ve done to die less?</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16,400,1</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>61</x>
+                        <y>95</y>
+                        <z>0</z>
+                        <width>349</width>
+                        <height>25</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text" uid="339">
+                    <properties>
+                        <text>You used </text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>0,0,0</color>
@@ -194,10 +214,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>79</x>
-                        <y>174</y>
+                        <x>63</x>
+                        <y>213</y>
                         <z>0</z>
-                        <width>200</width>
+                        <width>79</width>
                         <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -206,11 +226,11 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Terje" uid="502">
+                <instance type="Died" uid="344">
                     <properties>
-                        <text>- Terje Andrè Bratlie</text>
+                        <text>4 minutes, 36 seconds</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
+                        <font>Arial Black,-16,900,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -221,10 +241,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>79</x>
-                        <y>202</y>
+                        <x>146</x>
+                        <y>206</y>
                         <z>0</z>
-                        <width>200</width>
+                        <width>203</width>
                         <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -233,9 +253,9 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Dawn" uid="503">
+                <instance type="Text2" uid="345">
                     <properties>
-                        <text>- Dawn Alphonse Jose</text>
+                        <text>to complete this level</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>0,0,0</color>
@@ -248,10 +268,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>79</x>
-                        <y>226</y>
+                        <x>350</x>
+                        <y>210</y>
                         <z>0</z>
-                        <width>200</width>
+                        <width>159</width>
                         <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -260,11 +280,11 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="In_the_course" uid="504">
+                <instance type="Text3" uid="346">
                     <properties>
-                        <text>in the course coperation technology and social media at IDI, NTNU.</text>
+                        <text>Is there a way you and your partner can do to improve your coordination?</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
+                        <font>Arial,-16,400,1</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -275,11 +295,65 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>79</x>
-                        <y>258</y>
+                        <x>65</x>
+                        <y>238</y>
                         <z>0</z>
-                        <width>486</width>
+                        <width>534</width>
                         <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Tips1" uid="347">
+                    <properties>
+                        <text>Tips! Identify dangerous elements in the environment and coordinate with your team mate to get past them</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16,700,1</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>59</x>
+                        <y>127</y>
+                        <z>0</z>
+                        <width>579</width>
+                        <height>51</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Tips2" uid="348">
+                    <properties>
+                        <text>Tips! Use chat and pings efficiently to get past the puzzles.</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16,700,1</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>64</x>
+                        <y>269</y>
+                        <z>0</z>
+                        <width>579</width>
+                        <height>51</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

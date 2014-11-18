@@ -156,5 +156,21 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="4009606865075194">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="8351183543890555" type="Player">
+                    <param id="0" name="Object">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-28" name="Set canvas size" sid="5761394345455582" type="System">
+                    <param id="0" name="Width">680</param>
+                    <param id="1" name="Height">530</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="709955746298547" type="System">
+                    <param id="0" name="Layout">Reflection</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
