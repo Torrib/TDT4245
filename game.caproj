@@ -94,7 +94,7 @@
                 <plugin id="Button" />
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="game lobby">
+        <object-folder expanded="1" name="game lobby">
             <object-type name="Chat" sid="7211364043948355">
                 <plugin id="TextBox" />
             </object-type>
@@ -541,7 +541,7 @@
                     <behavior-type name="Physics" sid="2103844311979867">
                         <behavior id="Physics" />
                     </behavior-type>
-                    <behavior-type name="Jumpthru" sid="7860102928131352">
+                    <behavior-type name="Jumpthru" sid="6713350419487768">
                         <behavior id="jumpthru" />
                     </behavior-type>
                 </behaviors>
@@ -790,16 +790,16 @@
             </behaviors>
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1290562989576375" speed="5">
-                    <frame duration="1" hotspotX="0" hotspotY="0.333333" original-source="C:\Users\thb\Downloads\shield.png">
+                    <frame duration="1" hotspotX="0" hotspotY="0.38" original-source="C:\Users\thb\Downloads\shield.png">
                         <collision-poly>
-                            <point x="0.768518" y="0.177083" />
-                            <point x="0.708333" y="0.0104167" />
-                            <point x="0.912037" y="0" />
+                            <point x="0.768518" y="0.2675" />
+                            <point x="0.685185" y="0.0225" />
+                            <point x="0.912037" y="0.14" />
                             <point x="0.962963" y="0.5" />
-                            <point x="0.791667" y="0.857639" />
-                            <point x="0.546296" y="0.986111" />
-                            <point x="0.666667" y="0.763889" />
-                            <point x="0.787037" y="0.4375" />
+                            <point x="0.791667" y="0.7575" />
+                            <point x="0.472222" y="0.9475" />
+                            <point x="0.666667" y="0.69" />
+                            <point x="0.787037" y="0.455" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -895,6 +895,14 @@
         <object-type name="SpartacusInfo" sid="9150364509853433">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Sprite3" sid="4984822598870818">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1666707950879111" speed="5">
+                    <frame duration="1" hotspotX="0.96" hotspotY="0.16" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder expanded="1">
@@ -909,7 +917,7 @@
         </layout-folder>
     </layout-folder>
     <event-folder expanded="1">
-        <event-folder expanded="0" name="menu">
+        <event-folder expanded="1" name="menu">
             <event-sheet>GameLobby.xml</event-sheet>
             <event-sheet>Login.xml</event-sheet>
             <event-sheet>Main.xml</event-sheet>

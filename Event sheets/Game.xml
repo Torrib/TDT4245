@@ -110,7 +110,7 @@
             </conditions>
             <actions>
                 <action id="-3" name="Set position" sid="7362320084868106" type="Player">
-                    <param id="0" name="X">1000</param>
+                    <param id="0" name="X">2500</param>
                     <param id="1" name="Y">400</param>
                 </action>
             </actions>
@@ -128,6 +128,9 @@
                 <action behavior="Physics" id="27" name="Set enabled" sid="4326079696851964" type="plankdown">
                     <param id="0" name="Mode">1</param>
                 </action>
+                <action behavior="Physics" id="27" name="Set enabled" sid="4329158813194468" type="Shield">
+                    <param id="0" name="Mode">0</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="244412090241343">
@@ -142,25 +145,13 @@
                 </action>
             </actions>
         </event-block>
-        <event-block disabled="1" sid="3028747679364795">
-            <conditions>
-                <condition id="1" inverted="1" name="Is overlapping another object" sid="7964600640367534" type="Player">
-                    <param id="0" name="Object">Helmet</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="7442395420411278" type="SpartacusInfo">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="394776920178092">
             <conditions>
                 <condition id="-4" name="Is outside layout" sid="4098794344385865" type="Player" />
             </conditions>
             <actions>
                 <action id="-3" name="Set position" sid="6308575196214507" type="Player">
-                    <param id="0" name="X">1000</param>
+                    <param id="0" name="X">2500</param>
                     <param id="1" name="Y">400</param>
                 </action>
             </actions>
